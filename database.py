@@ -15,17 +15,19 @@ CREATE TABLE IF NOT EXISTS alerts(id INTEGER PRIMARY KEY AUTOINCREMENT, site TEX
 JSON_COLS = ("risk_reasons", "hazards", "life_saving_rules", "barriers")
 def connect(path="safetysignal.db"):
     c = sqlite3.connect(path); c.row_factory = sqlite3.Row; c.executescript(SCHEMA); return c
-def add_report(conn, r):
+def add_report(conn, r, commit=True):
     r = dict(r); r.setdefault("created_at", dt.datetime.now().isoformat(timespec="seconds"))
     for k in JSON_COLS:
         if k in r and not isinstance(r[k], str): r[k] = json.dumps(r[k])
     cols = [k for k in r if k in {x[1] for x in conn.execute("PRAGMA table_info(reports)")}]
-    cur = conn.execute(f"INSERT INTO reports({','.join(cols)}) VALUES({','.join('?'*len(cols))})", [r[k] for k in cols]); conn.commit(); return cur.lastrowid
-def add_actions(conn, report_id, actions):
+    cur = conn.execute(f"INSERT INTO reports({','.join(cols)}) VALUES({','.join('?'*len(cols))})", [r[k] for k in cols])
+    if commit: conn.commit()
+    return cur.lastrowid
+def add_actions(conn, report_id, actions, commit=True):
     for a in actions:
         conn.execute("INSERT INTO actions(report_id,action,priority,department,owner,due_date) VALUES(?,?,?,?,?,?)",
                      (report_id, a["action"], a["priority"], a["department"], a["owner"], a["due_date"]))
-    conn.commit()
+    if commit: conn.commit()
 def add_alert(conn, a):
     conn.execute("INSERT INTO alerts(site,hazard,window_start,window_end,previous_count,current_count,growth_percent,level,created_at) VALUES(?,?,?,?,?,?,?,?,?)",
                  (a["site"], a["hazard"], a["window_start"], a["window_end"], a["previous_count"], a["current_count"], a["growth_percent"], a["level"], dt.datetime.now().isoformat(timespec="seconds"))); conn.commit()

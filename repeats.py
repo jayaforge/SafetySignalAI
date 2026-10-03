@@ -17,9 +17,24 @@ class SimilarityIndex:
             out.append({"id": int(r["id"]), "similarity_pct": round(float(s[i]) * 100, 1), "kind": kind, "reported_at": str(r["reported_at"]), "site": r["site"], "status": r.get("status", ""), "text": r["text"]})
         return out
 def repeat_count(hist, site, rule, when, window_days=REPEAT_WINDOW_DAYS):
-    """hist needs columns site, reported_at, rules (list). Counts prior same-site same-rule reports inside the window."""
-    t = pd.to_datetime(when); d = pd.to_datetime(hist.reported_at)
-    m = (hist.site == site) & (d <= t) & (d > t - pd.Timedelta(days=window_days)) & hist.rules.map(lambda r: rule in r)
+    """hist needs columns/keys site, reported_at, rules (list). Counts prior same-site same-rule reports inside the window."""
+    if hist is None or len(hist) == 0: return 0
+    t = pd.to_datetime(when)
+    start = t - pd.Timedelta(days=window_days)
+    if isinstance(hist, list):
+        cnt = 0
+        for r in hist:
+            if r.get("site") == site and rule in r.get("rules", ()):
+                dt_val = r.get("_dt")
+                if dt_val is None:
+                    dt_val = pd.to_datetime(r.get("reported_at"))
+                if start < dt_val <= t:
+                    cnt += 1
+        return cnt
+    if "_dt" in hist.columns: d = hist["_dt"]
+    elif pd.api.types.is_datetime64_any_dtype(hist["reported_at"]): d = hist["reported_at"]
+    else: d = pd.to_datetime(hist["reported_at"])
+    m = (hist["site"] == site) & (d <= t) & (d > start) & hist["rules"].map(lambda r: rule in r)
     return int(m.sum())
 def repeat_summary(hist, site, rule, when, window_days=REPEAT_WINDOW_DAYS):
     n = repeat_count(hist, site, rule, when, window_days)

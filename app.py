@@ -14,20 +14,48 @@ def sanitize_json(v):
 app = Flask(__name__)
 app.secret_key = os.environ.get("SECRET_KEY") or os.urandom(24)       # no hardcoded secret
 app.config["MAX_CONTENT_LENGTH"] = 2 * 1024 * 1024                      # 2 MB upload limit
-DB = os.environ.get("SAFETYSIGNAL_DB", "safetysignal.db"); _eng = None
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+os.chdir(BASE_DIR)
+
+DB = os.environ.get("SAFETYSIGNAL_DB", os.path.join(BASE_DIR, "safetysignal.db"))
+_eng = None
+
 def engine():
     global _eng
-    if _eng is None: _eng = Engine()
+    if _eng is None:
+        _eng = Engine()
     return _eng
-def conn():
+
+def init_app():
+    global _eng
+    # Pre-warm ML Engine at startup so web requests never pay initialization overhead
+    if _eng is None:
+        _eng = Engine()
+    # Ensuredef database is initialized & seeded at startup if empty
     c = db.connect(DB)
-    if c.execute("SELECT COUNT(*) FROM reports").fetchone()[0] == 0 and os.path.exists("data/reports.csv"): seed(c, engine())
-    return c
+    try:
+        count = c.execute("SELECT COUNT(*) FROM reports").fetchone()[0]
+        csv_path = os.path.join(BASE_DIR, "data", "reports.csv")
+        if count == 0 and os.path.exists(csv_path):
+            seed(c, _eng, csv=csv_path)
+    finally:
+        c.close()
+
+# Initialize immediately on startup/import before traffic starts
+init_app()
+
+def conn():
+    return db.connect(DB)
 def asof(d): return pd.to_datetime(d.reported_at).max().to_pydatetime() if len(d) else pd.Timestamp.now().to_pydatetime()
 @app.context_processor
 def ctx(): return dict(DISCLAIMER=C.DISCLAIMER, RISK_NOTE=C.RISK_NOTE)
-@app.route("/", methods=["GET", "POST"])
+@app.route("/health", methods=["GET", "HEAD"])
+def health():
+    return jsonify({"status": "ok"}), 200
+@app.route("/", methods=["GET", "POST", "HEAD"])
 def index():
+    if request.method == "HEAD":
+        return "", 200
     result = None; c = conn()
     if request.method == "POST":
         f = request.form; sev = f.get("severity", "Unspecified"); sev = sev if sev in SEVS else "Unspecified"
@@ -92,7 +120,7 @@ def review():
     return render_template("review.html", rows=q.head(50).to_dict("records"), total=len(q), audited=audited.to_dict("records"), audited_total=len(audited))
 @app.route("/evaluation")
 def evaluation():
-    p = "data/eval_results.json"; r = json.load(open(p)) if os.path.exists(p) else None; return render_template("evaluation.html", r=r)
+    p = os.path.join(BASE_DIR, "data", "eval_results.json"); r = json.load(open(p)) if os.path.exists(p) else None; return render_template("evaluation.html", r=r)
 @app.route("/dashboard")
 def dashboard(): return render_template("dashboard.html")
 @app.route("/api/dashboard")
@@ -162,4 +190,6 @@ def api_dashboard():
 def too_big(e): flash("File too large (limit 2 MB).", "err"); return redirect(url_for("reports"))
 @app.errorhandler(500)
 def err(e): return render_template("index.html", result={"error": "Something went wrong. Please check your input and try again."}, sites=[], note=""), 500
-if __name__ == "__main__": app.run(debug=False)
+if __name__ == "__main__":
+    port = int(os.environ.get("PORT", 5000))
+    app.run(host="0.0.0.0", port=port, debug=False)

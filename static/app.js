@@ -9,47 +9,170 @@ if (window.DASH) {
 
       // Render KPIs with colored top bars & modern typography
       const K = [
-        { label: "Total Reports", val: d.kpi.total, color: "#0284c7" },
-        { label: "SIF Potential", val: d.kpi.sif, color: "#dc2626" },
-        { label: "High / Critical", val: d.kpi.high_critical, color: "#ea580c" },
-        { label: "Open Actions", val: d.kpi.open_actions, color: "#ca8a04" },
-        { label: "Overdue Actions", val: d.kpi.overdue, color: "#e11d48" },
-        { label: "Emerging Risks", val: d.kpi.emerging, color: "#7c3aed" }
+        { label: "Total Reports", val: d.kpi.total, color: "#0284c7", icon: "📋", iconBg: "rgba(2, 132, 199, 0.15)", desc: "All frontline safety observations logged" },
+        { label: "SIF Potential", val: d.kpi.sif, color: "#dc2626", icon: "⚠️", iconBg: "rgba(220, 38, 38, 0.15)", desc: `${d.kpi.sif_pct}% of total reports` },
+        { label: "High / Critical", val: d.kpi.high_critical, color: "#ea580c", icon: "🚨", iconBg: "rgba(234, 88, 12, 0.15)", desc: `${d.kpi.hc_pct}% of incident volume` },
+        { label: "Open Actions", val: d.kpi.open_actions, color: "#ca8a04", icon: "⏳", iconBg: "rgba(202, 138, 4, 0.15)", desc: "Mitigation items undergoing workflow" },
+        { label: "Overdue Actions", val: d.kpi.overdue, color: "#e11d48", icon: "⏱️", iconBg: "rgba(225, 29, 72, 0.15)", desc: "SLA escalated to senior management" },
+        { label: "Emerging Risks", val: d.kpi.emerging, color: "#7c3aed", icon: "📡", iconBg: "rgba(124, 58, 237, 0.15)", desc: "Statistical 7-day velocity spikes" }
       ];
 
-      $("kpis").innerHTML = K.map(k => `
-        <div class="kpi">
-          <div class="kpi-bar" style="background:${k.color}"></div>
-          <span style="color:${k.color}">${esc(k.label)}</span>
-          <b>${esc(k.val)}</b>
-        </div>
-      `).join("");
-
-      // Render Emerging Risk Alerts Box
-      const alertHtml = d.alerts.length ? d.alerts.map(a => `
-        <div style="display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:8px; padding:10px 14px; background:#f8fafc; border-radius:8px; margin-top:8px; border:1px solid #e2e8f0;">
-          <div style="display:flex; align-items:center; gap:10px;">
-            <span class="badge ${a.level}">${esc(a.level)}</span>
-            <span style="font-weight:700; color:var(--text-main); font-size:14px;">${esc(a.site)}</span>
-            <span class="tag" style="background:#e0f2fe; color:#0369a1; font-weight:700;">${esc(a.hazard)}</span>
+      if ($("kpis")) {
+        $("kpis").innerHTML = K.map(k => `
+          <div class="kpi-card">
+            <div class="kpi-bar" style="background:${k.color}"></div>
+            <div class="kpi-card-top">
+              <span class="kpi-label">${esc(k.label)}</span>
+              <div class="kpi-icon-wrap" style="background:${k.iconBg}; font-size:15px;">${k.icon}</div>
+            </div>
+            <div class="kpi-num">${esc(k.val)}</div>
+            <div class="kpi-desc">${esc(k.desc)}</div>
           </div>
-          <div style="font-size:13px; color:var(--text-muted);">
-            7-day window: <b>${esc(a.previous_count)}</b> &rarr; <b style="color:#b91c1c;">${esc(a.current_count)}</b> reports 
-            <span class="badge ${a.level}" style="font-size:10px; margin-left:6px;">
-              ${a.growth_percent == null ? "NEW SPIKE" : "+" + esc(a.growth_percent) + "% GROWTH"}
-            </span>
-          </div>
-        </div>
-      `).join("") : `<p class="muted" style="margin:6px 0;">No active statistical emerging-risk alerts triggered at this time.</p>`;
+        `).join("");
+      }
 
-      $("alertbox").innerHTML = `
-        <h4 style="margin-bottom:4px;">
-          Active Emerging Risk Alerts
-          <span class="tag" style="background:#fef3c7; color:#92400e;">Statistical 7-day Surveillance</span>
-        </h4>
-        <p class="muted" style="margin-bottom:6px;">Triggers when current 7-day reports &ge; 3 and &ge; 2&times; previous window.</p>
-        ${alertHtml}
-      `;
+      // Render Operational Safety Pulse Strip (5-second situational summary)
+      if ($("pulse-grid") && d.pulse) {
+        const P = [
+          { label: "Total Ingested", val: d.pulse.total_reports, sub: "observations" },
+          { label: "SIF Precursors", val: d.pulse.sif_count, sub: `${d.pulse.sif_pct}% volume` },
+          { label: "High/Critical Priority", val: d.pulse.hc_count, sub: `${d.pulse.hc_pct}% rate` },
+          { label: "Emerging Spikes", val: d.pulse.emerging_count, sub: "active 7d alerts" },
+          { label: "Cross-Site Clusters", val: d.pulse.cluster_count, sub: "systemic hazards" },
+          { label: "Pending Governance", val: d.pulse.pending_reviews, sub: "reviews needed" },
+          { label: "Overdue SLAs", val: d.pulse.overdue_actions, sub: "escalated tasks" }
+        ];
+        $("pulse-grid").innerHTML = P.map(p => `
+          <div class="pulse-item">
+            <div class="pulse-item-label">${esc(p.label)}</div>
+            <div class="pulse-item-val">${esc(p.val)} <span class="pulse-item-sub">${esc(p.sub)}</span></div>
+          </div>
+        `).join("");
+      }
+
+      // Render Priority Attention Board
+      if ($("attention-grid")) {
+        const items = [];
+        if (d.kpi.overdue > 0) {
+          items.push({
+            title: "Overdue Corrective Actions",
+            badge: `${d.kpi.overdue} Overdue`,
+            badgeClass: "CRITICAL",
+            desc: `${d.kpi.overdue} corrective actions have exceeded SLA target completion dates and triggered multi-tier escalation.`,
+            link: "/actions",
+            actionText: "View Actions"
+          });
+        }
+        if (d.review_pending > 0) {
+          items.push({
+            title: "Pending Human Review",
+            badge: `${d.review_pending} In Queue`,
+            badgeClass: "HIGH",
+            desc: `${d.review_pending} High and Critical incident classifications await safety officer verification or override.`,
+            link: "/review",
+            actionText: "Open Review Queue"
+          });
+        }
+        if (d.alerts && d.alerts.length > 0) {
+          items.push({
+            title: "Emerging Risk Spikes",
+            badge: `${d.alerts.length} Active`,
+            badgeClass: "HIGH",
+            desc: `Statistical radar flagged ${d.alerts.length} rapid-increase hazard velocity alerts (≥3 reports and ≥2x prior window).`,
+            link: "/alerts",
+            actionText: "Inspect Alerts"
+          });
+        }
+        if (d.clusters && d.clusters.length > 0) {
+          items.push({
+            title: "Systemic Cross-Site Clusters",
+            badge: `${d.clusters.length} Hazards`,
+            badgeClass: "CRITICAL",
+            desc: `Surveillance flagged hazards rising concurrently across ≥3 independent facilities.`,
+            link: "/alerts",
+            actionText: "Analyze Clusters"
+          });
+        }
+        if (!items.length) {
+          $("attention-grid").innerHTML = `<div class="card" style="padding:16px; color:var(--text-muted); grid-column: 1 / -1; text-align:center;">All operations within safe parameters. No urgent SLA breaches or unaddressed high-risk alerts.</div>`;
+        } else {
+          $("attention-grid").innerHTML = items.map(it => `
+            <div class="attention-card">
+              <div class="attention-card-top">
+                <span class="attention-card-title">${esc(it.title)}</span>
+                <span class="badge ${it.badgeClass}" style="font-size:10px;">${esc(it.badge)}</span>
+              </div>
+              <div class="attention-card-desc">${esc(it.desc)}</div>
+              <a href="${it.link}" class="attention-card-action">${esc(it.actionText)} &rarr;</a>
+            </div>
+          `).join("");
+        }
+      }
+
+      // Render Emerging Risk Radar Grid
+      if ($("emerging-grid")) {
+        if (d.alerts && d.alerts.length) {
+          $("emerging-grid").innerHTML = d.alerts.map(a => `
+            <div class="emerging-card ${String(a.level || '').toLowerCase()}">
+              <div class="emerging-card-header">
+                <div style="display:flex; align-items:center; gap:8px;">
+                  <span class="badge ${a.level}">${esc(a.level)}</span>
+                  <span style="font-weight:700; color:#fff; font-size:14px;">${esc(a.site)}</span>
+                  <span class="tag" style="background:rgba(56, 189, 248, 0.15); color:var(--brand-cyan); font-weight:700;">${esc(a.hazard)}</span>
+                </div>
+                <span class="badge ${a.level}">
+                  ${a.growth_percent == null ? "NEW SPIKE" : "+" + esc(a.growth_percent) + "%"}
+                </span>
+              </div>
+              <div class="emerging-stats">
+                <div class="emerging-stat-item">
+                  <div class="emerging-stat-label">Previous 7d</div>
+                  <div class="emerging-stat-val">${esc(a.previous_count)}</div>
+                </div>
+                <div class="emerging-stat-item">
+                  <div class="emerging-stat-label">Current 7d</div>
+                  <div class="emerging-stat-val" style="color:#ef4444;">${esc(a.current_count)}</div>
+                </div>
+                <div class="emerging-stat-item">
+                  <div class="emerging-stat-label">Velocity</div>
+                  <div class="emerging-stat-val" style="color:#f59e0b;">${esc(a.signal || (a.growth_percent != null ? "+" + a.growth_percent + "%" : "NEW SPIKE"))}</div>
+                </div>
+              </div>
+              <div style="font-size:12px; color:var(--text-muted);">${esc(a.reason)}</div>
+            </div>
+          `).join("");
+        } else {
+          $("emerging-grid").innerHTML = `<div class="card" style="padding:20px; color:var(--text-muted); grid-column: 1 / -1; text-align:center;">No emerging-risk statistical spikes detected across facilities in the current 7-day window.</div>`;
+        }
+      }
+
+      // Render Emerging Risk Alerts Box if legacy container exists
+      if ($("alertbox")) {
+        const alertHtml = d.alerts.length ? d.alerts.map(a => `
+          <div style="display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:8px; padding:10px 14px; background:#f8fafc; border-radius:8px; margin-top:8px; border:1px solid #e2e8f0;">
+            <div style="display:flex; align-items:center; gap:10px;">
+              <span class="badge ${a.level}">${esc(a.level)}</span>
+              <span style="font-weight:700; color:var(--text-main); font-size:14px;">${esc(a.site)}</span>
+              <span class="tag" style="background:#e0f2fe; color:#0369a1; font-weight:700;">${esc(a.hazard)}</span>
+            </div>
+            <div style="font-size:13px; color:var(--text-muted);">
+              7-day window: <b>${esc(a.previous_count)}</b> &rarr; <b style="color:#b91c1c;">${esc(a.current_count)}</b> reports 
+              <span class="badge ${a.level}" style="font-size:10px; margin-left:6px;">
+                ${a.growth_percent == null ? "NEW SPIKE" : "+" + esc(a.growth_percent) + "% GROWTH"}
+              </span>
+            </div>
+          </div>
+        `).join("") : `<p class="muted" style="margin:6px 0;">No active statistical emerging-risk alerts triggered at this time.</p>`;
+
+        $("alertbox").innerHTML = `
+          <h4 style="margin-bottom:4px;">
+            Active Emerging Risk Alerts
+            <span class="tag" style="background:#fef3c7; color:#92400e;">Statistical 7-day Surveillance</span>
+          </h4>
+          <p class="muted" style="margin-bottom:6px;">Triggers when current 7-day reports &ge; 3 and &ge; 2&times; previous window.</p>
+          ${alertHtml}
+        `;
+      }
 
       // Render Charts if Chart.js is loaded
       if (typeof Chart !== "undefined") {

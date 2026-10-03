@@ -1,5 +1,5 @@
 """Ties validation -> relevance -> ML (type, SIF) -> rule engine -> barriers -> repeats -> risk -> actions. Seeds the demo DB."""
-import re, random, datetime as dt
+import os, re, random, datetime as dt
 import pandas as pd
 import database as db
 from validation import validate_text, is_safety_relevant, NOT_SAFETY_MSG
@@ -9,10 +9,15 @@ from model import SafetyModels
 from repeats import SimilarityIndex, repeat_count
 from actions import recommend
 from early_warning import detect_emerging
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+DEFAULT_MODEL_PATH = os.path.join(BASE_DIR, "data", "models.pkl")
+DEFAULT_TRAIN_CSV = os.path.join(BASE_DIR, "data", "reports.csv")
+
 SEVS = ("Low", "Medium", "High")
 def clean(s, n=3000): return re.sub(r"[\x00-\x08\x0b-\x1f\x7f]", "", str(s or "")).strip()[:n]
 class Engine:
-    def __init__(self, train_csv="data/reports.csv"): self.models = SafetyModels().fit(pd.read_csv(train_csv))
+    def __init__(self, train_csv=DEFAULT_TRAIN_CSV, model_path=DEFAULT_MODEL_PATH):
+        self.models = SafetyModels.get_or_train(train_csv, model_path)
     def analyze(self, text, site="Unknown", location="", activity="", role="", severity="Unspecified", reported_at=None, hist=None, active=frozenset(), with_similar=True):
         ok, t = validate_text(clean(text))
         if not ok: return {"error": t}
@@ -43,6 +48,7 @@ class Engine:
                 "actions": recommend(names, risk["level"], when.to_pydatetime())}
 def ingest(conn, eng, rows, hist=None, active_fn=None, keep_uncertain=False):
     saved, rej = 0, []
+    hist_list = [] if hist is None else (hist if isinstance(hist, list) else hist.to_dict("records"))
     for i, r in enumerate(rows, start=2):
         sev = clean(r.get("severity")).title() or "Unspecified"
         if sev not in SEVS + ("Unspecified",): rej.append((i, f"Invalid severity '{sev[:20]}'")); continue
@@ -50,19 +56,23 @@ def ingest(conn, eng, rows, hist=None, active_fn=None, keep_uncertain=False):
         except Exception: rej.append((i, "Invalid date")); continue
         if pd.isna(when): rej.append((i, "Invalid date")); continue
         act = active_fn(when) if active_fn else frozenset()
-        a = eng.analyze(r.get("text"), clean(r.get("site"), 60) or "Unknown", clean(r.get("location"), 60), clean(r.get("activity"), 60), clean(r.get("reporter_role"), 40), sev, when, hist, act, with_similar=False)
+        a = eng.analyze(r.get("text"), clean(r.get("site"), 60) or "Unknown", clean(r.get("location"), 60), clean(r.get("activity"), 60), clean(r.get("reporter_role"), 40), sev, when, hist_list, act, with_similar=False)
         if "error" in a: rej.append((i, a["error"])); continue
         if not a["relevant"]: rej.append((i, "Not a safety report (screened out)")); continue
         if a.get("relevance_uncertain") and not keep_uncertain: rej.append((i, "Relevance uncertain (not saved; submit singly to confirm)")); continue
-        rid = db.add_report(conn, a["row"]); db.add_actions(conn, rid, a["actions"]); saved += 1
-        nr = pd.DataFrame([{**a["row"], "id": rid, "rules": a["row"]["hazards"]}]); hist = nr if hist is None else pd.concat([hist, nr], ignore_index=True)
+        rid = db.add_report(conn, a["row"], commit=False); db.add_actions(conn, rid, a["actions"], commit=False); saved += 1
+        nr = {**a["row"], "id": rid, "rules": a["row"]["hazards"], "_dt": when}
+        hist_list.append(nr)
+    conn.commit()
     return saved, rej
 def refresh_alerts(conn):
     d = db.reports_df(conn); conn.execute("DELETE FROM alerts"); al = detect_emerging(d) if len(d) else []
     for a in al: db.add_alert(conn, a)
     return al
-def seed(conn, eng, csv="data/reports.csv"):
+def seed(conn, eng=None, csv=DEFAULT_TRAIN_CSV):
     """Loads SYNTHETIC demo reports chronologically. Predictions on seeded rows are in-sample (model trained on same file) - demo only."""
+    if eng is None:
+        eng = Engine(train_csv=csv)
     d = pd.read_csv(csv).sort_values("reported_at"); rows = d.fillna("").to_dict("records")
     tmp = pd.DataFrame({"site": d.site, "reported_at": d.reported_at, "rules": [[r["rule"] for r in detect_rules(t)] for t in d.text]})
     al = detect_emerging(tmp); now = pd.to_datetime(d.reported_at).max(); start = now - pd.Timedelta(days=7)
