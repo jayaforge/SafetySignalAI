@@ -1,4 +1,4 @@
-# SafetySignal AI (SIH26165) - prototype
+# # SafetySignal AI — AI-Powered Industrial Safety Intelligence Platform
 Demo system using synthetic data. Metrics demonstrate the methodology, not field accuracy at OIL.
 
 ## Run (Windows, PowerShell)
