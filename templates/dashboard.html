@@ -1,0 +1,301 @@
+{% extends "base.html" %}{% block body %}
+<!-- Command Center Hero Header -->
+<div class="cmd-hero">
+  <div>
+    <div class="cmd-hero-title">
+      <span class="icon-wrap" aria-hidden="true">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#38bdf8" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+          <line x1="8" y1="21" x2="16" y2="21"></line>
+          <line x1="12" y1="17" x2="12" y2="21"></line>
+        </svg>
+      </span>
+      <span>Safety Intelligence Command Center</span>
+    </div>
+    <div class="cmd-hero-sub">
+      AI-assisted surveillance of unsafe acts, unsafe conditions, near misses and SIF precursors across operating facilities.
+    </div>
+    <div style="font-size: 12px; color: var(--brand-cyan); margin-top: 6px; font-family: var(--font-mono);" id="asof">
+      Demo Data Snapshot • 02 Oct 2026
+    </div>
+  </div>
+  <div class="cmd-hero-badges">
+    <div class="cmd-status-pill active">
+      <span class="pulse-dot"></span>
+      SIH 2026 • WORKING PROTOTYPE
+    </div>
+    <div class="cmd-status-pill demo">
+      <span class="icon-wrap" aria-hidden="true" style="margin-right:4px;">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+      </span>
+      DEMO DATA
+    </div>
+  </div>
+</div>
+
+<!-- KPI Cards Area -->
+<div id="kpis" class="kpis">
+  <div class="kpi-card" style="text-align:center; padding: 24px;">
+    <span class="muted">Loading Command Center Telemetry...</span>
+  </div>
+</div>
+
+<!-- SAFETY PULSE: 5-Second Operational Health Summary -->
+<div class="pulse-strip" id="pulse-strip">
+  <div class="pulse-strip-header">
+    <div class="pulse-strip-title">
+      <span class="icon-wrap" aria-hidden="true">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
+      </span>
+      <span>Operational Safety Pulse · 5-Second Situational Assessment</span>
+    </div>
+    <span class="tag" style="background: rgba(56, 189, 248, 0.12); color: var(--brand-cyan);">Statistical Baseline Active</span>
+  </div>
+  <div class="pulse-grid" id="pulse-grid">
+    <!-- Populated dynamically via static/app.js -->
+  </div>
+</div>
+
+<!-- INTELLIGENCE FLOW: Compact Process Diagram -->
+<div class="intel-flow">
+  <div class="intel-flow-step">
+    <div class="intel-flow-icon">01</div>
+    <div>
+      <div class="intel-flow-text">REPORT</div>
+      <div class="intel-flow-desc">Frontline Observation</div>
+    </div>
+  </div>
+  <div class="intel-flow-arrow" aria-hidden="true">&rarr;</div>
+  <div class="intel-flow-step">
+    <div class="intel-flow-icon" style="color:#38bdf8;">02</div>
+    <div>
+      <div class="intel-flow-text">AI TRIAGE</div>
+      <div class="intel-flow-desc">Relevance &amp; Type NLP</div>
+    </div>
+  </div>
+  <div class="intel-flow-arrow" aria-hidden="true">&rarr;</div>
+  <div class="intel-flow-step">
+    <div class="intel-flow-icon" style="color:#f97316;">03</div>
+    <div>
+      <div class="intel-flow-text">RISK SCORING</div>
+      <div class="intel-flow-desc">SIF &amp; Barrier Rules</div>
+    </div>
+  </div>
+  <div class="intel-flow-arrow" aria-hidden="true">&rarr;</div>
+  <div class="intel-flow-step">
+    <div class="intel-flow-icon" style="color:#ef4444;">04</div>
+    <div>
+      <div class="intel-flow-text">PATTERN</div>
+      <div class="intel-flow-desc">7d Statistical Spike</div>
+    </div>
+  </div>
+  <div class="intel-flow-arrow" aria-hidden="true">&rarr;</div>
+  <div class="intel-flow-step">
+    <div class="intel-flow-icon" style="color:#eab308;">05</div>
+    <div>
+      <div class="intel-flow-text">ACTION</div>
+      <div class="intel-flow-desc">SLA &amp; Escalation</div>
+    </div>
+  </div>
+  <div class="intel-flow-arrow" aria-hidden="true">&rarr;</div>
+  <div class="intel-flow-step">
+    <div class="intel-flow-icon" style="color:#10b981;">06</div>
+    <div>
+      <div class="intel-flow-text">HUMAN REVIEW</div>
+      <div class="intel-flow-desc">Safety Officer Audit</div>
+    </div>
+  </div>
+</div>
+
+<!-- WHAT NEEDS ATTENTION? Action Board -->
+<div class="attention-board" id="attention-board">
+  <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px;">
+    <h3 style="margin:0; color:#fff; display:flex; align-items:center; gap:8px;">
+      <span class="icon-wrap" aria-hidden="true">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#ef4444" stroke-width="2.5"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
+      </span>
+      <span>WHAT NEEDS ATTENTION?</span>
+    </h3>
+    <span class="tag" style="background: rgba(239, 68, 68, 0.15); color: #fca5a5; font-weight:700;">Priority Action Items</span>
+  </div>
+  <div class="attention-grid" id="attention-grid">
+    <!-- Populated dynamically via static/app.js -->
+  </div>
+</div>
+
+<!-- EMERGING RISK RADAR PANEL: Major Visual Showcase -->
+<div class="emerging-section" id="emerging-panel">
+  <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px; margin-bottom: 6px;">
+    <div>
+      <h3 style="margin:0; display:flex; align-items:center; gap:8px;">
+        <span class="icon-wrap" aria-hidden="true">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#f59e0b" stroke-width="2.5"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+        </span>
+        <span>Statistical Early Warning Radar</span>
+      </h3>
+      <p class="muted" style="margin: 3px 0 0;">Statistical trend detection, not guaranteed prediction. Triggers when current 7-day count &ge; 3 and &ge; 2&times; previous window.</p>
+    </div>
+    <a href="/alerts" style="text-decoration:none;">
+      <button type="button" style="padding:6px 12px; font-size:12px; background:var(--bg-card-subtle); border:1px solid var(--border-subtle); color:var(--text-main);">
+        Open Radar &rarr;
+      </button>
+    </a>
+  </div>
+  <div class="emerging-grid" id="emerging-grid">
+    <!-- Populated dynamically via static/app.js -->
+  </div>
+</div>
+
+<!-- MAIN CHARTS HIERARCHY -->
+<div class="grid">
+  <!-- 1. Primary: SIF Potential Trajectory -->
+  <div class="card chart-card">
+    <h4>
+      <span>SIF Potential Incident Trajectory</span>
+      <span class="tag">Weekly Primary Trend</span>
+    </h4>
+    <p class="muted" style="margin: -4px 0 8px; font-size:11.5px;">Weekly frequency of serious injury and fatality precursors.</p>
+    <div class="chart-wrap">
+      <canvas id="c_sif"></canvas>
+    </div>
+  </div>
+
+  <!-- 2. High & Critical Volume Spikes -->
+  <div class="card chart-card">
+    <h4>
+      <span>High &amp; Critical Priority Volume</span>
+      <span class="tag">Severity Acceleration</span>
+    </h4>
+    <p class="muted" style="margin: -4px 0 8px; font-size:11.5px;">Weekly concentration of High and Critical risk observations.</p>
+    <div class="chart-wrap">
+      <canvas id="c_hc"></canvas>
+    </div>
+  </div>
+
+  <!-- 3. Site SIF Risk Density -->
+  <div class="card chart-card">
+    <h4>
+      <span>Site Risk Density Comparison</span>
+      <span class="tag">% SIF Precursors</span>
+    </h4>
+    <p class="muted" style="margin: -4px 0 8px; font-size:11.5px;">Distribution of SIF-potential precursors across operating locations.</p>
+    <div class="chart-wrap">
+      <canvas id="c_sites"></canvas>
+    </div>
+  </div>
+
+  <!-- 4. Report Type Distribution -->
+  <div class="card chart-card">
+    <h4>
+      <span>Report Type Distribution</span>
+      <span class="tag">AI Classification</span>
+    </h4>
+    <p class="muted" style="margin: -4px 0 8px; font-size:11.5px;">Near Miss vs Unsafe Act vs Unsafe Condition breakdown.</p>
+    <div class="chart-wrap">
+      <canvas id="c_types"></canvas>
+    </div>
+  </div>
+
+  <!-- 5. Life-Saving Rule Frequency -->
+  <div class="card chart-card">
+    <h4>
+      <span>Life-Saving Rule Frequency</span>
+      <span class="tag">Standard Lapses</span>
+    </h4>
+    <p class="muted" style="margin: -4px 0 8px; font-size:11.5px;">Most frequently compromised Life-Saving Rules.</p>
+    <div class="chart-wrap">
+      <canvas id="c_rules"></canvas>
+    </div>
+  </div>
+
+  <!-- 6. Barrier Failure Frequency -->
+  <div class="card chart-card">
+    <h4>
+      <span>Barrier Failure Frequency</span>
+      <span class="tag">Defense Layers</span>
+    </h4>
+    <p class="muted" style="margin: -4px 0 8px; font-size:11.5px;">Hierarchy of control deficiencies identified from text evidence.</p>
+    <div class="chart-wrap">
+      <canvas id="c_bar"></canvas>
+    </div>
+  </div>
+</div>
+
+<!-- HIDDEN-RISK SURVEILLANCE SHOWCASE -->
+<div class="hidden-risk-card" id="hidden-section">
+  <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px; margin-bottom: 6px;">
+    <div>
+      <h3 style="margin:0; color:#fbbf24; display:flex; align-items:center; gap:8px;">
+        <span class="icon-wrap" aria-hidden="true">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#f59e0b" stroke-width="2.5"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+        </span>
+        <span>Hidden-Risk Discrepancy Surveillance</span>
+      </h3>
+      <p class="muted" style="margin:3px 0 0;">Under-reporting safeguard: highlights reports initially recorded as Low or Medium that SafetySignal AI elevated to High or Critical based on precursor indicators.</p>
+    </div>
+    <span class="tag" style="background: rgba(245, 158, 11, 0.16); color: #fbbf24; font-weight:700;">Logged Severity &rarr; AI Assessment</span>
+  </div>
+  <div id="hidden"></div>
+</div>
+
+<!-- REPEAT HAZARDS FLAGGED -->
+<div class="card" style="margin-top: 18px;">
+  <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px;">
+    <h4 style="margin:0;">
+      <span>Repeat Hazards Flagged</span>
+      <span class="tag">&ge; 3 reports in 30-day window</span>
+    </h4>
+  </div>
+  <p class="muted" style="margin: 4px 0 8px;">Identifies chronic operational hazards at the same facility that have not been permanently mitigated.</p>
+  <div id="repeats"></div>
+</div>
+
+<!-- RECENT CRITICAL PRECURSORS & HUMAN GOVERNANCE -->
+<div class="grid" style="margin-top: 16px;">
+  <div class="card" style="margin:0; border-top: 3px solid var(--critical-base);">
+    <h4>
+      <span>Recent Critical Precursors</span>
+      <span class="badge CRITICAL">Priority Triage</span>
+    </h4>
+    <p class="muted" style="margin: 4px 0 8px;">Immediate high-consequence precursor cases flagged for intervention.</p>
+    <div id="critical"></div>
+  </div>
+
+  <div class="card" style="margin:0; border-top: 3px solid #6366f1; display:flex; flex-direction:column; justify-content:space-between;">
+    <div>
+      <h4>
+        <span>Human-in-the-Loop Governance</span>
+        <span class="tag" style="background: rgba(99, 102, 241, 0.16); color: #a5b4fc;">Audit Control</span>
+      </h4>
+      <p class="muted" style="margin: 4px 0 14px;">Ensures all automated AI classifications are auditable, verifiable, and governed by HSE personnel before entering permanent archives.</p>
+      <div id="review"></div>
+    </div>
+    <div style="margin-top: 16px; padding-top: 14px; border-top: 1px solid var(--border-subtle); font-size:12px; color:var(--text-dim);">
+      Decisions are archived with audit trails and never retrain models automatically without validation.
+    </div>
+  </div>
+</div>
+
+<!-- DASHBOARD DEMO STORY STRIP -->
+<div class="demo-story">
+  <div class="demo-story-title">End-to-End AI Safety Surveillance Architecture</div>
+  <div class="demo-story-steps">
+    <div class="demo-story-step">553 Frontline Reports</div>
+    <div class="demo-story-sep">&rarr;</div>
+    <div class="demo-story-step">AI Precursor Triage</div>
+    <div class="demo-story-sep">&rarr;</div>
+    <div class="demo-story-step" style="color:#f87171;">176 SIF Signals</div>
+    <div class="demo-story-sep">&rarr;</div>
+    <div class="demo-story-step">Chronic Hazards Emerge</div>
+    <div class="demo-story-sep">&rarr;</div>
+    <div class="demo-story-sep" style="color:#fbbf24;">Early Warning Radar</div>
+    <div class="demo-story-sep">&rarr;</div>
+    <div class="demo-story-step">Corrective Actions &amp; SLA</div>
+    <div class="demo-story-sep">&rarr;</div>
+    <div class="demo-story-step" style="color:#34d399;">Human Governance</div>
+  </div>
+</div>
+
+<script src="{{ url_for('static', filename='chart.umd.min.js') }}"></script>
+<script>window.DASH=true</script>
+{% endblock %}

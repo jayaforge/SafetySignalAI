@@ -1,0 +1,655 @@
+id,reported_at,text,site,location,activity,reporter_role,severity,report_type,sif_potential,relevant,status,scenario_family,paraphrase_group
+42,2026-06-27 05:22,At CPF Area B: Rigger working on scaffold platform at height without harness.,Naharkatiya,CPF Area B,maintenance,Fitter,High,Unsafe Act,1,1,Open,height_noharness,height_noharness_0
+625,2026-06-29 16:18,at workshop bay 3: request new chairs for the admin office.,Baghjan,Workshop Bay 3,drilling,Safety Officer,,Non-Safety,0,0,Open,ns_misc2,ns_misc2_1
+377,2026-04-04 02:44,Chemical containers unlbaeled in the store.,Baghjan,OCS Main Yard,shutdown job,Contractor,Medium,Unsafe Condition,0,1,Open,chemical_store,chemical_store_2
+427,2026-03-28 04:56,at ocs main yard: permit copy not available at the worksite.,Duliajan,OCS Main Yard,inspection,Contractor,Low,Unsafe Act,0,1,Closed,ptw_lapse,ptw_lapse_2
+640,2026-04-02 00:29,Delivery of the sattionery order was delayed again.,Digboi,OCS Main Yard,inspection,Engineer,,Non-Safety,0,0,Closed,ns_misc2,ns_misc2_2
+598,2026-05-24 04:24,guest house wifi is very slow.,Moran,OCS Main Yard,maintenance,Contractor,,Non-Safety,0,0,Open,ns_misc,ns_misc_2
+43,2026-06-21 22:58,At Compressor Station: Rigger working on scaffold platform at height without harness.,Baghjan,Compressor Station,construction,Supervisor,High,Unsafe Act,1,1,Closed,height_noharness,height_noharness_0
+344,2026-06-16 18:18,Chemical drums stored without secnodary containment near the drain.,Moran,Store Yard,drilling,Safety Officer,Low,Unsafe Condition,0,1,Open,chemical_store,chemical_store_0
+618,2026-07-23 05:09,"at cpf area b: township shuttle bus timing needs to change, immediate supervisor informed.",Baghjan,CPF Area B,operations round,Contractor,,Non-Safety,0,0,Open,ns_misc2,ns_misc2_0
+161,2026-05-30 21:20,At Workshop Bay 3: Driver was not wearing seatbelt while moving the vehicle inside the site.,Moran,Workshop Bay 3,construction,Operator,Low,Unsafe Act,0,1,Closed,vehicle,vehicle_0
+563,2026-04-19 04:23,please approve my travel allowance blil.,Moran,Store Yard,shutdown job,Operator,,Non-Safety,0,0,Open,ns_admin,ns_admin_2
+292,2026-06-11 21:19,Cables across the floor in the control room created a trip hazard.,Duliajan,Workshop Bay 3,construction,Supervisor,Low,Unsafe Condition,0,1,Open,housekeeping,housekeeping_2
+509,2026-07-03 12:56,At Compressor Station: Several lamps out along the pipeline access road.,Naharkatiya,Compressor Station,workover,Operator,Medium,Unsafe Condition,0,1,Closed,lighting,lighting_2
+508,2026-06-05 16:29,Several lamps out along the pipeline access road.,Naharkatiya,Compressor Station,shutdown job,Fitter,Medium,Unsafe Condition,0,1,Open,lighting,lighting_2
+101,2026-03-09 15:45,Trench excavation deeper than 1.5 m with no shoring and no ladder for exit.,Jaisalmer,GGS-2,inspection,Safety Officer,Low,Unsafe Condition,1,1,Closed,excavation,excavation_0
+643,2026-08-05 08:45,"Delivery of the stationery order was delayed again, please review.",Moran,GGS-2,inspection,Supervisor,,Non-Safety,0,0,Closed,ns_misc2,ns_misc2_2
+54,2026-04-24 05:07,at well pad 12: suspended load swung unexpectedly during crane lift and narrowly missed a worker.,Moran,Well Pad 12,workover,Contractor,Medium,Near Miss,1,1,Open,suspended_load,suspended_load_0
+372,2026-03-15 20:53,chemical containers unlabeled in the sotre.,Jaisalmer,Workshop Bay 3,drilling,Fitter,Low,Unsafe Condition,0,1,Open,chemical_store,chemical_store_2
+168,2026-05-30 13:39,Driver was not wearing seatbelt while moving the vehicle inside the site.,Naharkatiya,Store Yard,drilling,Contractor,Low,Unsafe Act,0,1,Open,vehicle,vehicle_0
+62,2026-03-22 11:30,"Crane load swung close to a helper standing under it, near miss.",Moran,CPF Area B,operations round,Engineer,Low,Near Miss,1,1,Closed,suspended_load,suspended_load_2
+84,2026-05-19 02:18,"at well pad 12: hot work staretd before gas check, fire watch missing.",Moran,Well Pad 12,workover,Engineer,High,Unsafe Act,1,1,Open,hotwork_nopermit,hotwork_nopermit_2
+308,2026-07-21 00:50,"At Rig-14: Coupling guard missing on the pump, rotating shaft exposed.",Baghjan,Rig-14,operations round,Contractor,Medium,Unsafe Condition,0,1,Open,guard_missing,guard_missing_0
+596,2026-07-22 23:04,At CPF Area B: Guest house wifi is very slow.,Jaisalmer,CPF Area B,drilling,Operator,,Non-Safety,0,0,Closed,ns_misc,ns_misc_2
+266,2026-05-03 21:51,at ggs-2: loose hoses lying across the access path at the drill stie.,Naharkatiya,GGS-2,workover,Safety Officer,Low,Unsafe Condition,0,1,Open,housekeeping,housekeeping_1
+416,2026-03-18 17:18,At Compressor Station: Permit copy not available at the worksite.,Jaisalmer,Compressor Station,maintenance,Operator,Low,Unsafe Act,0,1,Open,ptw_lapse,ptw_lapse_2
+99,2026-06-24 02:29,"At GGS-2: Gas leakage at wellhead valve found by operator during round, controlled.",Jaisalmer,GGS-2,operations round,Contractor,High,Near Miss,1,1,Open,gas_leak,gas_leak_2
+270,2026-06-08 19:34,loose hoses lying across the access path at the drill site.,Moran,Well Pad 12,workover,Operator,Medium,Unsafe Condition,0,1,Closed,housekeeping,housekeeping_1
+592,2026-08-15 04:06,How to reset my password for the HR portal?,Jaisalmer,GGS-2,construction,Fitter,,Non-Safety,0,0,Closed,ns_misc,ns_misc_1
+268,2026-06-14 02:28,Loose hoses lying across the access path at the drill site.,Duliajan,Workshop Bay 3,workover,Fitter,Low,Unsafe Condition,0,1,Open,housekeeping,housekeeping_1
+510,2026-05-30 19:13,At Workshop Bay 3: Several lamps out along the pipeline access road.,Baghjan,Workshop Bay 3,maintenance,Contractor,High,Unsafe Condition,0,1,Open,lighting,lighting_2
+396,2026-08-15 17:10,at ggs-2: work continued under an expired permit at the tank farm.,Duliajan,GGS-2,maintenance,Engineer,Low,Unsafe Act,0,1,Closed,ptw_lapse,ptw_lapse_0
+208,2026-04-30 17:45,worker in the yard was without helmet and safety shoes.,Jaisalmer,Well Pad 12,maintenance,Fitter,Low,Unsafe Act,0,1,Open,ppe_missing,ppe_missing_0
+584,2026-03-23 11:19,"at rig-14: how to reset my password for the hr portal?, immediate supervisor informed.",Duliajan,Rig-14,operations round,Engineer,,Non-Safety,0,0,Open,ns_misc,ns_misc_1
+552,2026-06-15 14:36,At Compressor Station: Please approve my travel allowance bill.,Jaisalmer,Compressor Station,operations round,Operator,,Non-Safety,0,0,Open,ns_admin,ns_admin_2
+482,2026-08-05 08:12,Poor lighting at the walkway near the generator room.,Jaisalmer,Store Yard,construction,Contractor,Medium,Unsafe Condition,0,1,Open,lighting,lighting_0
+645,2026-04-23 09:33,"At Workshop Bay 3: Delivery of the stationery order was delayed again, immediate supervisor informed.",Jaisalmer,Workshop Bay 3,drilling,Operator,,Non-Safety,0,0,Open,ns_misc2,ns_misc2_2
+422,2026-08-31 06:20,"at ocs main yard: permit copy not available at the worksite, please review.",Jaisalmer,OCS Main Yard,inspection,Supervisor,Low,Unsafe Act,0,1,Closed,ptw_lapse,ptw_lapse_2
+646,2026-05-21 22:09,Delivery of the stationery order was delayed again.,Moran,Compressor Station,construction,Fitter,,Non-Safety,0,0,Closed,ns_misc2,ns_misc2_2
+446,2026-06-26 04:38,"Technician tripped over a pipe support, was not hurt.",Digboi,Store Yard,maintenance,Fitter,High,Near Miss,0,1,Open,slip_nm,slip_nm_1
+409,2026-07-27 08:26,"Job started without permit, supervisor not aware.",Jaisalmer,CPF Area B,construction,Contractor,Low,Unsafe Act,0,1,Open,ptw_lapse,ptw_lapse_1
+32,2026-09-09 05:44,"Maintenance team worked on a live panel, isolation not verified and no tags applied.",Baghjan,Well Pad 12,drilling,Contractor,Medium,Unsafe Act,1,1,Open,loto_missing,loto_missing_1
+36,2026-04-04 20:33,Isolation nahi kiya gaya aur electrician ne cable change kar diya.,Duliajan,CPF Area B,maintenance,Safety Officer,Low,Unsafe Act,1,1,Open,loto_missing,loto_missing_2
+452,2026-09-06 16:13,"at ggs-2: technician tripped over a pipe support, was not hutr, immediate supervisor informed.",Jaisalmer,GGS-2,drilling,Fitter,Medium,Near Miss,0,1,Open,slip_nm,slip_nm_1
+82,2026-03-25 13:43,"Grinding sparks near the hydrocarbon area, no fire watch posted.",Moran,Compressor Station,operations round,Supervisor,Medium,Unsafe Act,1,1,Closed,hotwork_nopermit,hotwork_nopermit_1
+504,2026-08-18 01:53,At Compressor Station: Emergency exit sign not illuminated in the workshop.,Digboi,Compressor Station,drilling,Fitter,Low,Unsafe Condition,0,1,Closed,lighting,lighting_1
+525,2026-09-23 14:35,"the canteen food was good today, reported during routine round.",Duliajan,Store Yard,inspection,Operator,,Non-Safety,0,0,Closed,ns_admin,ns_admin_0
+368,2026-03-17 19:07,"Corrosion inhibitor leaking from a barrel, no spill kit available.",Duliajan,Compressor Station,construction,Engineer,Low,Unsafe Condition,0,1,Closed,chemical_store,chemical_store_1
+616,2026-05-07 02:41,Township shuttle bus timing needs to change.,Duliajan,OCS Main Yard,shutdown job,Fitter,,Non-Safety,0,0,Closed,ns_misc2,ns_misc2_0
+555,2026-03-01 23:53,please approve my travel allowance bill.,Baghjan,Well Pad 12,construction,Supervisor,,Non-Safety,0,0,Closed,ns_admin,ns_admin_2
+642,2026-06-13 17:12,"At GGS-2: Delivery of the stationery order was delayed again, immediate supervisor informed.",Digboi,GGS-2,operations round,Operator,,Non-Safety,0,0,Open,ns_misc2,ns_misc2_2
+73,2026-09-09 20:05,"Portable gas detector battery dead at the separator, crew continued work.",Moran,Rig-14,construction,Supervisor,Low,Unsafe Condition,1,1,Closed,gas_detector_off,gas_detector_off_2
+97,2026-09-23 02:40,"Gas leakage at wellhead valve found by operator during round, controlled.",Naharkatiya,OCS Main Yard,operations round,Operator,Low,Near Miss,1,1,Closed,gas_leak,gas_leak_2
+571,2026-07-31 06:22,At Workshop Bay 3: Please share the training timetable for the new batch.,Duliajan,Workshop Bay 3,operations round,Fitter,,Non-Safety,0,0,Closed,ns_misc,ns_misc_0
+59,2026-03-01 12:43,"At GGS-2: Sling slipped while lifting, the load dropped near the crew, nobody hurt.",Jaisalmer,GGS-2,drilling,Fitter,High,Near Miss,1,1,Closed,suspended_load,suspended_load_1
+213,2026-07-28 18:34,"At Compressor Station: Worker in the yard was without helmet and safety shoes, reported during routine round.",Digboi,Compressor Station,construction,Supervisor,Low,Unsafe Act,0,1,Open,ppe_missing,ppe_missing_0
+556,2026-03-19 20:22,Please approve my travel allowance bill.,Duliajan,Rig-14,construction,Fitter,,Non-Safety,0,0,Open,ns_admin,ns_admin_2
+496,2026-05-06 19:50,At Rig-14: Emergency exit sign not illuminated in the workshop.,Digboi,Rig-14,drilling,Safety Officer,Low,Unsafe Condition,0,1,Open,lighting,lighting_1
+400,2026-05-28 02:45,"Job started without permit, supervisor not aware.",Naharkatiya,Rig-14,workover,Engineer,Low,Unsafe Act,0,1,Open,ptw_lapse,ptw_lapse_1
+133,2026-09-21 16:42,"Junction box cover missing with live terminals visible, reported during routine round.",Baghjan,Well Pad 12,shutdown job,Fitter,High,Unsafe Condition,1,1,Open,electrical_exposed,electrical_exposed_2
+418,2026-04-27 17:12,At Workshop Bay 3: Permit copy not available at the worksite.,Duliajan,Workshop Bay 3,shutdown job,Contractor,Low,Unsafe Act,0,1,Closed,ptw_lapse,ptw_lapse_2
+63,2026-03-14 05:48,"Crane load swung close to a helper standing under it, near miss, immediate supervisor informed.",Digboi,Compressor Station,operations round,Safety Officer,High,Near Miss,1,1,Open,suspended_load,suspended_load_2
+28,2026-04-04 17:50,"fitter started repairing the pump motor without lockout, breaker was still energized.",Baghjan,Store Yard,maintenance,Fitter,Medium,Unsafe Act,1,1,Open,loto_missing,loto_missing_0
+347,2026-08-22 20:31,"at workshop bay 3: chemical drums stored without secondary containment near the drain, immediate supervisor informed.",Duliajan,Workshop Bay 3,shutdown job,Safety Officer,Low,Unsafe Condition,0,1,Closed,chemical_store,chemical_store_0
+480,2026-03-25 11:58,"Poor lighting at the walkway near the generator room, immediate supervisor informed.",Jaisalmer,CPF Area B,shutdown job,Contractor,Low,Unsafe Condition,0,1,Open,lighting,lighting_0
+188,2026-08-02 00:41,Pickup was overspeeding near the rig gate.,Baghjan,Compressor Station,shutdown job,Safety Officer,Low,Unsafe Act,0,1,Open,vehicle,vehicle_1
+150,2026-08-15 06:10,A spanner dropped from the monkey board and landed beside a floorman.,Naharkatiya,GGS-2,shutdown job,Operator,Medium,Near Miss,1,1,Closed,dropped_obj_nm,dropped_obj_nm_0
+651,2026-08-19 02:40,At OCS Main Yard: Delivery of the stationery order was delayed again.,Naharkatiya,OCS Main Yard,construction,Operator,,Non-Safety,0,0,Closed,ns_misc2,ns_misc2_2
+644,2026-04-03 00:17,At CPF Area B: Delivery of the stationery order was delayed again.,Naharkatiya,CPF Area B,shutdown job,Safety Officer,,Non-Safety,0,0,Open,ns_misc2,ns_misc2_2
+111,2026-04-26 03:43,At Rig-14: Trench was dug without checking underground cable drawings.,Jaisalmer,Rig-14,operations round,Operator,Low,Unsafe Condition,1,1,Open,excavation,excavation_2
+30,2026-04-12 12:09,"at workshop bay 3: fitter started repairing the pump motor without lockout, breaker was still energized.",Duliajan,Workshop Bay 3,construction,Supervisor,High,Unsafe Act,1,1,Closed,loto_missing,loto_missing_0
+402,2026-05-22 10:30,"At Compressor Station: Job started without permit, supervisor not aware.",Naharkatiya,Compressor Station,inspection,Contractor,Low,Unsafe Act,0,1,Open,ptw_lapse,ptw_lapse_1
+570,2026-08-03 00:50,Pelase share the training timetable for the new batch.,Baghjan,Workshop Bay 3,operations round,Safety Officer,,Non-Safety,0,0,Closed,ns_misc,ns_misc_0
+58,2026-05-26 21:58,"Sling slipped while lifting, the load dropped near the crew, nobody hurt.",Digboi,OCS Main Yard,operations round,Engineer,Low,Near Miss,1,1,Open,suspended_load,suspended_load_1
+468,2026-03-19 16:29,"helper lost footing on muddy ramp, caught himself.",Jaisalmer,Rig-14,operations round,Fitter,Medium,Near Miss,0,1,Open,slip_nm,slip_nm_2
+146,2026-06-25 04:55,"flash fire near the sample point, operator escaped without injury.",Digboi,Store Yard,construction,Engineer,Low,Near Miss,1,1,Open,fire_nm,fire_nm_2
+533,2026-08-24 06:50,The canteen food was good today.,Moran,OCS Main Yard,workover,Safety Officer,,Non-Safety,0,0,Open,ns_admin,ns_admin_0
+34,2026-06-03 01:35,"at cpf area b: maintenance team worked on a live panel, isolation not verified and no tags applied, immediate supervisor informed.",Jaisalmer,CPF Area B,workover,Safety Officer,High,Unsafe Act,1,1,Closed,loto_missing,loto_missing_1
+457,2026-07-16 15:55,"Technician tripped over a pipe support, was not hurt.",Duliajan,Compressor Station,drilling,Safety Officer,Low,Near Miss,0,1,Open,slip_nm,slip_nm_1
+514,2026-07-07 17:46,"at workshop bay 3: several lamps out along the pipeline access road, immediate supervisor informed.",Baghjan,Workshop Bay 3,construction,Operator,Low,Unsafe Condition,0,1,Open,lighting,lighting_2
+609,2026-09-02 15:31,Guest house wifi is very slow.,Moran,CPF Area B,construction,Operator,,Non-Safety,0,0,Closed,ns_misc,ns_misc_2
+343,2026-06-18 01:54,At Rig-14: Chemical drums stored without secondary cotnainment near the drain.,Moran,Rig-14,operations round,Fitter,Low,Unsafe Condition,0,1,Closed,chemical_store,chemical_store_0
+551,2026-05-26 21:43,at well pad 12: please approve my travel allowance bill.,Moran,Well Pad 12,inspection,Fitter,,Non-Safety,0,0,Closed,ns_admin,ns_admin_2
+239,2026-04-11 15:30,Operator forgot safety glasses during sampling.,Duliajan,GGS-2,drilling,Engineer,Low,Unsafe Act,0,1,Closed,ppe_missing,ppe_missing_2
+579,2026-09-30 12:22,At Compressor Station: Please share the training timetable for the new batch.,Baghjan,Compressor Station,workover,Engineer,,Non-Safety,0,0,Open,ns_misc,ns_misc_0
+179,2026-04-23 14:56,pickup was overspeeding near the rig gate.,Jaisalmer,Rig-14,shutdown job,Operator,Medium,Unsafe Act,0,1,Closed,vehicle,vehicle_1
+378,2026-05-14 13:49,at store yard: chemical containers unlabeled in the store.,Moran,Store Yard,construction,Engineer,Low,Unsafe Condition,0,1,Closed,chemical_store,chemical_store_2
+214,2026-05-01 21:44,Worker in the yard was without helmet and safety shoes.,Digboi,GGS-2,workover,Engineer,Medium,Unsafe Act,0,1,Closed,ppe_missing,ppe_missing_0
+573,2026-05-06 23:25,Please share the training timetable for the new batch.,Digboi,OCS Main Yard,inspection,Contractor,,Non-Safety,0,0,Closed,ns_misc,ns_misc_0
+258,2026-07-01 02:02,"Oil spill on walkway near the pump house, slip hzaard.",Moran,Store Yard,operations round,Fitter,Low,Unsafe Condition,0,1,Open,housekeeping,housekeeping_0
+486,2026-06-03 20:15,"Poor lighting at the walkway near the generator room, please review.",Naharkatiya,CPF Area B,construction,Fitter,Medium,Unsafe Condition,0,1,Open,lighting,lighting_0
+479,2026-05-03 14:40,At Rig-14: Poor lighting at the walkway near the generator room.,Naharkatiya,Rig-14,maintenance,Supervisor,Medium,Unsafe Condition,0,1,Open,lighting,lighting_0
+113,2026-04-11 14:23,at well pad 12: operator bypassed the high pressure trip interlock to keep the separator running.,Baghjan,Well Pad 12,shutdown job,Fitter,Low,Unsafe Act,1,1,Open,interlock_bypass,interlock_bypass_0
+498,2026-05-05 06:45,At Well Pad 12: Emergency exit sign not illuminated in the workshop.,Jaisalmer,Well Pad 12,inspection,Operator,Low,Unsafe Condition,0,1,Open,lighting,lighting_1
+12,2026-04-27 16:35,"Contractor went inside the vessel for cleainng, gas test not done, permit not displayed.",Digboi,Well Pad 12,workover,Operator,High,Unsafe Act,1,1,Open,confined_entry,confined_entry_1
+564,2026-04-23 04:27,At OCS Main Yard: Please approve my travel allowance bill.,Jaisalmer,OCS Main Yard,workover,Operator,,Non-Safety,0,0,Open,ns_admin,ns_admin_2
+619,2026-03-26 07:11,At Well Pad 12: Township shuttle bus timing needs to change.,Jaisalmer,Well Pad 12,operations round,Operator,,Non-Safety,0,0,Closed,ns_misc2,ns_misc2_0
+381,2026-07-05 14:12,At Compressor Statino: Chemical containers unlabeled in the store.,Digboi,Compressor Station,shutdown job,Contractor,Low,Unsafe Condition,0,1,Open,chemical_store,chemical_store_2
+55,2026-07-27 16:18,"Suspended load swung unexpectedly during crane lift and narrowly missed a worker, immediate supervisor informed.",Duliajan,Well Pad 12,construction,Contractor,Medium,Near Miss,1,1,Open,suspended_load,suspended_load_0
+38,2026-09-20 09:46,"Isolation nahi kiya gaya aur electrician ne cable change kar dyia, reported during routine round.",Baghjan,Rig-14,drilling,Fitter,High,Unsafe Act,1,1,Closed,loto_missing,loto_missing_2
+199,2026-06-16 11:28,Forklift reversing without spotter near the store.,Baghjan,Workshop Bay 3,inspection,Contractor,Medium,Unsafe Act,0,1,Open,vehicle,vehicle_2
+102,2026-05-19 07:08,"trench excavaiton deeper than 1.5 m with no shoring and no ladder for exit, reported during routine round.",Jaisalmer,Rig-14,maintenance,Fitter,Medium,Unsafe Condition,1,1,Open,excavation,excavation_0
+593,2026-06-21 10:29,how to reset my password for the hr portal?,Naharkatiya,GGS-2,maintenance,Supervisor,,Non-Safety,0,0,Open,ns_misc,ns_misc_1
+310,2026-08-05 16:14,"At Compressor Station: Belt guard rmeoved from the compressor fan and not refitted, reported during routine round.",Jaisalmer,Compressor Station,shutdown job,Safety Officer,Medium,Unsafe Condition,0,1,Closed,guard_missing,guard_missing_1
+232,2026-09-05 21:58,at rig-14: contractor not wearing gloves while handling pipes.,Digboi,Rig-14,operations round,Contractor,Medium,Unsafe Act,0,1,Closed,ppe_missing,ppe_missing_1
+233,2026-06-02 12:08,"Contractor not wearing gloves while handling pipes, please review.",Digboi,Rig-14,drilling,Safety Officer,Low,Unsafe Act,0,1,Closed,ppe_missing,ppe_missing_1
+106,2026-09-02 14:35,"At GGS-2: Excavation edge unbarricaded near pipeline route, soil loose.",Naharkatiya,GGS-2,operations round,Fitter,High,Unsafe Condition,1,1,Closed,excavation,excavation_1
+226,2026-05-02 22:04,contractor not wearing gloves while handling pipes.,Moran,GGS-2,operations round,Fitter,Low,Unsafe Act,0,1,Open,ppe_missing,ppe_missing_1
+357,2026-05-27 04:13,"Corrosion inhibitor leaking from a barrel, no spill kit available.",Duliajan,Compressor Station,construction,Supervisor,Low,Unsafe Condition,0,1,Closed,chemical_store,chemical_store_1
+500,2026-08-03 15:19,"emergnecy exit sign not illuminated in the workshop, immediate supervisor informed.",Digboi,GGS-2,operations round,Operator,Low,Unsafe Condition,0,1,Closed,lighting,lighting_1
+635,2026-07-25 00:43,at rig-14: request new chairs for the admin office.,Jaisalmer,Rig-14,inspection,Contractor,,Non-Safety,0,0,Closed,ns_misc2,ns_misc2_1
+115,2026-06-18 17:57,Operator bypassed the high pressure trip interlock to keep the separator running.,Naharkatiya,CPF Area B,inspection,Contractor,Low,Unsafe Act,1,1,Open,interlock_bypass,interlock_bypass_0
+534,2026-07-23 18:00,"at store yard: the canteen food was good today, reported during routine round.",Digboi,Store Yard,operations round,Contractor,,Non-Safety,0,0,Closed,ns_admin,ns_admin_0
+590,2026-06-16 09:40,how to reset my password for the hr portal?,Jaisalmer,Well Pad 12,workover,Safety Officer,,Non-Safety,0,0,Closed,ns_misc,ns_misc_1
+599,2026-09-19 14:15,Guest house wifi is very slow.,Digboi,Compressor Station,drilling,Contractor,,Non-Safety,0,0,Closed,ns_misc,ns_misc_2
+110,2026-03-11 07:09,Trench was dug without checking underground cable drawings.,Moran,GGS-2,construction,Safety Officer,Medium,Unsafe Condition,1,1,Open,excavation,excavation_2
+225,2026-07-15 17:56,At Well Pad 12: Contractor not wearing gloves while handling pipes.,Digboi,Well Pad 12,drilling,Fitter,Medium,Unsafe Act,0,1,Open,ppe_missing,ppe_missing_1
+140,2026-06-11 17:15,"Spark from cutting set fire to oily rags, extinguished in time.",Jaisalmer,OCS Main Yard,drilling,Fitter,Medium,Near Miss,1,1,Closed,fire_nm,fire_nm_1
+638,2026-08-07 10:58,At OCS Main Yard: Request new chairs for the admin office.,Baghjan,OCS Main Yard,shutdown job,Engineer,,Non-Safety,0,0,Closed,ns_misc2,ns_misc2_1
+109,2026-05-01 19:43,At Workshop Bay 3: Trench was dug without checking underground cable drawings.,Digboi,Workshop Bay 3,shutdown job,Fitter,High,Unsafe Condition,1,1,Closed,excavation,excavation_2
+597,2026-07-05 18:22,at ocs main yard: guest huose wifi is very slow.,Jaisalmer,OCS Main Yard,maintenance,Engineer,,Non-Safety,0,0,Open,ns_misc,ns_misc_2
+460,2026-09-02 05:09,"At Store Yard: Helper lost footing on muddy ramp, caught himself.",Naharkatiya,Store Yard,maintenance,Contractor,Low,Near Miss,0,1,Closed,slip_nm,slip_nm_2
+449,2026-08-18 04:55,"At Rig-14: Technician tripped over a pipe support, was not hurt.",Digboi,Rig-14,inspection,Supervisor,Medium,Near Miss,0,1,Closed,slip_nm,slip_nm_1
+379,2026-03-31 23:52,Chemical containres unlabeled in the store.,Moran,Workshop Bay 3,shutdown job,Operator,Medium,Unsafe Condition,0,1,Open,chemical_store,chemical_store_2
+33,2026-08-05 04:03,"Maintenance team worked on a live panel, isolation not verified and no tags appiled.",Baghjan,Rig-14,maintenance,Operator,High,Unsafe Act,1,1,Closed,loto_missing,loto_missing_1
+536,2026-04-05 12:43,I want to apply for casual leave next week.,Digboi,CPF Area B,drilling,Engineer,,Non-Safety,0,0,Closed,ns_admin,ns_admin_1
+200,2026-03-02 16:18,forklift reversing without spotter near the store.,Moran,OCS Main Yard,drilling,Engineer,Low,Unsafe Act,0,1,Closed,vehicle,vehicle_2
+86,2026-09-19 09:33,"At Rig-14: Hot work started before gas check, fire watch missing.",Naharkatiya,Rig-14,shutdown job,Supervisor,Low,Unsafe Act,1,1,Closed,hotwork_nopermit,hotwork_nopermit_2
+325,2026-03-13 00:11,"fan guard broken on the cooling motor, please review.",Digboi,CPF Area B,construction,Supervisor,Low,Unsafe Condition,0,1,Open,guard_missing,guard_missing_2
+88,2026-08-31 16:15,"At Workshop Bay 3: Flange leak noticed on gas line, strong smell, area cleared in time.",Jaisalmer,Workshop Bay 3,maintenance,Supervisor,Low,Near Miss,1,1,Open,gas_leak,gas_leak_0
+288,2026-07-02 14:26,at well pad 12: cables across the floor in the control room created a trip hazard.,Moran,Well Pad 12,shutdown job,Supervisor,Low,Unsafe Condition,0,1,Open,housekeeping,housekeeping_2
+428,2026-07-23 08:12,"Permit copy not available at the worksite, immediate supervisor informed.",Baghjan,Well Pad 12,maintenance,Fitter,Low,Unsafe Act,0,1,Closed,ptw_lapse,ptw_lapse_2
+316,2026-07-15 15:10,Belt guard removed from the compressor fan and not refitted.,Duliajan,GGS-2,workover,Engineer,Low,Unsafe Condition,0,1,Closed,guard_missing,guard_missing_1
+327,2026-05-10 23:51,"Fan guard broken on the cooling motor, reported during routine round.",Duliajan,Compressor Station,drilling,Fitter,Low,Unsafe Condition,0,1,Open,guard_missing,guard_missing_2
+167,2026-09-06 01:38,driver was not wearing seatbelt while moving the vehicle inside the site.,Baghjan,Compressor Station,maintenance,Fitter,Medium,Unsafe Act,0,1,Open,vehicle,vehicle_0
+300,2026-05-14 09:56,"Coupling gurad missing on the pump, rotating shaft exposed.",Jaisalmer,Rig-14,maintenance,Engineer,High,Unsafe Condition,0,1,Closed,guard_missing,guard_missing_0
+290,2026-09-30 04:34,Cables across the floor in the control room created a trip hazard.,Baghjan,Compressor Station,inspection,Safety Officer,Medium,Unsafe Condition,0,1,Closed,housekeeping,housekeeping_2
+26,2026-09-30 14:00,"Tank ke andar bina gas check kiye operator ghus gaya, attendant bhi nahi tha, reported during routine round.",Duliajan,Store Yard,maintenance,Operator,Medium,Unsafe Act,1,1,Closed,confined_entry,confined_entry_2
+201,2026-07-26 09:46,Forklift reversing without spotter near the store.,Jaisalmer,OCS Main Yard,construction,Safety Officer,Medium,Unsafe Act,0,1,Closed,vehicle,vehicle_2
+361,2026-04-13 10:48,"at workshop bay 3: corrosion inhibitor leaking from a barrel, no spill kit available.",Naharkatiya,Workshop Bay 3,inspection,Supervisor,Low,Unsafe Condition,0,1,Open,chemical_store,chemical_store_1
+588,2026-08-06 23:34,how to reset my password for the hr portal?,Moran,CPF Area B,inspection,Operator,,Non-Safety,0,0,Closed,ns_misc,ns_misc_1
+445,2026-03-23 10:33,"Technician tripped over a pipe support, was not hurt.",Duliajan,Workshop Bay 3,operations round,Operator,Low,Near Miss,0,1,Closed,slip_nm,slip_nm_1
+196,2026-05-26 01:16,Forklift reversing without spotter near the store.,Digboi,Store Yard,drilling,Supervisor,Low,Unsafe Act,0,1,Closed,vehicle,vehicle_2
+306,2026-06-08 00:59,"At Well Pad 12: Coupling guard missing on the pump, rotating shaft exposed.",Naharkatiya,Well Pad 12,workover,Contractor,Medium,Unsafe Condition,0,1,Open,guard_missing,guard_missing_0
+118,2026-09-17 01:27,Safety alarm was jumpered out by technician during startup.,Jaisalmer,Store Yard,inspection,Supervisor,Medium,Unsafe Act,1,1,Open,interlock_bypass,interlock_bypass_1
+249,2026-09-28 09:14,"Operator forgot safety glasses during sampling, please review.",Moran,Well Pad 12,maintenance,Engineer,Low,Unsafe Act,0,1,Open,ppe_missing,ppe_missing_2
+142,2026-08-13 08:52,"spark from cutting set fire to oily rags, extinguished in time.",Moran,Store Yard,maintenance,Operator,Medium,Near Miss,1,1,Open,fire_nm,fire_nm_1
+411,2026-05-30 10:50,"At Store Yard: Job started without permit, supervisor not aware.",Moran,Store Yard,drilling,Fitter,High,Unsafe Act,0,1,Open,ptw_lapse,ptw_lapse_1
+491,2026-05-02 13:47,at well pad 12: emergency exit sign not illuminated in the workshop.,Moran,Well Pad 12,construction,Supervisor,Low,Unsafe Condition,0,1,Open,lighting,lighting_1
+203,2026-05-30 01:48,Forklift reversing without spotter near the store.,Jaisalmer,Well Pad 12,workover,Supervisor,Low,Unsafe Act,0,1,Closed,vehicle,vehicle_2
+13,2026-09-25 06:00,"Contractor went inside the vessel for cleaning, gas test not dnoe, permit not displayed.",Duliajan,Store Yard,workover,Fitter,Low,Unsafe Act,1,1,Open,confined_entry,confined_entry_1
+631,2026-06-10 19:43,"Request new chairs for the admin office, immediate supervisor informed.",Naharkatiya,Well Pad 12,construction,Fitter,,Non-Safety,0,0,Open,ns_misc2,ns_misc2_1
+222,2026-06-29 16:45,Contractor not wearing gloves while handling pipes.,Duliajan,Rig-14,drilling,Fitter,Low,Unsafe Act,0,1,Open,ppe_missing,ppe_missing_1
+583,2026-05-21 08:47,At Rig-14: How to reset my password for the HR portal?,Baghjan,Rig-14,operations round,Engineer,,Non-Safety,0,0,Closed,ns_misc,ns_misc_1
+76,2026-04-21 15:00,Welding was carried out near the flange without hot work permit.,Digboi,Workshop Bay 3,operations round,Operator,Medium,Unsafe Act,1,1,Closed,hotwork_nopermit,hotwork_nopermit_0
+171,2026-08-30 19:28,"at ocs main yard: driver was not wearing seatbelt while moving the vehicle inside the site, reported during routine round.",Baghjan,OCS Main Yard,shutdown job,Supervisor,Low,Unsafe Act,0,1,Open,vehicle,vehicle_0
+535,2026-05-19 13:46,I want to apply for casual leave next week.,Naharkatiya,OCS Main Yard,maintenance,Operator,,Non-Safety,0,0,Closed,ns_admin,ns_admin_1
+519,2026-07-07 21:49,At OCS Main Yard: Several lamps out along the pipeline access road.,Digboi,OCS Main Yard,inspection,Fitter,High,Unsafe Condition,0,1,Open,lighting,lighting_2
+412,2026-07-26 14:40,"job started without permit, supervisor not aware.",Naharkatiya,Store Yard,workover,Operator,Medium,Unsafe Act,0,1,Open,ptw_lapse,ptw_lapse_1
+463,2026-04-27 16:43,"At OCS Main Yard: Helper lost footing on muddy ramp, caught himself.",Digboi,OCS Main Yard,maintenance,Fitter,Low,Near Miss,0,1,Open,slip_nm,slip_nm_2
+591,2026-06-23 22:37,How to reset my passwrod for the HR portal?,Moran,OCS Main Yard,shutdown job,Safety Officer,,Non-Safety,0,0,Closed,ns_misc,ns_misc_1
+98,2026-07-23 06:18,"Gas leakage at wellhead valve found by operator during round, controlled.",Jaisalmer,Well Pad 12,inspection,Supervisor,Medium,Near Miss,1,1,Open,gas_leak,gas_leak_2
+315,2026-04-30 13:52,At Well Pad 12: Belt guard removed from the compressor fan and not reiftted.,Naharkatiya,Well Pad 12,inspection,Contractor,Low,Unsafe Condition,0,1,Closed,guard_missing,guard_missing_1
+148,2026-04-02 05:38,"A spanner dropped from the monkey board and landed beside a floorman, reported during routine round.",Jaisalmer,Rig-14,shutdown job,Operator,Low,Near Miss,1,1,Closed,dropped_obj_nm,dropped_obj_nm_0
+19,2026-09-30 15:00,"tank ke andar bina gas check kiye operator ghus gaya, attendant bhi nahi tha, reported during routine round.",Duliajan,Store Yard,shutdown job,Supervisor,High,Unsafe Act,1,1,Open,confined_entry,confined_entry_2
+576,2026-05-19 23:35,at cpf area b: please share the training timetable for the new batch.,Duliajan,CPF Area B,maintenance,Engineer,,Non-Safety,0,0,Closed,ns_misc,ns_misc_0
+521,2026-08-30 08:09,"The canteen food was good today, immediate supervisor informed.",Jaisalmer,Rig-14,shutdown job,Fitter,,Non-Safety,0,0,Closed,ns_admin,ns_admin_0
+243,2026-03-02 15:05,"Operator forgot safety glasses during sampling, immediate supervisor informed.",Moran,CPF Area B,construction,Engineer,Low,Unsafe Act,0,1,Closed,ppe_missing,ppe_missing_2
+68,2026-06-17 15:59,"At OCS Main Yard: H2S monitor on the wellhead was not working, alarm bypassed.",Duliajan,OCS Main Yard,inspection,Contractor,Low,Unsafe Condition,1,1,Closed,gas_detector_off,gas_detector_off_1
+172,2026-03-14 23:39,driver was not wearing seatbelt while moving the vehicle inside the site.,Moran,Workshop Bay 3,operations round,Supervisor,Low,Unsafe Act,0,1,Closed,vehicle,vehicle_0
+623,2026-09-07 00:54,Township shuttle bus timing needs to change.,Baghjan,Workshop Bay 3,shutdown job,Operator,,Non-Safety,0,0,Closed,ns_misc2,ns_misc2_0
+7,2026-09-27 02:00,wroker entered the tank without gas testing and no standby person at the manhole.,Duliajan,CPF Area B,drilling,Fitter,Low,Unsafe Act,1,1,Open,confined_entry,confined_entry_0
+612,2026-07-20 23:21,"at well pad 12: township shuttle bus timing needs to change, please review.",Baghjan,Well Pad 12,inspection,Engineer,,Non-Safety,0,0,Closed,ns_misc2,ns_misc2_0
+483,2026-07-06 13:46,Poor lighting at the walkway near the generator room.,Jaisalmer,Compressor Station,drilling,Engineer,Low,Unsafe Condition,0,1,Closed,lighting,lighting_0
+435,2026-03-05 01:04,"at store yard: opreator slipped on wet stairs but held the handrail, no injury.",Jaisalmer,Store Yard,shutdown job,Contractor,Medium,Near Miss,0,1,Closed,slip_nm,slip_nm_0
+360,2026-03-28 17:19,"Corrosion inhibitor leaking from a barrel, no spill kit available.",Baghjan,CPF Area B,construction,Engineer,Low,Unsafe Condition,0,1,Open,chemical_store,chemical_store_1
+137,2026-04-24 12:38,"At Store Yard: Small fire at the generator exhaust, put out with extinguisher before it spread.",Duliajan,Store Yard,maintenance,Fitter,Medium,Near Miss,1,1,Closed,fire_nm,fire_nm_0
+105,2026-05-17 11:38,"Excavation edge unbarricaded near pipeline route, soil loose.",Digboi,Well Pad 12,construction,Contractor,Medium,Unsafe Condition,1,1,Open,excavation,excavation_1
+652,2026-03-06 23:06,at workshop bay 3: delivery of the stationery order was delayed again.,Duliajan,Workshop Bay 3,operations round,Contractor,,Non-Safety,0,0,Open,ns_misc2,ns_misc2_2
+96,2026-07-02 22:01,"At Workshop Bay 3: Gas leakage at wellhead valve found by operator during round, controlled.",Jaisalmer,Workshop Bay 3,workover,Engineer,Medium,Near Miss,1,1,Open,gas_leak,gas_leak_2
+613,2026-05-06 16:53,At Well Pad 12: Township shuttle bus timing needs to change.,Jaisalmer,Well Pad 12,workover,Contractor,,Non-Safety,0,0,Closed,ns_misc2,ns_misc2_0
+328,2026-04-24 12:21,"Fan guard broken on the cooling motor, reported during routine round.",Digboi,Store Yard,shutdown job,Engineer,Low,Unsafe Condition,0,1,Open,guard_missing,guard_missing_2
+129,2026-09-07 05:38,"At Well Pad 12: Damaged cable insulation on welding machine, no earthing.",Duliajan,Well Pad 12,drilling,Safety Officer,High,Unsafe Condition,1,1,Closed,electrical_exposed,electrical_exposed_1
+494,2026-08-14 17:52,emergency exit sign not illuminated in the workshop.,Moran,Well Pad 12,inspection,Safety Officer,Low,Unsafe Condition,0,1,Open,lighting,lighting_1
+331,2026-05-03 23:20,Fan guard broken on the cooling motor.,Baghjan,Compressor Station,construction,Safety Officer,Low,Unsafe Condition,0,1,Open,guard_missing,guard_missing_2
+572,2026-09-17 03:59,At Well Pad 12: Please share the training timetable for the new bacth.,Moran,Well Pad 12,inspection,Operator,,Non-Safety,0,0,Open,ns_misc,ns_misc_0
+440,2026-07-06 01:07,"operator slipped on wet stairs but held the handrail, no injury.",Duliajan,OCS Main Yard,inspection,Fitter,Medium,Near Miss,0,1,Open,slip_nm,slip_nm_0
+17,2026-07-29 21:24,"contractor went inside the vessel for cleaning, gas test not done, permit not displayed.",Baghjan,OCS Main Yard,shutdown job,Fitter,High,Unsafe Act,1,1,Closed,confined_entry,confined_entry_1
+461,2026-09-26 07:18,"Helper lost footing on muddy ramp, caught himself.",Duliajan,Store Yard,inspection,Operator,Low,Near Miss,0,1,Open,slip_nm,slip_nm_2
+608,2026-04-02 17:34,Guest house wifi is very slow.,Baghjan,OCS Main Yard,workover,Contractor,,Non-Safety,0,0,Closed,ns_misc,ns_misc_2
+297,2026-03-01 07:31,"at workshop bay 3: coupling guard missing on the pump, rotating shaft exposed.",Duliajan,Workshop Bay 3,workover,Contractor,Low,Unsafe Condition,0,1,Open,guard_missing,guard_missing_0
+388,2026-08-26 21:24,work continued under an expired permit at the tank farm.,Moran,OCS Main Yard,shutdown job,Supervisor,Low,Unsafe Act,0,1,Closed,ptw_lapse,ptw_lapse_0
+324,2026-04-11 01:42,Belt guard removed from the compressor fan and not refitted.,Duliajan,GGS-2,drilling,Operator,Medium,Unsafe Condition,0,1,Open,guard_missing,guard_missing_1
+238,2026-07-05 20:49,"Operator forgot safety glasses during sampling, immediate supervisor informed.",Duliajan,CPF Area B,shutdown job,Contractor,Low,Unsafe Act,0,1,Open,ppe_missing,ppe_missing_2
+184,2026-06-22 05:21,Pickup was overspeeding near the rig gate.,Jaisalmer,GGS-2,construction,Supervisor,Medium,Unsafe Act,0,1,Open,vehicle,vehicle_1
+497,2026-04-30 19:28,Eemrgency exit sign not illuminated in the workshop.,Moran,OCS Main Yard,operations round,Fitter,Medium,Unsafe Condition,0,1,Open,lighting,lighting_1
+641,2026-08-07 10:04,Delivery of the statoinery order was delayed again.,Naharkatiya,GGS-2,operations round,Supervisor,,Non-Safety,0,0,Open,ns_misc2,ns_misc2_2
+206,2026-05-13 02:17,Worker in the yard was without helmet and safety shoes.,Baghjan,Rig-14,workover,Fitter,High,Unsafe Act,0,1,Open,ppe_missing,ppe_missing_0
+193,2026-03-16 07:24,"At Workshop Bay 3: Forklift reversing without spotter near the store, please review.",Moran,Workshop Bay 3,construction,Supervisor,Low,Unsafe Act,0,1,Closed,vehicle,vehicle_2
+154,2026-06-22 20:17,"Tool fell from scaffold level, hit the ground near the crew, no injury.",Baghjan,OCS Main Yard,maintenance,Fitter,High,Near Miss,1,1,Open,dropped_obj_nm,dropped_obj_nm_1
+242,2026-03-22 11:25,At OCS Main Yard: Operator forgot safety glasses during sampling.,Naharkatiya,OCS Main Yard,shutdown job,Supervisor,Low,Unsafe Act,0,1,Open,ppe_missing,ppe_missing_2
+481,2026-05-30 02:42,Poor lighting at the walkway near the generator room.,Baghjan,Well Pad 12,construction,Fitter,Medium,Unsafe Condition,0,1,Open,lighting,lighting_0
+91,2026-08-28 16:39,"Flange leak noticed on gas line, strong smell, area cleared in time, immediate supervisor informed.",Jaisalmer,Compressor Station,inspection,Operator,Low,Near Miss,1,1,Open,gas_leak,gas_leak_0
+149,2026-07-22 06:06,At GGS-2: A spanner dropped from the monkey board and landed beside a floorman.,Duliajan,GGS-2,drilling,Engineer,High,Near Miss,1,1,Open,dropped_obj_nm,dropped_obj_nm_0
+2,2026-03-23 22:56,At Well Pad 12: Worker entered the tank without gas testing and no standby person at the manhole.,Duliajan,Well Pad 12,inspection,Operator,Low,Unsafe Act,1,1,Open,confined_entry,confined_entry_0
+577,2026-05-28 17:04,at ocs main yard: please share the training timetable for the new batch.,Duliajan,OCS Main Yard,inspection,Safety Officer,,Non-Safety,0,0,Open,ns_misc,ns_misc_0
+370,2026-08-30 18:51,Chemical containers unlabeled in the store.,Duliajan,GGS-2,inspection,Fitter,Low,Unsafe Condition,0,1,Closed,chemical_store,chemical_store_2
+155,2026-03-06 17:17,"Tool fell from scaffold level, hit the ground near the crew, no injury.",Duliajan,GGS-2,construction,Supervisor,High,Near Miss,1,1,Closed,dropped_obj_nm,dropped_obj_nm_1
+354,2026-07-28 06:13,at rig-14: chemical drums stored without secondary containment near the drain.,Naharkatiya,Rig-14,workover,Safety Officer,Low,Unsafe Condition,0,1,Open,chemical_store,chemical_store_0
+237,2026-06-06 15:19,At CPF Area B: Operator forgot safety glsases during sampling.,Baghjan,CPF Area B,drilling,Fitter,Medium,Unsafe Act,0,1,Open,ppe_missing,ppe_missing_2
+464,2026-06-26 04:00,"at rig-14: helper lost footing on muddy ramp, cauhgt himself.",Jaisalmer,Rig-14,maintenance,Engineer,Low,Near Miss,0,1,Open,slip_nm,slip_nm_2
+434,2026-06-30 17:29,"Operator slipped on wet stairs but held the handrail, no injury.",Jaisalmer,Store Yard,shutdown job,Operator,Low,Near Miss,0,1,Open,slip_nm,slip_nm_0
+60,2026-04-13 13:09,"At Well Pad 12: Crane load swung close to a helper standing under it, near miss.",Jaisalmer,Well Pad 12,shutdown job,Safety Officer,Low,Near Miss,1,1,Open,suspended_load,suspended_load_2
+425,2026-09-20 01:52,At Stroe Yard: Permit copy not available at the worksite.,Moran,Store Yard,drilling,Supervisor,Medium,Unsafe Act,0,1,Open,ptw_lapse,ptw_lapse_2
+126,2026-06-08 21:24,"At Rig-14: Exposed wiring at the distribution board in the pump room, door open.",Duliajan,Rig-14,construction,Safety Officer,High,Unsafe Condition,1,1,Closed,electrical_exposed,electrical_exposed_0
+403,2026-08-06 01:19,"At GGS-2: Job started without permit, supervisor not aware.",Naharkatiya,GGS-2,drilling,Operator,Low,Unsafe Act,0,1,Open,ptw_lapse,ptw_lapse_1
+185,2026-05-26 21:01,At OCS Main Yard: Pickup was overspeeding near the rig gate.,Digboi,OCS Main Yard,maintenance,Operator,Low,Unsafe Act,0,1,Open,vehicle,vehicle_1
+8,2026-09-24 22:00,At Well Pad 12: Worker entered the tank without gas testing and no standby person at the manhole.,Duliajan,Well Pad 12,workover,Fitter,Medium,Unsafe Act,1,1,Closed,confined_entry,confined_entry_0
+130,2026-09-27 02:48,"damaged cable insulation on welding machine, no earthing.",Duliajan,Compressor Station,workover,Engineer,Low,Unsafe Condition,1,1,Closed,electrical_exposed,electrical_exposed_1
+394,2026-04-15 17:41,"Work continued under an expired permit at the tank farm, reported during routine round.",Duliajan,Well Pad 12,maintenance,Contractor,Low,Unsafe Act,0,1,Closed,ptw_lapse,ptw_lapse_0
+532,2026-09-15 21:48,"The canteen food was good today, please review.",Duliajan,GGS-2,maintenance,Operator,,Non-Safety,0,0,Open,ns_admin,ns_admin_0
+83,2026-08-07 03:30,"Grinding sparks near the hydrocarbon area, no fire watch posetd.",Baghjan,CPF Area B,maintenance,Contractor,High,Unsafe Act,1,1,Open,hotwork_nopermit,hotwork_nopermit_1
+605,2026-04-15 12:54,At CPF Area B: Guest house wifi is very slow.,Naharkatiya,CPF Area B,operations round,Engineer,,Non-Safety,0,0,Closed,ns_misc,ns_misc_2
+520,2026-06-13 12:56,"The canteen food was good today, please review.",Jaisalmer,CPF Area B,inspection,Engineer,,Non-Safety,0,0,Open,ns_admin,ns_admin_0
+25,2026-05-03 05:21,"At Compressor Station: Tank ke andar bina gas check kiye operator ghus gaya, attendant bhi nahi tha.",Moran,Compressor Station,drilling,Contractor,High,Unsafe Act,1,1,Closed,confined_entry,confined_entry_2
+11,2026-03-27 03:43,"At Workshop Bay 3: Contractor went insdie the vessel for cleaning, gas test not done, permit not displayed, immediate supervisor informed.",Duliajan,Workshop Bay 3,construction,Operator,Medium,Unsafe Act,1,1,Open,confined_entry,confined_entry_1
+254,2026-06-09 08:39,"Oil spill on walkway near the pump house, slip hazard.",Duliajan,OCS Main Yard,drilling,Safety Officer,Low,Unsafe Condition,0,1,Closed,housekeeping,housekeeping_0
+252,2026-09-16 07:11,"Oil spill on walkway near the pump huose, slip hazard.",Digboi,Store Yard,workover,Safety Officer,Medium,Unsafe Condition,0,1,Open,housekeeping,housekeeping_0
+220,2026-09-13 01:21,Contractor not wearing gloves while handling pipes.,Naharkatiya,Compressor Station,construction,Engineer,Low,Unsafe Act,0,1,Closed,ppe_missing,ppe_missing_1
+606,2026-04-16 02:10,At OCS Main Yard: Guest house wifi is very slow.,Moran,OCS Main Yard,workover,Engineer,,Non-Safety,0,0,Open,ns_misc,ns_misc_2
+544,2026-09-14 21:27,I want to apply for casual leave next week.,Moran,Rig-14,workover,Supervisor,,Non-Safety,0,0,Open,ns_admin,ns_admin_1
+529,2026-05-06 15:50,The canteen food was good today.,Baghjan,Rig-14,operations round,Engineer,,Non-Safety,0,0,Open,ns_admin,ns_admin_0
+454,2026-05-24 20:40,"At Rig-14: Technician trpiped over a pipe support, was not hurt.",Naharkatiya,Rig-14,shutdown job,Engineer,Low,Near Miss,0,1,Closed,slip_nm,slip_nm_1
+363,2026-09-25 20:03,"at ggs-2: corrosion inhibitor leaking from a barrel, no spill kit available.",Moran,GGS-2,workover,Operator,Low,Unsafe Condition,0,1,Open,chemical_store,chemical_store_1
+312,2026-09-17 11:37,At Workshop Bay 3: Belt guard removed from the compressor fan and not refitted.,Baghjan,Workshop Bay 3,operations round,Contractor,Low,Unsafe Condition,0,1,Closed,guard_missing,guard_missing_1
+585,2026-04-23 16:43,How to reset my password for the HR portal?,Moran,Workshop Bay 3,inspection,Engineer,,Non-Safety,0,0,Closed,ns_misc,ns_misc_1
+147,2026-04-12 03:17,"At CPF Area B: Flash fire near the sample point, operator escaped without injury.",Moran,CPF Area B,shutdown job,Safety Officer,Low,Near Miss,1,1,Closed,fire_nm,fire_nm_2
+489,2026-06-12 20:50,Poor lighting at the walkway near the generator room.,Digboi,OCS Main Yard,operations round,Operator,Low,Unsafe Condition,0,1,Open,lighting,lighting_0
+195,2026-05-18 03:14,At Well Pad 12: Forklift reversing without spotter near the store.,Baghjan,Well Pad 12,shutdown job,Contractor,Low,Unsafe Act,0,1,Open,vehicle,vehicle_2
+247,2026-04-06 21:08,Operator forgot safety glasses during sampling.,Digboi,CPF Area B,construction,Safety Officer,Low,Unsafe Act,0,1,Open,ppe_missing,ppe_missing_2
+307,2026-09-26 13:24,"at well pad 12: coupling guard missing on the pump, rotating shaft exposed.",Moran,Well Pad 12,inspection,Fitter,Low,Unsafe Condition,0,1,Closed,guard_missing,guard_missing_0
+607,2026-09-15 12:17,At Rig-14: Guest house wifi is very slow.,Digboi,Rig-14,shutdown job,Contractor,,Non-Safety,0,0,Closed,ns_misc,ns_misc_2
+582,2026-08-22 13:24,"How to reset my password for the HR portal?, please review.",Jaisalmer,Compressor Station,drilling,Operator,,Non-Safety,0,0,Open,ns_misc,ns_misc_1
+144,2026-09-21 02:21,"Flash fire near the sample point, operator escaped without injury.",Naharkatiya,Compressor Station,maintenance,Contractor,Medium,Near Miss,1,1,Closed,fire_nm,fire_nm_2
+202,2026-03-03 15:01,"Forklift reversing without spotter near the store, immediate supervisor informed.",Baghjan,Store Yard,shutdown job,Supervisor,Medium,Unsafe Act,0,1,Closed,vehicle,vehicle_2
+293,2026-09-20 11:23,"At Store Yard: Cables across the floor in the control room created a trip hazard, please review.",Duliajan,Store Yard,inspection,Supervisor,Low,Unsafe Condition,0,1,Open,housekeeping,housekeeping_2
+380,2026-08-19 13:18,"At CPF Area B: Chemical containers unlabeled in the store, immediate supervisor informed.",Jaisalmer,CPF Area B,maintenance,Supervisor,Low,Unsafe Condition,0,1,Closed,chemical_store,chemical_store_2
+318,2026-06-25 10:56,Belt guard removed from the compressor fan and not refitted.,Naharkatiya,Workshop Bay 3,operations round,Contractor,Low,Unsafe Condition,0,1,Open,guard_missing,guard_missing_1
+108,2026-09-20 04:59,"At Well Pad 12: Trench was dug without checking underground cable drawings, please review.",Naharkatiya,Well Pad 12,maintenance,Supervisor,High,Unsafe Condition,1,1,Closed,excavation,excavation_2
+136,2026-06-26 05:10,"Small fire at the generator exahust, put out with extinguisher before it spread.",Naharkatiya,Workshop Bay 3,shutdown job,Engineer,Medium,Near Miss,1,1,Open,fire_nm,fire_nm_0
+548,2026-05-16 16:11,"at ggs-2: i want to apply for casual leave next week, immediate supervisor informed.",Duliajan,GGS-2,drilling,Contractor,,Non-Safety,0,0,Open,ns_admin,ns_admin_1
+302,2026-03-26 06:43,"Coupling guard missing on the pump, rotating shaft exposed.",Moran,Rig-14,operations round,Supervisor,Low,Unsafe Condition,0,1,Closed,guard_missing,guard_missing_0
+469,2026-07-19 13:42,"Helper lost footing on muddy ramp, caught himself.",Jaisalmer,GGS-2,inspection,Safety Officer,Low,Near Miss,0,1,Open,slip_nm,slip_nm_2
+367,2026-05-02 12:12,"corrosion inhibiotr leaking from a barrel, no spill kit available.",Baghjan,Well Pad 12,inspection,Operator,Medium,Unsafe Condition,0,1,Open,chemical_store,chemical_store_1
+647,2026-03-17 11:32,At Rig-14: Delivery of the stationery order was delayed again.,Moran,Rig-14,maintenance,Fitter,,Non-Safety,0,0,Open,ns_misc2,ns_misc2_2
+326,2026-06-04 10:33,at ggs-2: fan guard broken on the cooling motor.,Digboi,GGS-2,drilling,Contractor,Low,Unsafe Condition,0,1,Closed,guard_missing,guard_missing_2
+175,2026-06-24 04:03,At CPF Area B: Pickup was overspeeding near the rig gate.,Duliajan,CPF Area B,maintenance,Supervisor,Low,Unsafe Act,0,1,Open,vehicle,vehicle_1
+259,2026-06-15 03:41,"Oil spill on walkway near the pump house, slip hazard.",Naharkatiya,Well Pad 12,drilling,Fitter,Low,Unsafe Condition,0,1,Open,housekeeping,housekeeping_0
+490,2026-04-12 21:57,Emergency exit sign not illuminated in the workshop.,Jaisalmer,Well Pad 12,maintenance,Operator,Medium,Unsafe Condition,0,1,Open,lighting,lighting_1
+622,2026-03-12 13:36,Township shuttle bus timing needs to change.,Duliajan,GGS-2,inspection,Supervisor,,Non-Safety,0,0,Closed,ns_misc2,ns_misc2_0
+430,2026-04-26 05:54,"At OCS Main Yard: Operator slpiped on wet stairs but held the handrail, no injury.",Jaisalmer,OCS Main Yard,operations round,Operator,Low,Near Miss,0,1,Closed,slip_nm,slip_nm_0
+107,2026-04-10 21:17,"excavation edge unbarricaded near pipeline route, soil loose.",Digboi,Workshop Bay 3,shutdown job,Contractor,Medium,Unsafe Condition,1,1,Open,excavation,excavation_1
+554,2026-05-01 06:53,Please approve my trvael allowance bill.,Baghjan,Compressor Station,operations round,Supervisor,,Non-Safety,0,0,Open,ns_admin,ns_admin_2
+568,2026-07-24 04:42,At CPF Area B: Please share the training timetable for the new batch.,Baghjan,CPF Area B,construction,Supervisor,,Non-Safety,0,0,Closed,ns_misc,ns_misc_0
+177,2026-06-21 09:40,"At Well Pad 12: Pickup was overspeeding near the rig gate, please review.",Duliajan,Well Pad 12,maintenance,Engineer,Low,Unsafe Act,0,1,Closed,vehicle,vehicle_1
+604,2026-07-13 16:26,"Guest house wifi is very slow, immediate supervisor informed.",Jaisalmer,Well Pad 12,maintenance,Contractor,,Non-Safety,0,0,Closed,ns_misc,ns_misc_2
+340,2026-06-23 21:22,Chemical drums stored without secondary containment near the drain.,Moran,CPF Area B,operations round,Operator,Low,Unsafe Condition,0,1,Closed,chemical_store,chemical_store_0
+566,2026-06-21 09:25,At Compressor Station: Please share the training timetable for the new batch.,Baghjan,Compressor Station,workover,Safety Officer,,Non-Safety,0,0,Closed,ns_misc,ns_misc_0
+39,2026-08-23 07:13,Isolation nahi kiya gaya aur electrician ne cable change kar diya.,Duliajan,Well Pad 12,maintenance,Engineer,Medium,Unsafe Act,1,1,Open,loto_missing,loto_missing_2
+349,2026-03-17 01:13,Chemical drums stored without secondary containment near the drain.,Moran,GGS-2,drilling,Operator,Low,Unsafe Condition,0,1,Open,chemical_store,chemical_store_0
+553,2026-09-14 12:36,please approve my travel allowance bill.,Moran,Workshop Bay 3,maintenance,Operator,,Non-Safety,0,0,Closed,ns_admin,ns_admin_2
+467,2026-08-18 17:10,"helper lost footing on muddy ramp, caught himself, please review.",Moran,GGS-2,workover,Fitter,Low,Near Miss,0,1,Closed,slip_nm,slip_nm_2
+417,2026-03-02 12:40,At Workshop Bay 3: Permit copy not available at the worksite.,Duliajan,Workshop Bay 3,maintenance,Operator,Low,Unsafe Act,0,1,Open,ptw_lapse,ptw_lapse_2
+366,2026-05-21 06:42,"Corrosion inhibitor leaking from a barrel, no spill kit available.",Jaisalmer,Well Pad 12,shutdown job,Safety Officer,Low,Unsafe Condition,0,1,Closed,chemical_store,chemical_store_1
+158,2026-03-07 00:28,Pipe clamp fell from the pipe rack close to a passing worker.,Jaisalmer,Store Yard,inspection,Engineer,High,Near Miss,1,1,Closed,dropped_obj_nm,dropped_obj_nm_2
+630,2026-04-03 16:13,Request new chairs for the admin office.,Moran,CPF Area B,shutdown job,Fitter,,Non-Safety,0,0,Open,ns_misc2,ns_misc2_1
+228,2026-06-03 22:30,At GGS-2: Contractor not wearing gloves while handling pipes.,Duliajan,GGS-2,maintenance,Engineer,Medium,Unsafe Act,0,1,Closed,ppe_missing,ppe_missing_1
+41,2026-03-30 19:16,Rigger working on scaffold platform at height without harness.,Moran,Well Pad 12,maintenance,Safety Officer,Medium,Unsafe Act,1,1,Open,height_noharness,height_noharness_0
+442,2026-07-15 19:24,"At CPF Area B: Operator slipped on wet stairs but held the handrail, no injury.",Naharkatiya,CPF Area B,inspection,Engineer,Low,Near Miss,0,1,Closed,slip_nm,slip_nm_0
+395,2026-06-01 20:23,work continued under an expired permit at the tank farm.,Moran,Compressor Station,construction,Safety Officer,Medium,Unsafe Act,0,1,Closed,ptw_lapse,ptw_lapse_0
+120,2026-07-23 10:49,"At GGS-2: Pressure relief valve found isolated on the vessel, nobody was aware.",Moran,GGS-2,operations round,Supervisor,Low,Unsafe Act,1,1,Closed,interlock_bypass,interlock_bypass_2
+375,2026-03-22 01:31,Chemical containers unlabeled in the store.,Jaisalmer,OCS Main Yard,drilling,Operator,Medium,Unsafe Condition,0,1,Open,chemical_store,chemical_store_2
+205,2026-07-17 22:07,Worekr in the yard was without helmet and safety shoes.,Moran,Compressor Station,inspection,Contractor,Low,Unsafe Act,0,1,Closed,ppe_missing,ppe_missing_0
+543,2026-08-17 01:49,I want to apply for casual leave next week.,Naharkatiya,OCS Main Yard,drilling,Operator,,Non-Safety,0,0,Open,ns_admin,ns_admin_1
+40,2026-09-21 06:35,Rigger working on scfafold platform at height without harness.,Baghjan,OCS Main Yard,drilling,Supervisor,Low,Unsafe Act,1,1,Closed,height_noharness,height_noharness_0
+241,2026-05-14 02:31,at compressor station: operator forgot safety glasses during sampling.,Moran,Compressor Station,construction,Engineer,Low,Unsafe Act,0,1,Open,ppe_missing,ppe_missing_2
+387,2026-09-15 04:06,"At Compressor Station: Work continued under an expired permit at the tank farm, immediate supervisor informed.",Baghjan,Compressor Station,inspection,Engineer,Medium,Unsafe Act,0,1,Open,ptw_lapse,ptw_lapse_0
+542,2026-06-26 12:56,At GGS-2: I want to apply for casual leave next week.,Moran,GGS-2,operations round,Supervisor,,Non-Safety,0,0,Open,ns_admin,ns_admin_1
+253,2026-06-07 21:03,"oil spill on walkway near the pump house, slip hazard.",Duliajan,Workshop Bay 3,shutdown job,Operator,Low,Unsafe Condition,0,1,Closed,housekeeping,housekeeping_0
+15,2026-09-30 11:00,"Contractor went inside the vessel for cleaning, gas test not done, permit not displayed.",Duliajan,Workshop Bay 3,workover,Engineer,High,Unsafe Act,1,1,Closed,confined_entry,confined_entry_1
+386,2026-03-27 09:10,at ocs main yrad: work continued under an expired permit at the tank farm.,Baghjan,OCS Main Yard,drilling,Safety Officer,Medium,Unsafe Act,0,1,Open,ptw_lapse,ptw_lapse_0
+317,2026-04-06 02:44,At Compressor Station: Belt guard removed from the compressor fan and not refitted.,Duliajan,Compressor Station,drilling,Supervisor,Low,Unsafe Condition,0,1,Closed,guard_missing,guard_missing_1
+245,2026-04-23 03:33,At Compressor Station: Operator frogot safety glasses during sampling.,Naharkatiya,Compressor Station,inspection,Fitter,Low,Unsafe Act,0,1,Open,ppe_missing,ppe_missing_2
+173,2026-03-09 10:35,Driver was not wearing seatbelt while moving the vehicle inside the site.,Duliajan,Well Pad 12,operations round,Contractor,Low,Unsafe Act,0,1,Open,vehicle,vehicle_0
+5,2026-07-12 09:25,worker entered the tank without gas testing and no standby person at the manhole.,Jaisalmer,Compressor Station,drilling,Engineer,Medium,Unsafe Act,1,1,Closed,confined_entry,confined_entry_0
+507,2026-09-12 07:15,"At CPF Area B: Several lamps out along the pipeline access road, immediate supervisor informed.",Jaisalmer,CPF Area B,workover,Operator,Low,Unsafe Condition,0,1,Closed,lighting,lighting_2
+282,2026-09-12 04:50,"at rig-14: cables across the floor in the control room created a trip hazard, immediate supervisor informed.",Naharkatiya,Rig-14,operations round,Fitter,Medium,Unsafe Condition,0,1,Closed,housekeeping,housekeeping_2
+431,2026-05-05 16:14,"At Well Pad 12: Operator slipped on wet stairs but held the handrail, no injury.",Digboi,Well Pad 12,drilling,Engineer,Low,Near Miss,0,1,Open,slip_nm,slip_nm_0
+251,2026-07-16 17:41,"Oil spill on walkway near the pump house, slip hazard.",Jaisalmer,OCS Main Yard,shutdown job,Contractor,Low,Unsafe Condition,0,1,Open,housekeeping,housekeeping_0
+4,2026-09-27 10:00,"Worker entered the tank without gas testing and no standby person at the manhole, reported during routine round.",Duliajan,GGS-2,maintenance,Safety Officer,Medium,Unsafe Act,1,1,Closed,confined_entry,confined_entry_0
+595,2026-04-09 05:17,At Rig-14: Guest house wifi is very slow.,Jaisalmer,Rig-14,shutdown job,Engineer,,Non-Safety,0,0,Open,ns_misc,ns_misc_2
+319,2026-07-15 00:22,At Store Yard: Belt guard removed from the compressor fan and not refitted.,Digboi,Store Yard,workover,Operator,Low,Unsafe Condition,0,1,Closed,guard_missing,guard_missing_1
+522,2026-08-27 08:48,The catneen food was good today.,Duliajan,CPF Area B,inspection,Engineer,,Non-Safety,0,0,Closed,ns_admin,ns_admin_0
+626,2026-06-19 20:11,At Well Pad 12: Reqeust new chairs for the admin office.,Digboi,Well Pad 12,construction,Engineer,,Non-Safety,0,0,Closed,ns_misc2,ns_misc2_1
+358,2026-05-26 14:23,"At GGS-2: Corrosion inhibitor leaking from a barrel, no spill kit available, please review.",Jaisalmer,GGS-2,workover,Fitter,Medium,Unsafe Condition,0,1,Open,chemical_store,chemical_store_1
+437,2026-05-06 13:47,"Operator slipped on wet stairs but held the handrail, no injury.",Baghjan,GGS-2,shutdown job,Contractor,Medium,Near Miss,0,1,Open,slip_nm,slip_nm_0
+224,2026-04-21 07:53,At Compressor Station: Contractor not wearing gloves while handling pipes.,Moran,Compressor Station,inspection,Operator,Medium,Unsafe Act,0,1,Closed,ppe_missing,ppe_missing_1
+629,2026-09-16 04:22,"Request new chairs for the admin office, immediate supervisor informed.",Naharkatiya,GGS-2,workover,Operator,,Non-Safety,0,0,Open,ns_misc2,ns_misc2_1
+18,2026-04-02 23:30,"at well pad 12: contractor went inside the vessel for cleaning, gas test not done, permit not displayed.",Moran,Well Pad 12,drilling,Safety Officer,Low,Unsafe Act,1,1,Closed,confined_entry,confined_entry_1
+250,2026-03-17 05:01,"oil spill on walkway near the pump house, slip hazard.",Duliajan,Store Yard,inspection,Operator,Low,Unsafe Condition,0,1,Open,housekeeping,housekeeping_0
+547,2026-07-13 16:01,"At Rig-14: I want to aplpy for casual leave next week, please review.",Jaisalmer,Rig-14,shutdown job,Fitter,,Non-Safety,0,0,Open,ns_admin,ns_admin_1
+376,2026-05-21 01:46,"chemical containers unlabeled in the store, reported during routine round.",Jaisalmer,Compressor Station,construction,Safety Officer,Low,Unsafe Condition,0,1,Closed,chemical_store,chemical_store_2
+371,2026-04-15 23:29,chemical containers unlabeled in the store.,Jaisalmer,Rig-14,drilling,Operator,Medium,Unsafe Condition,0,1,Closed,chemical_store,chemical_store_2
+119,2026-09-07 09:50,Safety alarm was jumpered out by technician during startup.,Baghjan,OCS Main Yard,inspection,Engineer,High,Unsafe Act,1,1,Open,interlock_bypass,interlock_bypass_1
+560,2026-08-22 08:37,At GGS-2: Please approve my travel allowance bill.,Jaisalmer,GGS-2,construction,Contractor,,Non-Safety,0,0,Closed,ns_admin,ns_admin_2
+143,2026-04-06 11:55,"Spark from cutting set fire to oily rags, extniguished in time.",Baghjan,Store Yard,shutdown job,Fitter,Medium,Near Miss,1,1,Closed,fire_nm,fire_nm_1
+246,2026-08-09 16:54,At Store Yard: Operator forgot safety glasses during sampling.,Digboi,Store Yard,drilling,Safety Officer,Low,Unsafe Act,0,1,Open,ppe_missing,ppe_missing_2
+524,2026-07-17 22:41,The canteen food was good today.,Digboi,Well Pad 12,shutdown job,Operator,,Non-Safety,0,0,Closed,ns_admin,ns_admin_0
+295,2026-08-23 20:26,"At CPF Area B: Coupling guard missing on the pump, rotating shaft exposed, please review.",Baghjan,CPF Area B,inspection,Fitter,Medium,Unsafe Condition,0,1,Open,guard_missing,guard_missing_0
+346,2026-09-01 08:50,At CPF Area B: Chemical drums stroed without secondary containment near the drain.,Naharkatiya,CPF Area B,inspection,Engineer,Low,Unsafe Condition,0,1,Closed,chemical_store,chemical_store_0
+453,2026-08-06 13:12,"at store yard: technician tripped over a pipe support, was not hurt.",Jaisalmer,Store Yard,construction,Engineer,Medium,Near Miss,0,1,Closed,slip_nm,slip_nm_1
+77,2026-06-12 22:49,welding was carried out near the flange without hot work permit.,Naharkatiya,CPF Area B,drilling,Contractor,Medium,Unsafe Act,1,1,Open,hotwork_nopermit,hotwork_nopermit_0
+273,2026-07-19 08:04,loose hoses lying arcoss the access path at the drill site.,Jaisalmer,CPF Area B,shutdown job,Contractor,Low,Unsafe Condition,0,1,Open,housekeeping,housekeeping_1
+194,2026-06-23 00:32,Forklift reversing without spotter near the store.,Duliajan,Rig-14,workover,Engineer,Medium,Unsafe Act,0,1,Open,vehicle,vehicle_2
+382,2026-03-31 19:03,At Store Yard: Chemical containers unlabeled in the store.,Digboi,Store Yard,workover,Operator,Low,Unsafe Condition,0,1,Open,chemical_store,chemical_store_2
+523,2026-09-17 10:26,At Store Yard: The canteen food was good tdoay.,Naharkatiya,Store Yard,shutdown job,Safety Officer,,Non-Safety,0,0,Open,ns_admin,ns_admin_0
+6,2026-09-25 11:00,Worker entered the tank without gas testing and no standby person at the manhole.,Duliajan,OCS Main Yard,operations round,Operator,Medium,Unsafe Act,1,1,Open,confined_entry,confined_entry_0
+116,2026-08-17 12:00,At GGS-2: Safety alarm was jumpered out by tehcnician during startup.,Moran,GGS-2,shutdown job,Operator,Medium,Unsafe Act,1,1,Closed,interlock_bypass,interlock_bypass_1
+27,2026-09-26 06:00,"Tank ke andar bina gas check kiye operator ghus gaya, attendant bhi nahi tha.",Duliajan,GGS-2,construction,Safety Officer,High,Unsafe Act,1,1,Closed,confined_entry,confined_entry_2
+122,2026-05-29 17:18,"Pressure relief valve found isolated on the vessel, nobody was aware, immediate supervisor informed.",Moran,CPF Area B,shutdown job,Fitter,Low,Unsafe Act,1,1,Open,interlock_bypass,interlock_bypass_2
+1,2026-08-01 08:01,"Worker entered the tank without gas testing and no stnadby person at the manhole, immediate supervisor informed.",Naharkatiya,Rig-14,inspection,Operator,Low,Unsafe Act,1,1,Open,confined_entry,confined_entry_0
+320,2026-05-02 16:05,"belt guard removed from the compressor fan and not refitted, please review.",Duliajan,OCS Main Yard,operations round,Supervisor,Low,Unsafe Condition,0,1,Closed,guard_missing,guard_missing_1
+329,2026-03-27 19:28,fan guard broken on the cooling motor.,Moran,Store Yard,shutdown job,Engineer,Medium,Unsafe Condition,0,1,Open,guard_missing,guard_missing_2
+227,2026-09-10 08:41,At Workshop Bay 3: Contractor not wearing gloves while handling pipes.,Jaisalmer,Workshop Bay 3,maintenance,Operator,Medium,Unsafe Act,0,1,Closed,ppe_missing,ppe_missing_1
+72,2026-03-10 10:05,"At OCS Main Yard: Portable gas detector battery dead at the separator, crew continued work.",Baghjan,OCS Main Yard,shutdown job,Contractor,High,Unsafe Condition,1,1,Closed,gas_detector_off,gas_detector_off_2
+53,2026-04-16 12:04,at well pad 12: suspended load swung unexpectedly during crane lift and narrowly missed a worker.,Jaisalmer,Well Pad 12,drilling,Engineer,Low,Near Miss,1,1,Closed,suspended_load,suspended_load_0
+614,2026-08-21 07:36,At Compressor Station: Township shuttle bus timing needs to change.,Naharkatiya,Compressor Station,shutdown job,Supervisor,,Non-Safety,0,0,Open,ns_misc2,ns_misc2_0
+443,2026-05-20 18:04,"Operator slipped on wet stairs but held the handrail, no injury.",Duliajan,Workshop Bay 3,operations round,Safety Officer,Low,Near Miss,0,1,Open,slip_nm,slip_nm_0
+47,2026-07-01 18:03,At Well Pad 12: Contractor climbed the derrick ladder with no fall protection attached.,Naharkatiya,Well Pad 12,drilling,Fitter,Low,Unsafe Act,1,1,Open,height_noharness,height_noharness_1
+465,2026-05-16 16:22,"Helper lost footing on muddy ramp, caught himself.",Duliajan,Rig-14,inspection,Contractor,Low,Near Miss,0,1,Closed,slip_nm,slip_nm_2
+286,2026-03-06 21:44,at rig-14: cables across the floor in the control room created a trip hazard.,Naharkatiya,Rig-14,construction,Contractor,Low,Unsafe Condition,0,1,Closed,housekeeping,housekeeping_2
+611,2026-05-16 08:09,Township shuttle bus timing needs to change.,Moran,Well Pad 12,inspection,Contractor,,Non-Safety,0,0,Closed,ns_misc2,ns_misc2_0
+398,2026-09-04 00:39,Work continued under an expired permit at the tank farm.,Baghjan,Compressor Station,operations round,Engineer,Low,Unsafe Act,0,1,Open,ptw_lapse,ptw_lapse_0
+277,2026-07-15 04:36,Loose hoses lying across the access path at the drill site.,Duliajan,Well Pad 12,operations round,Supervisor,Low,Unsafe Condition,0,1,Open,housekeeping,housekeeping_1
+397,2026-04-21 03:50,Work continued under an expired permit at the tank farm.,Moran,Compressor Station,workover,Operator,Low,Unsafe Act,0,1,Open,ptw_lapse,ptw_lapse_0
+145,2026-08-04 19:02,"Flash fire near the sample point, operator escaped without injury.",Naharkatiya,Compressor Station,inspection,Operator,Medium,Near Miss,1,1,Closed,fire_nm,fire_nm_2
+424,2026-05-11 10:29,"At Workshop Bay 3: Permit copy not available at the worksite, reported during routine round.",Jaisalmer,Workshop Bay 3,inspection,Contractor,Low,Unsafe Act,0,1,Closed,ptw_lapse,ptw_lapse_2
+348,2026-03-30 16:40,At Well Pad 12: Chemical drums stored without secondary containment near the drain.,Baghjan,Well Pad 12,operations round,Operator,Low,Unsafe Condition,0,1,Closed,chemical_store,chemical_store_0
+21,2026-09-26 02:00,"Tank ke andar bina gas chcek kiye operator ghus gaya, attendant bhi nahi tha.",Duliajan,Rig-14,maintenance,Safety Officer,High,Unsafe Act,1,1,Open,confined_entry,confined_entry_2
+654,2026-04-14 09:59,At Store Yard: Delivery of the stationery order was delayed again.,Digboi,Store Yard,drilling,Operator,,Non-Safety,0,0,Closed,ns_misc2,ns_misc2_2
+502,2026-09-04 20:11,emergency exit sign not illuminated in the workshop.,Digboi,OCS Main Yard,operations round,Operator,Low,Unsafe Condition,0,1,Open,lighting,lighting_1
+100,2026-05-26 01:48,Trench excavation deeper than 1.5 m with no shoring and no ladder for exit.,Baghjan,GGS-2,drilling,Engineer,Low,Unsafe Condition,1,1,Open,excavation,excavation_0
+44,2026-03-07 19:09,At Compressor Station: Contractor climbed the derrick ladder with no fall protection attached.,Duliajan,Compressor Station,inspection,Supervisor,Medium,Unsafe Act,1,1,Open,height_noharness,height_noharness_1
+413,2026-08-05 17:29,"Job started without permit, supervisor not aware.",Jaisalmer,Rig-14,construction,Contractor,Low,Unsafe Act,0,1,Closed,ptw_lapse,ptw_lapse_1
+157,2026-09-02 05:36,Pipe clamp fell from the pipe rack close to a passing worker.,Baghjan,Well Pad 12,workover,Contractor,Medium,Near Miss,1,1,Open,dropped_obj_nm,dropped_obj_nm_2
+37,2026-07-05 15:47,"Isolation nahi kiya gaya aur electrician ne cable change kar diya, please review.",Baghjan,Well Pad 12,construction,Fitter,High,Unsafe Act,1,1,Closed,loto_missing,loto_missing_2
+562,2026-06-26 14:07,"Please approve my travel allowance bill, reported during routine round.",Jaisalmer,Compressor Station,inspection,Contractor,,Non-Safety,0,0,Open,ns_admin,ns_admin_2
+389,2026-06-16 19:52,work continued under an expired permit at the tank famr.,Baghjan,Store Yard,drilling,Operator,Low,Unsafe Act,0,1,Open,ptw_lapse,ptw_lapse_0
+231,2026-05-31 15:42,at rig-14: contractor not wearing gloves while handling pipes.,Digboi,Rig-14,drilling,Fitter,Low,Unsafe Act,0,1,Closed,ppe_missing,ppe_missing_1
+186,2026-08-28 04:14,pickup was overspeeding near the rig gate.,Naharkatiya,GGS-2,maintenance,Contractor,Low,Unsafe Act,0,1,Open,vehicle,vehicle_1
+303,2026-06-23 04:06,"Coupling gaurd missing on the pump, rotating shaft exposed.",Jaisalmer,GGS-2,maintenance,Operator,Low,Unsafe Condition,0,1,Closed,guard_missing,guard_missing_0
+285,2026-09-09 17:32,At Store Yard: Cables across the floor in the control room created a trip hazard.,Jaisalmer,Store Yard,drilling,Fitter,High,Unsafe Condition,0,1,Open,housekeeping,housekeeping_2
+415,2026-06-05 12:51,permit copy not available at the worksite.,Jaisalmer,Workshop Bay 3,workover,Supervisor,Medium,Unsafe Act,0,1,Open,ptw_lapse,ptw_lapse_2
+183,2026-09-17 05:58,at compressor station: pickup was overspeeding near the rig gate.,Jaisalmer,Compressor Station,shutdown job,Fitter,Low,Unsafe Act,0,1,Closed,vehicle,vehicle_1
+617,2026-04-25 00:02,"Township shuttle bus timing needs to change, immediate supervisor informed.",Naharkatiya,OCS Main Yard,workover,Operator,,Non-Safety,0,0,Closed,ns_misc2,ns_misc2_0
+470,2026-05-14 02:58,"Helper lost footing on muddy ramp, caught himself.",Naharkatiya,Well Pad 12,construction,Fitter,Low,Near Miss,0,1,Closed,slip_nm,slip_nm_2
+561,2026-08-13 04:48,"At Rig-14: Please approve my travel allowance bill, reported during routine round.",Digboi,Rig-14,inspection,Operator,,Non-Safety,0,0,Open,ns_admin,ns_admin_2
+356,2026-04-23 21:21,"Corrosion inhibitor leaking from a barrel, no spill kit available.",Duliajan,Compressor Station,maintenance,Operator,Low,Unsafe Condition,0,1,Closed,chemical_store,chemical_store_1
+527,2026-05-03 22:09,"The canteen food was good today, reported during routine round.",Digboi,Compressor Station,workover,Fitter,,Non-Safety,0,0,Closed,ns_admin,ns_admin_0
+578,2026-06-20 08:34,"at compressor station: please share the training timetable for the new batch, reported during routine round.",Digboi,Compressor Station,shutdown job,Safety Officer,,Non-Safety,0,0,Open,ns_misc,ns_misc_0
+393,2026-04-08 16:23,"work continued under an expired pemrit at the tank farm, immediate supervisor informed.",Duliajan,GGS-2,construction,Fitter,Medium,Unsafe Act,0,1,Closed,ptw_lapse,ptw_lapse_0
+162,2026-09-25 05:17,driver was not wearing seatbelt while moving the vehicle inside the site.,Moran,OCS Main Yard,shutdown job,Safety Officer,Medium,Unsafe Act,0,1,Closed,vehicle,vehicle_0
+399,2026-09-10 18:58,At Workshop Bay 3: Work continued under an expired permit at the tank farm.,Jaisalmer,Workshop Bay 3,workover,Fitter,Medium,Unsafe Act,0,1,Open,ptw_lapse,ptw_lapse_0
+530,2026-06-28 21:03,at cpf area b: the canteen food was good today.,Digboi,CPF Area B,construction,Supervisor,,Non-Safety,0,0,Closed,ns_admin,ns_admin_0
+364,2026-07-16 23:16,"At Rig-14: Corrosion inhibitor leaking from a barrel, no spill kit available.",Baghjan,Rig-14,shutdown job,Supervisor,Low,Unsafe Condition,0,1,Closed,chemical_store,chemical_store_1
+586,2026-07-04 10:41,At GGS-2: How to reset my password for the HR portal?,Duliajan,GGS-2,maintenance,Operator,,Non-Safety,0,0,Open,ns_misc,ns_misc_1
+495,2026-05-16 23:29,At Rig-41: Emergency exit sign not illuminated in the workshop.,Duliajan,Rig-14,maintenance,Safety Officer,Low,Unsafe Condition,0,1,Closed,lighting,lighting_1
+511,2026-08-07 02:01,Several lamps out along the pipeline access road.,Naharkatiya,Store Yard,shutdown job,Supervisor,Low,Unsafe Condition,0,1,Closed,lighting,lighting_2
+23,2026-09-25 16:00,"At Workshop Bay 3: Tank ke andar bina gas check kiye operator ghus gaya, attendant bhi nahi tha.",Duliajan,Workshop Bay 3,construction,Supervisor,Medium,Unsafe Act,1,1,Closed,confined_entry,confined_entry_2
+550,2026-08-23 15:14,Please approve my travel allowance bill.,Naharkatiya,OCS Main Yard,maintenance,Contractor,,Non-Safety,0,0,Closed,ns_admin,ns_admin_2
+236,2026-06-11 16:40,Operator forgot safety glasses during sampling.,Baghjan,Store Yard,maintenance,Contractor,Low,Unsafe Act,0,1,Open,ppe_missing,ppe_missing_2
+620,2026-07-02 20:36,At Workshop Bay 3: Township shuttle bus timing needs to change.,Moran,Workshop Bay 3,operations round,Contractor,,Non-Safety,0,0,Closed,ns_misc2,ns_misc2_0
+79,2026-08-22 02:25,At Workshop Bay 3: Wedling was carried out near the flange without hot work permit.,Moran,Workshop Bay 3,workover,Safety Officer,High,Unsafe Act,1,1,Open,hotwork_nopermit,hotwork_nopermit_0
+334,2026-06-25 16:35,at ggs-2: fan guard broken on the cooling motor.,Naharkatiya,GGS-2,construction,Contractor,Low,Unsafe Condition,0,1,Closed,guard_missing,guard_missing_2
+610,2026-06-15 15:46,Township shuttle bus timing needs to change.,Baghjan,GGS-2,drilling,Engineer,,Non-Safety,0,0,Open,ns_misc2,ns_misc2_0
+589,2026-09-10 10:01,"How to reset my password for the HR portal?, please review.",Baghjan,OCS Main Yard,inspection,Contractor,,Non-Safety,0,0,Open,ns_misc,ns_misc_1
+476,2026-03-21 18:54,Poor lighting at the walkway near the generator room.,Baghjan,CPF Area B,shutdown job,Engineer,Low,Unsafe Condition,0,1,Open,lighting,lighting_0
+64,2026-05-17 19:59,gas detector was unavailable near the process area during maintenance.,Digboi,Compressor Station,workover,Operator,Medium,Unsafe Condition,1,1,Closed,gas_detector_off,gas_detector_off_0
+546,2026-03-15 21:03,I want to apply for casual leave next week.,Digboi,Compressor Station,workover,Fitter,,Non-Safety,0,0,Open,ns_admin,ns_admin_1
+565,2026-06-27 13:43,Plesae share the training timetable for the new batch.,Jaisalmer,Well Pad 12,construction,Fitter,,Non-Safety,0,0,Closed,ns_misc,ns_misc_0
+390,2026-03-23 05:29,"Work continued under an expired permit at the tank farm, reported during routine round.",Moran,OCS Main Yard,workover,Supervisor,Low,Unsafe Act,0,1,Closed,ptw_lapse,ptw_lapse_0
+384,2026-05-24 16:27,chemical containers unlabeled in the store.,Baghjan,Workshop Bay 3,drilling,Safety Officer,Low,Unsafe Condition,0,1,Closed,chemical_store,chemical_store_2
+75,2026-05-02 09:45,"Portable gas detector battery dead at the separator, crew continued work, reported during routine round.",Moran,Store Yard,inspection,Engineer,High,Unsafe Condition,1,1,Closed,gas_detector_off,gas_detector_off_2
+29,2026-05-26 08:59,"Fitter started repairing the pump motor without lockout, breaker was still energized.",Naharkatiya,OCS Main Yard,workover,Safety Officer,Low,Unsafe Act,1,1,Open,loto_missing,loto_missing_0
+471,2026-07-09 19:22,"Helper lost footing on muddy ramp, caught himself.",Naharkatiya,CPF Area B,maintenance,Engineer,Low,Near Miss,0,1,Open,slip_nm,slip_nm_2
+648,2026-04-15 13:23,Delivery of the stationery order was delayed again.,Moran,OCS Main Yard,construction,Safety Officer,,Non-Safety,0,0,Open,ns_misc2,ns_misc2_2
+216,2026-05-07 08:50,at ocs main yard: worker in the yard was without helmet and safety shoes.,Digboi,OCS Main Yard,workover,Operator,Low,Unsafe Act,0,1,Closed,ppe_missing,ppe_missing_0
+362,2026-06-24 01:03,"Corrosion inhibitor leaking from a barrel, no spill kit available.",Naharkatiya,Workshop Bay 3,maintenance,Contractor,Medium,Unsafe Condition,0,1,Open,chemical_store,chemical_store_1
+438,2026-03-22 07:14,"Operator slipped on wet stairs but held the handrail, no injury, please review.",Digboi,Store Yard,shutdown job,Fitter,Low,Near Miss,0,1,Open,slip_nm,slip_nm_0
+52,2026-07-12 11:10,At Well Pad 12: Suspended load swung unexpectedly during crane lift and narrowly missed a worker.,Moran,Well Pad 12,drilling,Contractor,Medium,Near Miss,1,1,Closed,suspended_load,suspended_load_0
+51,2026-08-23 02:19,"At Well Pad 12: Man was at height on the pipe rack, harness not hooked to any anchor point.",Baghjan,Well Pad 12,construction,Supervisor,High,Unsafe Act,1,1,Open,height_noharness,height_noharness_2
+276,2026-05-22 18:33,At Compressor Station: Loose hoses lying across the access path at the drill site.,Moran,Compressor Station,maintenance,Operator,Low,Unsafe Condition,0,1,Open,housekeeping,housekeeping_1
+473,2026-06-16 10:26,"Helper lost footing on muddy ramp, caught himself.",Duliajan,Well Pad 12,maintenance,Fitter,Medium,Near Miss,0,1,Closed,slip_nm,slip_nm_2
+209,2026-08-07 18:41,At GGS-2: Worker in the yard was without helmet and safety shoes.,Naharkatiya,GGS-2,inspection,Operator,Low,Unsafe Act,0,1,Open,ppe_missing,ppe_missing_0
+165,2026-04-06 12:56,Driver was not wearing seatbelt while moving the vehicle inside the site.,Jaisalmer,GGS-2,workover,Contractor,Low,Unsafe Act,0,1,Closed,vehicle,vehicle_0
+423,2026-09-19 15:57,permit copy not available at the worksite.,Jaisalmer,Well Pad 12,workover,Supervisor,Low,Unsafe Act,0,1,Closed,ptw_lapse,ptw_lapse_2
+78,2026-08-01 19:38,"At OCS Main Yard: Welding was carried out near the flange without hot work permit, immediate supervisor informed.",Naharkatiya,OCS Main Yard,maintenance,Operator,Medium,Unsafe Act,1,1,Open,hotwork_nopermit,hotwork_nopermit_0
+581,2026-03-15 19:32,At OCS Main Yard: How to reset my password for the HR portal?,Jaisalmer,OCS Main Yard,operations round,Contractor,,Non-Safety,0,0,Closed,ns_misc,ns_misc_1
+628,2026-05-29 02:25,at store yard: request new chairs for the admin office.,Digboi,Store Yard,maintenance,Fitter,,Non-Safety,0,0,Closed,ns_misc2,ns_misc2_1
+131,2026-07-31 10:18,"Damaged cable insulation on welding machine, no earthing.",Digboi,Rig-14,workover,Contractor,Medium,Unsafe Condition,1,1,Closed,electrical_exposed,electrical_exposed_1
+291,2026-05-31 01:05,"Cables across the floor in the control room created a trip hazard, please review.",Jaisalmer,Well Pad 12,workover,Safety Officer,Medium,Unsafe Condition,0,1,Closed,housekeeping,housekeeping_2
+61,2026-08-26 21:56,"At CPF Area B: Crane load swung close to a helper standing under it, near miss.",Duliajan,CPF Area B,construction,Supervisor,Medium,Near Miss,1,1,Open,suspended_load,suspended_load_2
+294,2026-07-19 11:52,cables across the floor in the control room created a trip hazard.,Naharkatiya,Well Pad 12,maintenance,Contractor,Medium,Unsafe Condition,0,1,Closed,housekeeping,housekeeping_2
+322,2026-06-10 11:18,belt guard removed from the compressor fan and not refitted.,Naharkatiya,Rig-14,maintenance,Contractor,Low,Unsafe Condition,0,1,Closed,guard_missing,guard_missing_1
+475,2026-08-25 04:14,At CPF Area B: Poor lighting at the walkway near the generator room.,Jaisalmer,CPF Area B,maintenance,Fitter,Low,Unsafe Condition,0,1,Open,lighting,lighting_0
+484,2026-09-29 14:53,Poor lighting at the walkway near the generator room.,Naharkatiya,Well Pad 12,inspection,Fitter,Low,Unsafe Condition,0,1,Closed,lighting,lighting_0
+275,2026-04-27 23:43,Loose hoses lying across the access path at the drill site.,Jaisalmer,Store Yard,workover,Fitter,Medium,Unsafe Condition,0,1,Open,housekeeping,housekeeping_1
+385,2026-06-19 09:55,At Rig-14: Work continued under an expired permit at the tank fram.,Jaisalmer,Rig-14,construction,Fitter,Medium,Unsafe Act,0,1,Open,ptw_lapse,ptw_lapse_0
+515,2026-09-15 06:18,Several lamps out along the piepline access road.,Naharkatiya,Compressor Station,maintenance,Fitter,Low,Unsafe Condition,0,1,Closed,lighting,lighting_2
+49,2026-03-21 01:06,"At OCS Main Yard: Man was at height on the pipe rack, harness not hooked to any anchor point.",Naharkatiya,OCS Main Yard,construction,Contractor,High,Unsafe Act,1,1,Open,height_noharness,height_noharness_2
+383,2026-05-22 03:23,Chemical containers unlabeled in the store.,Moran,Rig-14,construction,Fitter,Low,Unsafe Condition,0,1,Open,chemical_store,chemical_store_2
+234,2026-04-14 11:00,"At Workshop Bay 3: Contractor not weairng gloves while handling pipes, please review.",Moran,Workshop Bay 3,workover,Engineer,Medium,Unsafe Act,0,1,Open,ppe_missing,ppe_missing_1
+311,2026-05-03 17:45,Belt guard removed from the compressor fan and not refitted.,Digboi,GGS-2,shutdown job,Supervisor,Low,Unsafe Condition,0,1,Open,guard_missing,guard_missing_1
+541,2026-06-11 09:43,At OCS Main Yard: I want to apply for casual leave next week.,Naharkatiya,OCS Main Yard,construction,Supervisor,,Non-Safety,0,0,Closed,ns_admin,ns_admin_1
+271,2026-04-30 20:21,"at store yard: loose hoses lying across the access path at the drill site, immediate supervisor informed.",Jaisalmer,Store Yard,inspection,Contractor,Low,Unsafe Condition,0,1,Open,housekeeping,housekeeping_1
+474,2026-04-07 21:29,"Helper lost footing on muddy ramp, caught himself.",Baghjan,Store Yard,drilling,Safety Officer,Low,Near Miss,0,1,Closed,slip_nm,slip_nm_2
+404,2026-08-24 09:04,"Job started without permit, supervisor not aware.",Jaisalmer,CPF Area B,workover,Engineer,Low,Unsafe Act,0,1,Open,ptw_lapse,ptw_lapse_1
+410,2026-08-31 04:23,"At GGS-2: Job started without permit, supervisor not aware.",Baghjan,GGS-2,shutdown job,Fitter,Low,Unsafe Act,0,1,Open,ptw_lapse,ptw_lapse_1
+190,2026-07-05 04:05,Forklift reversing without spotter near the store.,Jaisalmer,GGS-2,operations round,Operator,Low,Unsafe Act,0,1,Closed,vehicle,vehicle_2
+439,2026-07-10 18:37,"Operator slipped on wet stairs but held the handrail, no injury.",Jaisalmer,Compressor Station,workover,Supervisor,Low,Near Miss,0,1,Open,slip_nm,slip_nm_0
+123,2026-06-05 03:37,"Pressure relief valve found isolated on the vessel, nobody was aware.",Baghjan,Rig-14,workover,Fitter,High,Unsafe Act,1,1,Open,interlock_bypass,interlock_bypass_2
+433,2026-09-07 16:52,"Operator slipped on wet stairs but held the handrail, no injury.",Baghjan,Workshop Bay 3,inspection,Fitter,Low,Near Miss,0,1,Open,slip_nm,slip_nm_0
+166,2026-04-20 20:06,"at compressor station: driver was not wearing seatbelt while moving the vehicle inside the site, reported during routine round.",Duliajan,Compressor Station,maintenance,Safety Officer,Low,Unsafe Act,0,1,Closed,vehicle,vehicle_0
+639,2026-06-25 22:57,"Request new chairs for the admin office, reported during routine round.",Naharkatiya,Store Yard,shutdown job,Contractor,,Non-Safety,0,0,Closed,ns_misc2,ns_misc2_1
+650,2026-03-26 23:55,At Well Pad 12: Delivery of the stationery order was delayed again.,Baghjan,Well Pad 12,inspection,Contractor,,Non-Safety,0,0,Closed,ns_misc2,ns_misc2_2
+537,2026-05-16 09:26,i want to apply for casual leave next week.,Moran,Compressor Station,construction,Supervisor,,Non-Safety,0,0,Open,ns_admin,ns_admin_1
+462,2026-03-24 02:21,"At Workshop Bay 3: Helper lost footing on muddy ramp, caught himself.",Digboi,Workshop Bay 3,maintenance,Fitter,Medium,Near Miss,0,1,Open,slip_nm,slip_nm_2
+65,2026-05-26 17:31,gas detector was unavailable near the process area during maintenance.,Jaisalmer,Rig-14,maintenance,Supervisor,Medium,Unsafe Condition,1,1,Open,gas_detector_off,gas_detector_off_0
+649,2026-06-13 10:40,Delivery of the stationery order was delayed again.,Baghjan,GGS-2,drilling,Contractor,,Non-Safety,0,0,Closed,ns_misc2,ns_misc2_2
+207,2026-07-02 12:41,At Store Yard: Worker in the yard was without helmet and safety shoes.,Digboi,Store Yard,workover,Fitter,Low,Unsafe Act,0,1,Closed,ppe_missing,ppe_missing_0
+229,2026-06-18 04:39,At Workshop Bay 3: Contractor not wearing gloves while handling pipes.,Baghjan,Workshop Bay 3,construction,Fitter,Low,Unsafe Act,0,1,Closed,ppe_missing,ppe_missing_1
+478,2026-07-12 07:05,Poor lighting at the walkway near the generator room.,Baghjan,CPF Area B,operations round,Supervisor,Medium,Unsafe Condition,0,1,Closed,lighting,lighting_0
+230,2026-05-19 23:46,Contractor not waering gloves while handling pipes.,Jaisalmer,GGS-2,shutdown job,Safety Officer,Low,Unsafe Act,0,1,Closed,ppe_missing,ppe_missing_1
+69,2026-03-20 03:06,"At OCS Main Yard: H2S monitor on the wellhead was not working, alarm bypassed.",Moran,OCS Main Yard,operations round,Engineer,High,Unsafe Condition,1,1,Open,gas_detector_off,gas_detector_off_1
+503,2026-06-02 05:11,Emergency exit sign not illuminated in the workshop.,Duliajan,Store Yard,workover,Engineer,Low,Unsafe Condition,0,1,Closed,lighting,lighting_1
+164,2026-09-08 13:35,"At GGS-2: Driver was not wearing seatbelt while moving the vehicle inside the site, please review.",Digboi,GGS-2,maintenance,Contractor,Low,Unsafe Act,0,1,Closed,vehicle,vehicle_0
+499,2026-04-09 05:07,At Well Pad 12: Emergency exit sign not illuminated in the workshop.,Baghjan,Well Pad 12,workover,Fitter,Low,Unsafe Condition,0,1,Closed,lighting,lighting_1
+338,2026-09-21 17:47,fan guard broken on the cooling motor.,Digboi,Well Pad 12,operations round,Contractor,Low,Unsafe Condition,0,1,Closed,guard_missing,guard_missing_2
+278,2026-06-10 21:00,At GGS-2: Loose hoses lying across the access path at the drill site.,Naharkatiya,GGS-2,workover,Contractor,Medium,Unsafe Condition,0,1,Closed,housekeeping,housekeeping_1
+80,2026-03-03 11:05,"Grinding sparks near the hydrocarbon area, no fire watch posted.",Moran,CPF Area B,drilling,Operator,Low,Unsafe Act,1,1,Open,hotwork_nopermit,hotwork_nopermit_1
+569,2026-05-19 05:24,"At CPF Area B: Please share the training timetable for the new btach, please review.",Moran,CPF Area B,drilling,Contractor,,Non-Safety,0,0,Closed,ns_misc,ns_misc_0
+210,2026-05-16 08:54,Worker in the yard was without helmet and safety shoes.,Baghjan,GGS-2,construction,Supervisor,Low,Unsafe Act,0,1,Open,ppe_missing,ppe_missing_0
+407,2026-04-23 17:43,"Job started without permit, supervisor not aware.",Naharkatiya,Rig-14,construction,Safety Officer,Low,Unsafe Act,0,1,Open,ptw_lapse,ptw_lapse_1
+539,2026-03-11 07:39,I want to apply for casual leave next week.,Jaisalmer,Compressor Station,inspection,Supervisor,,Non-Safety,0,0,Open,ns_admin,ns_admin_1
+352,2026-04-21 20:54,Chemiacl drums stored without secondary containment near the drain.,Baghjan,CPF Area B,construction,Engineer,Low,Unsafe Condition,0,1,Closed,chemical_store,chemical_store_0
+260,2026-05-17 09:05,"Oil spill on walkway near the pump house, slip hazard.",Jaisalmer,OCS Main Yard,shutdown job,Supervisor,Medium,Unsafe Condition,0,1,Open,housekeeping,housekeeping_0
+545,2026-05-02 14:58,I want to apply for casual leave next week.,Digboi,Workshop Bay 3,shutdown job,Operator,,Non-Safety,0,0,Open,ns_admin,ns_admin_1
+353,2026-04-21 10:36,Chemical drums stored without secondary containment near the drain.,Digboi,CPF Area B,maintenance,Fitter,Low,Unsafe Condition,0,1,Closed,chemical_store,chemical_store_0
+505,2026-04-14 17:47,at ocs main yard: several lamps out along the pipeline access road.,Baghjan,OCS Main Yard,maintenance,Contractor,Medium,Unsafe Condition,0,1,Closed,lighting,lighting_2
+580,2026-07-09 10:23,How to reset my password for the HR portal?,Digboi,OCS Main Yard,workover,Operator,,Non-Safety,0,0,Closed,ns_misc,ns_misc_1
+420,2026-04-24 18:49,Perimt copy not available at the worksite.,Naharkatiya,Compressor Station,workover,Fitter,Low,Unsafe Act,0,1,Open,ptw_lapse,ptw_lapse_2
+151,2026-08-21 09:25,A spanner dropped from the monkey board and landed beside a floorman.,Jaisalmer,Well Pad 12,drilling,Engineer,Low,Near Miss,1,1,Closed,dropped_obj_nm,dropped_obj_nm_0
+156,2026-07-01 19:56,"Pipe clamp fell from the pipe rack close to a passing worker, reported during routine round.",Jaisalmer,GGS-2,workover,Fitter,Medium,Near Miss,1,1,Open,dropped_obj_nm,dropped_obj_nm_2
+66,2026-08-09 07:40,At Rig-14: Gas detector was unavailable near the process area during maintenance.,Jaisalmer,Rig-14,operations round,Operator,Low,Unsafe Condition,1,1,Open,gas_detector_off,gas_detector_off_0
+95,2026-05-01 15:49,"Hydrocarbon leak from valve gland near compressor, no ignition, isolated quickly.",Jaisalmer,CPF Area B,inspection,Supervisor,Medium,Near Miss,1,1,Closed,gas_leak,gas_leak_1
+401,2026-06-30 22:55,"Job started without permit, supervisor not aware, immediate supervisor informed.",Digboi,CPF Area B,drilling,Operator,Low,Unsafe Act,0,1,Closed,ptw_lapse,ptw_lapse_1
+31,2026-06-14 01:27,"At Rig-14: Fitter started repairing the pump motor without lockout, breaker was sitll energized.",Moran,Rig-14,drilling,Engineer,Medium,Unsafe Act,1,1,Open,loto_missing,loto_missing_0
+309,2026-08-06 19:29,"coupling guard missing on the pump, rotating shaft exposed.",Jaisalmer,OCS Main Yard,drilling,Fitter,High,Unsafe Condition,0,1,Open,guard_missing,guard_missing_0
+14,2026-09-28 09:00,"Contractor went inside the vessel for cleaning, gas test not done, permit not displayed.",Duliajan,CPF Area B,shutdown job,Supervisor,Medium,Unsafe Act,1,1,Open,confined_entry,confined_entry_1
+74,2026-07-19 12:45,"Portable gas detector battery dead at the separator, crew continued work, immediate supervisor informed.",Naharkatiya,Compressor Station,maintenance,Fitter,High,Unsafe Condition,1,1,Open,gas_detector_off,gas_detector_off_2
+429,2026-04-20 01:55,permit copy not available at the worksite.,Digboi,GGS-2,operations round,Contractor,Low,Unsafe Act,0,1,Closed,ptw_lapse,ptw_lapse_2
+163,2026-05-13 11:01,At Workshop Bay 3: Driver was not wearing seatbelt while moving the vehicle inside the site.,Moran,Workshop Bay 3,workover,Engineer,Low,Unsafe Act,0,1,Open,vehicle,vehicle_0
+633,2026-03-23 10:57,At Store Yard: Request new chairs for the admin office.,Moran,Store Yard,drilling,Operator,,Non-Safety,0,0,Closed,ns_misc2,ns_misc2_1
+10,2026-08-25 08:13,"Contractor went inside the vessel for cleaning, gas test not done, permit not displayed.",Digboi,GGS-2,maintenance,Engineer,High,Unsafe Act,1,1,Closed,confined_entry,confined_entry_1
+517,2026-05-17 17:54,several lamps out along the pipeline access road.,Naharkatiya,OCS Main Yard,workover,Operator,Medium,Unsafe Condition,0,1,Open,lighting,lighting_2
+426,2026-05-16 18:46,Permit copy not available at the worksite.,Moran,GGS-2,inspection,Safety Officer,Low,Unsafe Act,0,1,Closed,ptw_lapse,ptw_lapse_2
+558,2026-04-17 12:24,At Well Pad 12: Please approve my travel allowance bill.,Baghjan,Well Pad 12,maintenance,Engineer,,Non-Safety,0,0,Open,ns_admin,ns_admin_2
+22,2026-04-11 05:00,"at compressor station: tank ke andar bina gas cehck kiye operator ghus gaya, attendant bhi nahi tha.",Naharkatiya,Compressor Station,maintenance,Engineer,Low,Unsafe Act,1,1,Closed,confined_entry,confined_entry_2
+506,2026-09-24 01:37,Several lamps out along the pipeline access road.,Baghjan,Compressor Station,construction,Safety Officer,Low,Unsafe Condition,0,1,Open,lighting,lighting_2
+518,2026-09-17 09:43,Several lapms out along the pipeline access road.,Jaisalmer,Store Yard,inspection,Contractor,Low,Unsafe Condition,0,1,Open,lighting,lighting_2
+298,2026-04-05 11:14,"coupling guard missing on the pump, rotating shaft expsoed.",Naharkatiya,Compressor Station,workover,Operator,Low,Unsafe Condition,0,1,Closed,guard_missing,guard_missing_0
+601,2026-05-18 07:55,"Guest house wifi is very slow, immediate supervisor informed.",Baghjan,OCS Main Yard,shutdown job,Fitter,,Non-Safety,0,0,Closed,ns_misc,ns_misc_2
+215,2026-06-03 08:15,Worker in the yard was without helmet and safety shoes.,Moran,OCS Main Yard,operations round,Engineer,Medium,Unsafe Act,0,1,Open,ppe_missing,ppe_missing_0
+373,2026-06-11 02:55,Chemical containers unlabeled in the store.,Jaisalmer,Well Pad 12,operations round,Operator,Low,Unsafe Condition,0,1,Open,chemical_store,chemical_store_2
+493,2026-09-28 02:36,emregency exit sign not illuminated in the workshop.,Moran,Compressor Station,workover,Supervisor,Medium,Unsafe Condition,0,1,Open,lighting,lighting_1
+70,2026-06-05 07:38,"h2s mnoitor on the wellhead was not working, alarm bypassed.",Baghjan,Well Pad 12,operations round,Operator,High,Unsafe Condition,1,1,Closed,gas_detector_off,gas_detector_off_1
+244,2026-08-03 21:00,Operator forgot safety glasses during samlping.,Jaisalmer,Rig-14,workover,Safety Officer,High,Unsafe Act,0,1,Closed,ppe_missing,ppe_missing_2
+488,2026-09-17 01:46,"Poor lighting at the walkway near the generator room, reported during routine round.",Naharkatiya,GGS-2,drilling,Supervisor,Low,Unsafe Condition,0,1,Open,lighting,lighting_0
+264,2026-06-28 19:23,"Oil spill on walkway near the pump house, slip hazard, reported during routine round.",Digboi,CPF Area B,construction,Operator,Low,Unsafe Condition,0,1,Open,housekeeping,housekeeping_0
+189,2026-07-20 01:46,At GGS-2: Pickup was overspeeding near the rig gate.,Moran,GGS-2,shutdown job,Contractor,Low,Unsafe Act,0,1,Closed,vehicle,vehicle_1
+124,2026-05-15 21:33,"Exposed wiring at the distribution board in the pump room, door open.",Digboi,OCS Main Yard,drilling,Operator,Medium,Unsafe Condition,1,1,Open,electrical_exposed,electrical_exposed_0
+16,2026-09-27 04:00,"Contractor went inside the vessel for cleaning, gas test not done, permit not displayed.",Duliajan,OCS Main Yard,operations round,Contractor,Low,Unsafe Act,1,1,Open,confined_entry,confined_entry_1
+90,2026-08-11 03:21,"At CPF Area B: Flange leak noticed on gas line, strong smell, area cleared in time.",Jaisalmer,CPF Area B,drilling,Operator,Medium,Near Miss,1,1,Open,gas_leak,gas_leak_0
+284,2026-03-26 01:42,"At Store Yard: Cables across the floor in the control room cerated a trip hazard, please review.",Duliajan,Store Yard,construction,Supervisor,Medium,Unsafe Condition,0,1,Open,housekeeping,housekeeping_2
+57,2026-08-31 19:10,"sling slipped while lifting, the load dropped near the crew, nobody hurt.",Duliajan,Well Pad 12,construction,Engineer,High,Near Miss,1,1,Closed,suspended_load,suspended_load_1
+615,2026-03-31 13:23,township shuttle bus timing needs to change.,Naharkatiya,CPF Area B,construction,Engineer,,Non-Safety,0,0,Open,ns_misc2,ns_misc2_0
+448,2026-09-12 02:44,"Technician tripped over a pipe support, was not hurt.",Digboi,GGS-2,drilling,Safety Officer,Medium,Near Miss,0,1,Open,slip_nm,slip_nm_1
+296,2026-03-03 07:10,"At Rig-14: Coupling guard missing on the pump, rotating shaft exposed.",Jaisalmer,Rig-14,workover,Engineer,Medium,Unsafe Condition,0,1,Closed,guard_missing,guard_missing_0
+92,2026-08-15 05:28,"Hydrocarbon leak from valve gland near compressor, no ignition, isolated quickly, reported during routine round.",Digboi,Store Yard,maintenance,Fitter,Medium,Near Miss,1,1,Closed,gas_leak,gas_leak_1
+152,2026-04-02 04:54,"at ocs main yrad: tool fell from scaffold level, hit the ground near the crew, no injury.",Jaisalmer,OCS Main Yard,maintenance,Operator,High,Near Miss,1,1,Open,dropped_obj_nm,dropped_obj_nm_1
+262,2026-07-09 23:05,"Oil spill on walkway near the pump house, slip hazard.",Naharkatiya,GGS-2,shutdown job,Supervisor,Medium,Unsafe Condition,0,1,Closed,housekeeping,housekeeping_0
+567,2026-04-06 13:17,"Please share the training timetable for the new batch, please review.",Baghjan,OCS Main Yard,shutdown job,Safety Officer,,Non-Safety,0,0,Closed,ns_misc,ns_misc_0
+337,2026-05-05 00:25,Fan guard broken on the cooling motor.,Digboi,Store Yard,inspection,Contractor,Low,Unsafe Condition,0,1,Open,guard_missing,guard_missing_2
+492,2026-04-28 00:11,emergency exit sign not illuminated in the workshop.,Digboi,Rig-14,maintenance,Safety Officer,Low,Unsafe Condition,0,1,Closed,lighting,lighting_1
+323,2026-09-24 22:55,At Rig-14: Belt guard removed from the compressor fan and not refitted.,Digboi,Rig-14,drilling,Supervisor,Low,Unsafe Condition,0,1,Open,guard_missing,guard_missing_1
+559,2026-07-03 23:07,Please approve my travel allowance bill.,Moran,Workshop Bay 3,construction,Contractor,,Non-Safety,0,0,Open,ns_admin,ns_admin_2
+85,2026-03-21 01:50,"Hot work started before gas check, fire watch misisng.",Digboi,GGS-2,drilling,Supervisor,Medium,Unsafe Act,1,1,Closed,hotwork_nopermit,hotwork_nopermit_2
+321,2026-03-30 14:32,belt guard removed from the compressor fan and not refitted.,Jaisalmer,Store Yard,workover,Operator,Low,Unsafe Condition,0,1,Closed,guard_missing,guard_missing_1
+127,2026-05-10 11:44,"Exposed wiring at the distribution board in the pump room, door open, immediate supervisor informed.",Digboi,Workshop Bay 3,drilling,Engineer,High,Unsafe Condition,1,1,Open,electrical_exposed,electrical_exposed_0
+138,2026-04-25 10:21,"At OCS Main Yard: Small fire at the generator exhaust, put out with extinguisher before it spread.",Naharkatiya,OCS Main Yard,inspection,Safety Officer,High,Near Miss,1,1,Open,fire_nm,fire_nm_0
+477,2026-08-20 18:02,"At GGS-2: Poor lighting at the walkway near the generator room, immediate supervisor informed.",Naharkatiya,GGS-2,construction,Engineer,Low,Unsafe Condition,0,1,Open,lighting,lighting_0
+174,2026-03-23 00:43,"Driver was not wearing seatbelt while moving the vehicle inside the site, immediate supervisor informed.",Naharkatiya,Workshop Bay 3,inspection,Supervisor,Low,Unsafe Act,0,1,Open,vehicle,vehicle_0
+447,2026-05-03 17:12,"Technician tripped over a pipe support, was not hurt.",Jaisalmer,Well Pad 12,workover,Operator,Low,Near Miss,0,1,Open,slip_nm,slip_nm_1
+192,2026-06-12 05:10,"Forklift reversing without spotter near the store, reported during routine round.",Duliajan,GGS-2,workover,Operator,Medium,Unsafe Act,0,1,Open,vehicle,vehicle_2
+359,2026-08-03 09:34,"Corrosion inhibitor leaking from a barrel, no spill kit available.",Jaisalmer,OCS Main Yard,maintenance,Contractor,Low,Unsafe Condition,0,1,Closed,chemical_store,chemical_store_1
+392,2026-03-12 16:27,at well pad 12: work continued under an expired permit at the tank farm.,Naharkatiya,Well Pad 12,operations round,Engineer,Low,Unsafe Act,0,1,Closed,ptw_lapse,ptw_lapse_0
+87,2026-09-04 11:25,"Hot work started before gas check, fire watch missing.",Digboi,GGS-2,shutdown job,Supervisor,Medium,Unsafe Act,1,1,Closed,hotwork_nopermit,hotwork_nopermit_2
+45,2026-04-25 01:07,At OCS Main Yard: Contractor climbed the derrick ladder with no fall protection attached.,Duliajan,OCS Main Yard,workover,Operator,High,Unsafe Act,1,1,Closed,height_noharness,height_noharness_1
+240,2026-06-25 08:12,"operator forgot safety glasses during sampling, please review.",Moran,Rig-14,inspection,Operator,Low,Unsafe Act,0,1,Open,ppe_missing,ppe_missing_2
+89,2026-03-16 23:04,"Flange leak noticed on gas line, strong smell, area cleared in time.",Baghjan,Workshop Bay 3,inspection,Safety Officer,High,Near Miss,1,1,Closed,gas_leak,gas_leak_0
+280,2026-06-05 23:40,Cables across the floor in the control room created a trip hazard.,Duliajan,Compressor Station,shutdown job,Supervisor,Low,Unsafe Condition,0,1,Closed,housekeeping,housekeeping_2
+281,2026-05-10 19:07,At Compressor Station: Cables across the floor in the control room created a trip hazard.,Duliajan,Compressor Station,drilling,Operator,Low,Unsafe Condition,0,1,Open,housekeeping,housekeeping_2
+289,2026-07-25 09:35,Cables across the floor in the control room cerated a trip hazard.,Digboi,CPF Area B,maintenance,Engineer,High,Unsafe Condition,0,1,Closed,housekeeping,housekeeping_2
+332,2026-05-30 03:12,Fan guard broken on the cooling motor.,Duliajan,CPF Area B,operations round,Fitter,Low,Unsafe Condition,0,1,Open,guard_missing,guard_missing_2
+204,2026-03-19 10:11,Forklift reversing without spotter near the store.,Duliajan,GGS-2,construction,Engineer,Low,Unsafe Act,0,1,Closed,vehicle,vehicle_2
+104,2026-06-05 12:09,"at compressor sttaion: excavation edge unbarricaded near pipeline route, soil loose, reported during routine round.",Jaisalmer,Compressor Station,maintenance,Safety Officer,Low,Unsafe Condition,1,1,Open,excavation,excavation_1
+305,2026-04-26 12:23,"At GGS-2: Coupling guard missing on the pump, rotating shaft exposed.",Moran,GGS-2,construction,Contractor,Low,Unsafe Condition,0,1,Open,guard_missing,guard_missing_0
+365,2026-04-02 03:12,"Corrosion inhibitor leaking from a barrel, no spill kit available, reported during routine round.",Moran,Compressor Station,construction,Safety Officer,Medium,Unsafe Condition,0,1,Closed,chemical_store,chemical_store_1
+408,2026-09-11 00:33,"Job started without permit, supervisor not aware.",Moran,Workshop Bay 3,drilling,Engineer,Medium,Unsafe Act,0,1,Open,ptw_lapse,ptw_lapse_1
+121,2026-07-14 08:07,"Pressure relief valve found isolated on the vessel, nobody was aware.",Digboi,GGS-2,workover,Supervisor,Medium,Unsafe Act,1,1,Closed,interlock_bypass,interlock_bypass_2
+263,2026-05-19 18:06,"Oil spill on walkway near the pump house, slip hazard.",Digboi,Rig-14,workover,Supervisor,Low,Unsafe Condition,0,1,Open,housekeeping,housekeeping_0
+634,2026-06-15 11:15,At OCS Main Yard: Request new chairs for the admin office.,Duliajan,OCS Main Yard,shutdown job,Fitter,,Non-Safety,0,0,Open,ns_misc2,ns_misc2_1
+48,2026-06-07 08:06,"At CPF Area B: Man was at height on the pipe rack, harness not hooked to any anchor point.",Baghjan,CPF Area B,inspection,Contractor,Medium,Unsafe Act,1,1,Open,height_noharness,height_noharness_2
+466,2026-08-21 06:28,"Helper lost footing on muddy ramp, caught himself, reported during routine round.",Moran,CPF Area B,drilling,Contractor,Low,Near Miss,0,1,Open,slip_nm,slip_nm_2
+350,2026-04-13 05:09,at well pad 12: chemical drums stored without secondary containment near the drain.,Jaisalmer,Well Pad 12,maintenance,Engineer,Medium,Unsafe Condition,0,1,Closed,chemical_store,chemical_store_0
+501,2026-06-07 06:03,Emergency exit sign not illuminated in the workshop.,Jaisalmer,Compressor Station,construction,Engineer,Low,Unsafe Condition,0,1,Open,lighting,lighting_1
+248,2026-08-06 11:04,operator forgot safety glasses during sampling.,Baghjan,OCS Main Yard,shutdown job,Operator,Medium,Unsafe Act,0,1,Open,ppe_missing,ppe_missing_2
+198,2026-09-17 18:44,At GGS-2: Fokrlift reversing without spotter near the store.,Baghjan,GGS-2,operations round,Contractor,Low,Unsafe Act,0,1,Open,vehicle,vehicle_2
+441,2026-08-04 01:27,"Operator slipped on wet stairs but held the handrail, no injury.",Digboi,Compressor Station,construction,Engineer,Low,Near Miss,0,1,Closed,slip_nm,slip_nm_0
+81,2026-05-19 00:12,"Grinding sparks near the hydrocarbon area, no fire watch posted.",Naharkatiya,GGS-2,maintenance,Supervisor,High,Unsafe Act,1,1,Open,hotwork_nopermit,hotwork_nopermit_1
+265,2026-08-29 16:53,"Loose hoses lying across the access path at the drill site, immediate supervisor informed.",Naharkatiya,Store Yard,workover,Supervisor,Low,Unsafe Condition,0,1,Closed,housekeeping,housekeeping_1
+169,2026-05-06 20:18,At Workshop Bay 3: Driver was not wearing seatbelt while moving the vehicle inside the site.,Baghjan,Workshop Bay 3,shutdown job,Operator,Low,Unsafe Act,0,1,Closed,vehicle,vehicle_0
+24,2026-09-28 05:00,"At Well Pad 12: Tank ke andar bina gas chcek kiye operator ghus gaya, attendant bhi nahi tha, reported during routine round.",Duliajan,Well Pad 12,inspection,Supervisor,Medium,Unsafe Act,1,1,Open,confined_entry,confined_entry_2
+46,2026-09-05 19:09,At Compressor Station: Contractor climbed the derrick ladder with no fall protection attached.,Digboi,Compressor Station,operations round,Supervisor,Medium,Unsafe Act,1,1,Closed,height_noharness,height_noharness_1
+117,2026-03-01 12:06,"At Well Pad 12: Safety alarm was jumpreed out by technician during startup, please review.",Digboi,Well Pad 12,shutdown job,Supervisor,Medium,Unsafe Act,1,1,Closed,interlock_bypass,interlock_bypass_1
+56,2026-04-05 23:04,"At Workshop Bay 3: Sling slipped while lifting, the load dropped near the crew, nobody hurt.",Baghjan,Workshop Bay 3,shutdown job,Operator,Medium,Near Miss,1,1,Open,suspended_load,suspended_load_1
+355,2026-04-06 10:39,"Corrosoin inhibitor leaking from a barrel, no spill kit available.",Digboi,CPF Area B,maintenance,Contractor,Low,Unsafe Condition,0,1,Open,chemical_store,chemical_store_1
+287,2026-03-17 01:56,Cables across the floor in the control room created a trip hazard.,Duliajan,Store Yard,shutdown job,Fitter,Medium,Unsafe Condition,0,1,Closed,housekeeping,housekeeping_2
+299,2026-03-17 05:09,"At Store Yard: Coupling guard missing on the pump, rotating shaft exposed.",Moran,Store Yard,workover,Supervisor,Medium,Unsafe Condition,0,1,Closed,guard_missing,guard_missing_0
+255,2026-08-20 11:12,"at cpf area b: oil spill on walkway near the pump house, slip hazard.",Jaisalmer,CPF Area B,shutdown job,Operator,Low,Unsafe Condition,0,1,Open,housekeeping,housekeeping_0
+335,2026-09-28 19:32,At Store Yard: Fan guard broken on the cooling motor.,Digboi,Store Yard,maintenance,Contractor,Low,Unsafe Condition,0,1,Open,guard_missing,guard_missing_2
+512,2026-04-12 03:54,several lapms out along the pipeline access road.,Naharkatiya,Compressor Station,maintenance,Fitter,Medium,Unsafe Condition,0,1,Open,lighting,lighting_2
+304,2026-08-24 10:10,"Coupling guard missing on the pump, rotating shaft exposed, please review.",Duliajan,Workshop Bay 3,operations round,Engineer,Low,Unsafe Condition,0,1,Open,guard_missing,guard_missing_0
+112,2026-03-17 13:29,operator bypassed the high pressure trip interlock to keep the separator running.,Duliajan,Rig-14,shutdown job,Safety Officer,High,Unsafe Act,1,1,Open,interlock_bypass,interlock_bypass_0
+217,2026-07-09 10:37,at well pad 12: worker in the yard was without helmet and safety shoes.,Jaisalmer,Well Pad 12,drilling,Engineer,Low,Unsafe Act,0,1,Open,ppe_missing,ppe_missing_0
+94,2026-09-08 00:33,"Hydrocarbon leak from valve gland near compressor, no ignition, isolated quickly.",Digboi,Rig-14,drilling,Operator,Medium,Near Miss,1,1,Closed,gas_leak,gas_leak_1
+267,2026-03-23 01:25,loose hoses lying across the access path at the drill site.,Digboi,Workshop Bay 3,workover,Fitter,High,Unsafe Condition,0,1,Open,housekeeping,housekeeping_1
+653,2026-08-22 02:34,At Workshop Bay 3: Delivery of the stationery order was delayed again.,Digboi,Workshop Bay 3,inspection,Operator,,Non-Safety,0,0,Open,ns_misc2,ns_misc2_2
+191,2026-03-27 21:35,At Rig-14: Forklift reversing without spotter near the store.,Duliajan,Rig-14,inspection,Engineer,Low,Unsafe Act,0,1,Open,vehicle,vehicle_2
+444,2026-03-10 04:17,"at well pad 12: operator slipped on wet stairs but held the handrail, no injury.",Moran,Well Pad 12,shutdown job,Fitter,Medium,Near Miss,0,1,Closed,slip_nm,slip_nm_0
+3,2026-09-24 16:00,worker entered the tank without gas testing and no standby person at the manhole.,Duliajan,Rig-14,workover,Operator,Medium,Unsafe Act,1,1,Open,confined_entry,confined_entry_0
+272,2026-05-29 07:47,At Store Yard: Loose hoses lying across the access path at the drill site.,Baghjan,Store Yard,workover,Fitter,Medium,Unsafe Condition,0,1,Closed,housekeeping,housekeeping_1
+557,2026-03-27 11:05,Please approve my travel allowance bill.,Duliajan,OCS Main Yard,operations round,Supervisor,,Non-Safety,0,0,Closed,ns_admin,ns_admin_2
+345,2026-09-19 03:32,at cpf area b: chemical drums stored without secondary containment near the drain.,Digboi,CPF Area B,workover,Fitter,Low,Unsafe Condition,0,1,Open,chemical_store,chemical_store_0
+182,2026-06-05 10:41,Pickup was overspeeding near the rig gate.,Digboi,CPF Area B,construction,Operator,Low,Unsafe Act,0,1,Closed,vehicle,vehicle_1
+141,2026-05-03 22:20,"spark from cutting set fire to oily rags, extinguished in time.",Digboi,Compressor Station,construction,Engineer,Medium,Near Miss,1,1,Closed,fire_nm,fire_nm_1
+575,2026-09-20 17:46,At OCS Main Yard: Please share the training timetable for the new batch.,Naharkatiya,OCS Main Yard,workover,Contractor,,Non-Safety,0,0,Closed,ns_misc,ns_misc_0
+540,2026-08-05 16:40,"At Compressor Station: I want to apply for casual leave next week, please review.",Naharkatiya,Compressor Station,drilling,Supervisor,,Non-Safety,0,0,Open,ns_admin,ns_admin_1
+526,2026-03-02 10:10,At Well Pad 12: The canteen food was good today.,Digboi,Well Pad 12,inspection,Contractor,,Non-Safety,0,0,Open,ns_admin,ns_admin_0
+472,2026-04-02 02:01,"Helper lost footing on muddy ramp, caught himself.",Digboi,Well Pad 12,maintenance,Safety Officer,Low,Near Miss,0,1,Open,slip_nm,slip_nm_2
+369,2026-03-03 20:22,"Corrosion inhibitor leaking from a barrel, no sipll kit available.",Baghjan,Workshop Bay 3,inspection,Engineer,Low,Unsafe Condition,0,1,Closed,chemical_store,chemical_store_1
+132,2026-03-06 04:02,Junction box cover missing with live terminals visible.,Moran,GGS-2,maintenance,Supervisor,Low,Unsafe Condition,1,1,Closed,electrical_exposed,electrical_exposed_2
+139,2026-09-30 00:23,"small fire at the generator exhaust, put out with extinguisher before it spread.",Jaisalmer,OCS Main Yard,operations round,Engineer,High,Near Miss,1,1,Open,fire_nm,fire_nm_0
+279,2026-09-02 09:25,Loose hoses lying across the access path at the drill site.,Digboi,Rig-14,workover,Operator,Medium,Unsafe Condition,0,1,Closed,housekeeping,housekeeping_1
+391,2026-04-23 17:36,Work continued under an expired permit at the tank farm.,Naharkatiya,Rig-14,shutdown job,Supervisor,Low,Unsafe Act,0,1,Open,ptw_lapse,ptw_lapse_0
+212,2026-07-04 08:55,At GGS-2: Worker in the yard was without helmet and safety sohes.,Baghjan,GGS-2,construction,Operator,Low,Unsafe Act,0,1,Closed,ppe_missing,ppe_missing_0
+342,2026-03-14 15:13,chemical drums stored without secondary containment near the drain.,Baghjan,Compressor Station,drilling,Safety Officer,Medium,Unsafe Condition,0,1,Open,chemical_store,chemical_store_0
+538,2026-08-01 19:51,at cpf area b: i want to apply for casual leave next week.,Baghjan,CPF Area B,inspection,Safety Officer,,Non-Safety,0,0,Closed,ns_admin,ns_admin_1
+181,2026-09-18 08:23,At GGS-2: Pickup was overspeeding near the rig gate.,Baghjan,GGS-2,maintenance,Engineer,Medium,Unsafe Act,0,1,Closed,vehicle,vehicle_1
+624,2026-08-20 03:10,Township shuttle bus timing needs to change.,Naharkatiya,Rig-14,inspection,Safety Officer,,Non-Safety,0,0,Open,ns_misc2,ns_misc2_0
+436,2026-07-16 01:05,"At Store Yard: Operator slipped on wet stairs but held the handaril, no injury.",Naharkatiya,Store Yard,shutdown job,Safety Officer,Low,Near Miss,0,1,Open,slip_nm,slip_nm_0
+50,2026-03-12 06:24,"Man was at height on the pipe rack, harness not hooked to any anchor point.",Naharkatiya,Well Pad 12,operations round,Operator,High,Unsafe Act,1,1,Open,height_noharness,height_noharness_2
+374,2026-09-15 21:21,Chemical containers unlabeled in the store.,Digboi,Rig-14,maintenance,Operator,Low,Unsafe Condition,0,1,Open,chemical_store,chemical_store_2
+159,2026-08-23 06:08,At Workshop Bay 3: Pipe clamp fell from the pipe rack close to a passing worker.,Jaisalmer,Workshop Bay 3,shutdown job,Operator,Medium,Near Miss,1,1,Closed,dropped_obj_nm,dropped_obj_nm_2
+406,2026-04-28 13:12,"At Workshop Bay 3: Job started without permit, supervisor not aware, reported during routine round.",Jaisalmer,Workshop Bay 3,maintenance,Contractor,High,Unsafe Act,0,1,Open,ptw_lapse,ptw_lapse_1
+487,2026-06-20 08:12,"Poor lighting at the walkway near the generator room, reported during routine round.",Digboi,OCS Main Yard,inspection,Operator,Medium,Unsafe Condition,0,1,Closed,lighting,lighting_0
+414,2026-07-01 03:18,"job started without permit, supervisor not aware, immediate supervisor informed.",Baghjan,Well Pad 12,maintenance,Fitter,Low,Unsafe Act,0,1,Closed,ptw_lapse,ptw_lapse_1
+313,2026-04-30 03:11,belt guard removed from the compressor fan and not refitted.,Baghjan,Well Pad 12,shutdown job,Supervisor,Medium,Unsafe Condition,0,1,Closed,guard_missing,guard_missing_1
+405,2026-07-03 17:58,"at rig-14: job started without permit, supervisor not aware.",Digboi,Rig-14,inspection,Engineer,Medium,Unsafe Act,0,1,Closed,ptw_lapse,ptw_lapse_1
+178,2026-08-20 01:08,Pickup was overspeeding near the rig gate.,Jaisalmer,Rig-14,inspection,Supervisor,Low,Unsafe Act,0,1,Closed,vehicle,vehicle_1
+341,2026-03-07 23:42,Chemical drums stored without secondary containment near the drain.,Moran,Store Yard,shutdown job,Safety Officer,Low,Unsafe Condition,0,1,Open,chemical_store,chemical_store_0
+219,2026-08-20 03:56,worker in the yard was without helmet and safety shoes.,Naharkatiya,Rig-14,inspection,Engineer,Low,Unsafe Act,0,1,Open,ppe_missing,ppe_missing_0
+135,2026-05-29 11:59,"At Store Yard: Junction box cover missing with live terminals visible, reported during routine round.",Moran,Store Yard,shutdown job,Fitter,Medium,Unsafe Condition,1,1,Closed,electrical_exposed,electrical_exposed_2
+455,2026-08-31 02:01,"Technician tripped over a pipe support, was not hurt.",Moran,CPF Area B,workover,Fitter,Low,Near Miss,0,1,Closed,slip_nm,slip_nm_1
+197,2026-09-07 20:14,fokrlift reversing without spotter near the store.,Jaisalmer,Store Yard,construction,Contractor,Low,Unsafe Act,0,1,Closed,vehicle,vehicle_2
+170,2026-03-22 15:47,at compressor station: driver was not wearing seatbelt while moving the vehicle inside the site.,Jaisalmer,Compressor Station,construction,Safety Officer,Low,Unsafe Act,0,1,Closed,vehicle,vehicle_0
+218,2026-07-12 18:46,"At CPF Area B: Worker in the yard was without helmet and safety shoes, please review.",Moran,CPF Area B,drilling,Operator,Low,Unsafe Act,0,1,Open,ppe_missing,ppe_missing_0
+450,2026-03-03 04:51,"technician tripped over a pipe support, was not hurt.",Duliajan,OCS Main Yard,drilling,Safety Officer,Medium,Near Miss,0,1,Open,slip_nm,slip_nm_1
+269,2026-08-05 09:50,loose hoses lying across the access path at the drill site.,Baghjan,Compressor Station,maintenance,Fitter,Low,Unsafe Condition,0,1,Closed,housekeeping,housekeeping_1
+301,2026-09-09 20:38,"Coupling guard missing on the pump, rotaitng shaft exposed.",Moran,Well Pad 12,operations round,Engineer,Medium,Unsafe Condition,0,1,Closed,guard_missing,guard_missing_0
+160,2026-06-15 08:27,Driver was not wearing seatbelt while moving the vehicle inside the site.,Digboi,Rig-14,construction,Operator,High,Unsafe Act,0,1,Closed,vehicle,vehicle_0
+458,2026-07-21 01:57,"At Rig-14: Technician tripped over a pipe support, was not hurt.",Baghjan,Rig-14,shutdown job,Supervisor,Medium,Near Miss,0,1,Closed,slip_nm,slip_nm_1
+283,2026-05-31 02:44,cables across the floor in the control room craeted a trip hazard.,Naharkatiya,GGS-2,operations round,Operator,Low,Unsafe Condition,0,1,Open,housekeeping,housekeeping_2
+600,2026-08-21 23:46,"At Rig-14: Guest house wifi is very slow, immediate supervisor informed.",Baghjan,Rig-14,drilling,Supervisor,,Non-Safety,0,0,Open,ns_misc,ns_misc_2
+261,2026-06-27 01:26,"At OCS Main Yard: Oil spill on walkway near the pump house, slip hazard.",Baghjan,OCS Main Yard,shutdown job,Safety Officer,High,Unsafe Condition,0,1,Closed,housekeeping,housekeeping_0
+274,2026-08-03 16:08,at worksohp bay 3: loose hoses lying across the access path at the drill site.,Baghjan,Workshop Bay 3,construction,Supervisor,Medium,Unsafe Condition,0,1,Closed,housekeeping,housekeeping_1
+528,2026-09-10 00:33,"The canteen food was good today, reported during routine round.",Baghjan,GGS-2,operations round,Supervisor,,Non-Safety,0,0,Closed,ns_admin,ns_admin_0
+153,2026-08-31 10:27,"tool fell from scaffold level, hit the ground near the crew, no injury, reported during routine round.",Duliajan,Rig-14,workover,Fitter,Low,Near Miss,1,1,Open,dropped_obj_nm,dropped_obj_nm_1
+549,2026-05-26 16:09,"At Compressor Station: I want to apply for casual leave next week, reported during routine round.",Naharkatiya,Compressor Station,shutdown job,Operator,,Non-Safety,0,0,Open,ns_admin,ns_admin_1
+314,2026-06-29 05:22,At Rig-14: Belt guard removed from the compressor fan and not refitted.,Baghjan,Rig-14,drilling,Engineer,Medium,Unsafe Condition,0,1,Open,guard_missing,guard_missing_1
+176,2026-09-02 10:12,At Workshop Bay 3: Pickup was overspeeding near the rig gate.,Baghjan,Workshop Bay 3,workover,Supervisor,Medium,Unsafe Act,0,1,Open,vehicle,vehicle_1
+211,2026-04-26 10:47,worker in the yard was withuot helmet and safety shoes.,Moran,OCS Main Yard,construction,Engineer,Low,Unsafe Act,0,1,Open,ppe_missing,ppe_missing_0
+574,2026-05-11 10:31,"Please share the training timetable for the new batch, please review.",Jaisalmer,Store Yard,construction,Supervisor,,Non-Safety,0,0,Closed,ns_misc,ns_misc_0
+330,2026-05-03 00:04,Fan guard broken on the cooling motor.,Baghjan,Store Yard,operations round,Contractor,Medium,Unsafe Condition,0,1,Open,guard_missing,guard_missing_2
+128,2026-09-04 11:29,"Damaged cable insulation on welding machine, no earthing.",Naharkatiya,Well Pad 12,drilling,Fitter,Medium,Unsafe Condition,1,1,Closed,electrical_exposed,electrical_exposed_1
+459,2026-06-19 22:30,"Technician tripped over a pipe supprot, was not hurt.",Baghjan,Rig-14,workover,Contractor,Low,Near Miss,0,1,Open,slip_nm,slip_nm_1
+35,2026-06-29 05:11,"At GGS-2: Maintenance team worekd on a live panel, isolation not verified and no tags applied.",Digboi,GGS-2,drilling,Safety Officer,Low,Unsafe Act,1,1,Open,loto_missing,loto_missing_1
+636,2026-03-08 18:09,Request new chairs for the admin office.,Digboi,Store Yard,maintenance,Fitter,,Non-Safety,0,0,Closed,ns_misc2,ns_misc2_1
+513,2026-08-18 14:07,at well pad 12: several lamps out along the pipeline access road.,Naharkatiya,Well Pad 12,workover,Contractor,Low,Unsafe Condition,0,1,Open,lighting,lighting_2
+180,2026-05-20 00:21,Pickup was overspeeding near the rig gate.,Naharkatiya,Rig-14,maintenance,Operator,Low,Unsafe Act,0,1,Closed,vehicle,vehicle_1
+421,2026-03-29 00:32,At CPF Area B: Permit copy not available at the worksite.,Digboi,CPF Area B,shutdown job,Engineer,Medium,Unsafe Act,0,1,Open,ptw_lapse,ptw_lapse_2
+257,2026-06-29 21:07,"oil spill on walkway near the pump house, slip hazard.",Naharkatiya,Workshop Bay 3,inspection,Contractor,Medium,Unsafe Condition,0,1,Closed,housekeeping,housekeeping_0
+114,2026-09-02 07:02,At CPF Area B: Operator bypassed the high pressure trip interlock to keep the separator running.,Baghjan,CPF Area B,inspection,Contractor,Low,Unsafe Act,1,1,Open,interlock_bypass,interlock_bypass_0
+20,2026-09-27 07:00,"at workshop bay 3: tank ke andar bina gas check kiye operator ghus gaya, attendant bhi nahi tha.",Duliajan,Workshop Bay 3,inspection,Fitter,Medium,Unsafe Act,1,1,Closed,confined_entry,confined_entry_2
+621,2026-05-25 14:31,At Workshop Bay 3: Township shuttle bus timing needs to change.,Moran,Workshop Bay 3,construction,Contractor,,Non-Safety,0,0,Closed,ns_misc2,ns_misc2_0
+336,2026-08-06 05:39,"fan guard broken on the cooling motor, reported during routine round.",Baghjan,Compressor Station,inspection,Contractor,Medium,Unsafe Condition,0,1,Closed,guard_missing,guard_missing_2
+67,2026-05-14 01:17,Gas detector was unavailable near the process area duirng maintenance.,Digboi,Store Yard,inspection,Supervisor,Low,Unsafe Condition,1,1,Open,gas_detector_off,gas_detector_off_0
+339,2026-09-16 13:35,At OCS Main Yard: Fan guard broken on the cooling motor.,Baghjan,OCS Main Yard,construction,Safety Officer,Medium,Unsafe Condition,0,1,Closed,guard_missing,guard_missing_2
+531,2026-04-19 00:58,The canteen food was good today.,Baghjan,Store Yard,shutdown job,Operator,,Non-Safety,0,0,Open,ns_admin,ns_admin_0
+187,2026-09-11 11:22,at compressor station: pickup was overspeeding near the rig gate.,Moran,Compressor Station,drilling,Supervisor,Medium,Unsafe Act,0,1,Open,vehicle,vehicle_1
+627,2026-06-19 01:13,Request new chairs for the admin office.,Baghjan,Compressor Station,operations round,Fitter,,Non-Safety,0,0,Open,ns_misc2,ns_misc2_1
+637,2026-04-08 19:50,at workshop bay 3: request new chairs for the admin office.,Baghjan,Workshop Bay 3,operations round,Contractor,,Non-Safety,0,0,Closed,ns_misc2,ns_misc2_1
+93,2026-03-22 01:47,"Hydrocarbon leak from valve gland near compressor, no ignition, isolated quickly, reported during routine round.",Baghjan,OCS Main Yard,construction,Fitter,High,Near Miss,1,1,Open,gas_leak,gas_leak_1
+333,2026-07-12 01:43,at well pad 12: fan guard broken on the cooling motor.,Moran,Well Pad 12,workover,Fitter,Medium,Unsafe Condition,0,1,Closed,guard_missing,guard_missing_2
+587,2026-09-07 06:01,How to reset my password for the HR portal?,Duliajan,Well Pad 12,construction,Contractor,,Non-Safety,0,0,Open,ns_misc,ns_misc_1
+223,2026-09-11 07:44,At Store Yard: Contractor not wearing golves while handling pipes.,Duliajan,Store Yard,inspection,Contractor,Medium,Unsafe Act,0,1,Closed,ppe_missing,ppe_missing_1
+351,2026-08-03 08:03,Chemical drums stored without secondary containment near the drain.,Baghjan,Store Yard,construction,Fitter,Low,Unsafe Condition,0,1,Closed,chemical_store,chemical_store_0
+451,2026-05-18 10:44,"technician tripped over a pipe support, was not hurt.",Digboi,Rig-14,drilling,Contractor,High,Near Miss,0,1,Closed,slip_nm,slip_nm_1
+235,2026-08-20 20:22,at stroe yard: operator forgot safety glasses during sampling.,Digboi,Store Yard,shutdown job,Engineer,Low,Unsafe Act,0,1,Open,ppe_missing,ppe_missing_2
+602,2026-08-19 22:33,"At Rig-14: Guest house wifi is very slow, reported during routine round.",Jaisalmer,Rig-14,shutdown job,Operator,,Non-Safety,0,0,Open,ns_misc,ns_misc_2
+125,2026-07-29 19:36,"At Workshop Bay 3: Exposed wiring at the distribution board in the pump room, door open.",Naharkatiya,Workshop Bay 3,operations round,Contractor,Medium,Unsafe Condition,1,1,Closed,electrical_exposed,electrical_exposed_0
+516,2026-07-08 07:21,At Store Yard: Several lamps out along the pipeline access road.,Duliajan,Store Yard,construction,Safety Officer,Low,Unsafe Condition,0,1,Open,lighting,lighting_2
+256,2026-09-01 18:22,"Oil spill on walkway near the pump house, slip hazard.",Digboi,Well Pad 12,construction,Operator,High,Unsafe Condition,0,1,Closed,housekeeping,housekeeping_0
+419,2026-06-11 12:32,At OCS Main Yard: Permit copy not available at the worksite.,Duliajan,OCS Main Yard,shutdown job,Fitter,Low,Unsafe Act,0,1,Closed,ptw_lapse,ptw_lapse_2
+432,2026-07-29 04:28,"Operator slipped on wet stairs but held the handrail, no injury.",Duliajan,CPF Area B,operations round,Supervisor,Low,Near Miss,0,1,Open,slip_nm,slip_nm_0
+9,2026-09-28 07:00,"worker entered the tank without gas testing and no standby person at the manhole, please review.",Duliajan,Rig-14,workover,Safety Officer,Low,Unsafe Act,1,1,Closed,confined_entry,confined_entry_0
+603,2026-04-02 09:54,"At Well Pad 12: Guest hosue wifi is very slow, immediate supervisor informed.",Baghjan,Well Pad 12,workover,Supervisor,,Non-Safety,0,0,Open,ns_misc,ns_misc_2
+103,2026-08-04 02:28,trench excavation deeper than 1.5 m with no shoring and no ladder for exit.,Baghjan,CPF Area B,construction,Fitter,High,Unsafe Condition,1,1,Closed,excavation,excavation_0
+134,2026-04-26 19:16,Junction box cover missing with live terminals visible.,Moran,Workshop Bay 3,workover,Safety Officer,Medium,Unsafe Condition,1,1,Open,electrical_exposed,electrical_exposed_2
+632,2026-06-04 21:15,At Workshop Bay 3: Request new chairs for the admin office.,Digboi,Workshop Bay 3,shutdown job,Engineer,,Non-Safety,0,0,Closed,ns_misc2,ns_misc2_1
+485,2026-09-03 16:34,Poor lighting at the walkway near the generator room.,Jaisalmer,Store Yard,workover,Supervisor,Medium,Unsafe Condition,0,1,Open,lighting,lighting_0
+594,2026-06-10 22:55,At Rig-14: How to reset my password for the HR portal?,Baghjan,Rig-14,construction,Safety Officer,,Non-Safety,0,0,Closed,ns_misc,ns_misc_1
+456,2026-04-09 00:10,"At Well Pad 12: Technician tripped over a pipe support, was not hurt.",Duliajan,Well Pad 12,drilling,Engineer,Low,Near Miss,0,1,Open,slip_nm,slip_nm_1
+71,2026-07-09 02:09,"H2S monitor on the wellhead was not working, alarm bypassed.",Naharkatiya,CPF Area B,workover,Contractor,High,Unsafe Condition,1,1,Open,gas_detector_off,gas_detector_off_1
+221,2026-08-04 22:57,At Workshop Bay 3: Contractor not wearing gloves wihle handling pipes.,Jaisalmer,Workshop Bay 3,workover,Fitter,Low,Unsafe Act,0,1,Closed,ppe_missing,ppe_missing_1

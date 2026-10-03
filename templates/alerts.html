@@ -1,0 +1,64 @@
+{% extends "base.html" %}{% block body %}
+<div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; margin-bottom: 8px;">
+  <div>
+    <h2>Statistical Early Warning &amp; Cluster Surveillance</h2>
+    <p class="muted">{{ note }} Emerging risk criteria: Current 7-day count &ge; 3 and &ge; 2.0&times; previous 7 days.</p>
+  </div>
+  <div class="flow" style="background:#fef3c7; color:#92400e; border-color:#fde68a;">
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+    RADAR SURVEILLANCE ACTIVE
+  </div>
+</div>
+
+<div style="margin-top: 16px;">
+  <h3>Active Emerging Risk Alerts</h3>
+  {% for a in alerts %}
+    <div class="card" style="border-left: 5px solid {% if a.level == 'CRITICAL' %}#dc2626{% else %}#ea580c{% endif %};">
+      <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px; margin-bottom:6px;">
+        <div style="display:flex; align-items:center; gap:8px;">
+          <span class="badge {{ a.level }}">{{ a.level }} EMERGING RISK</span>
+          <span style="font-size:16px; font-weight:800; color:var(--text-main);">{{ a.site }}</span>
+          <span class="tag" style="background:#e0f2fe; color:#0369a1; font-size:12px; font-weight:700;">{{ a.hazard }}</span>
+        </div>
+        <div>
+          <span class="badge {{ a.level }}" style="font-size:12px;">
+            {{ ('+%.1f%%' % a.growth_percent) if a.growth_percent is not none else 'NEW SPIKE (0 &rarr; %d)' % a.current_count }}
+          </span>
+        </div>
+      </div>
+      <div style="display:flex; align-items:center; gap:20px; font-size:13px; color:var(--text-muted); margin-top:8px; flex-wrap:wrap;">
+        <div>Prior 7-Day Baseline: <b>{{ a.previous_count }}</b> reports</div>
+        <div>Current 7-Day Window: <b style="color:#b91c1c;">{{ a.current_count }}</b> reports</div>
+        <div style="color:var(--text-dim); font-size:12px;">Window: {{ a.window_start[:10] }} &rarr; {{ a.window_end[:10] }}</div>
+      </div>
+    </div>
+  {% else %}
+    <div class="card" style="text-align:center; padding: 28px; color:var(--text-muted);">
+      No emerging-risk statistical spikes detected across facilities in the current 7-day window.
+    </div>
+  {% endfor %}
+</div>
+
+<div style="margin-top: 28px;">
+  <h3>Cross-Facility Hazard Clusters</h3>
+  <p class="muted">Detects systemic hazards concurrently rising across &ge; 3 distinct facilities within the surveillance window.</p>
+  {% for c in clusters %}
+    <div class="card" style="border-left: 4px solid #6366f1;">
+      <div style="font-size:15px; font-weight:700; color:var(--text-main); margin-bottom:6px;">
+        {{ c.message }}
+      </div>
+      <div style="display:flex; align-items:center; gap:8px; flex-wrap:wrap;">
+        <span style="font-size:12px; font-weight:600; color:var(--text-muted);">Affected Locations:</span>
+        {% for s in c.sites %}
+          <span class="tag" style="background:#e0e7ff; color:#3730a3; font-weight:700;">{{ s }}</span>
+        {% endfor %}
+        <span class="muted" style="margin:0 0 0 12px; font-size:12px;">(Total observations: {{ c.current_count }} current vs {{ c.previous_count }} prior)</span>
+      </div>
+    </div>
+  {% else %}
+    <div class="card" style="text-align:center; padding: 24px; color:var(--text-muted);">
+      No systemic cross-site hazard clusters identified.
+    </div>
+  {% endfor %}
+</div>
+{% endblock %}

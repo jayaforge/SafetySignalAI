@@ -1,0 +1,107 @@
+{% extends "base.html" %}{% block body %}
+<div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; margin-bottom: 8px;">
+  <div>
+    <h2>Corrective Action Workflow &amp; Escalation</h2>
+    <p class="muted">Closed-loop mitigation tracker: Open &rarr; In Progress &rarr; Resolved &rarr; Verified. Overdue actions trigger multi-tier escalation.</p>
+  </div>
+  <div class="flow" style="background:#fef2f2; color:#b91c1c; border-color:#fecaca;">
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+    SLA SURVEILLANCE ACTIVE
+  </div>
+</div>
+
+<div class="card" style="margin-top: 10px;">
+  <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px; margin-bottom: 12px; font-size:12.5px; color:var(--text-muted);">
+    <span>Showing <b>{{ rows|length }}</b> of <b>{{ total }}</b> corrective actions (Overdue prioritized first).</span>
+    <span>As-of (Demo Clock): <b>{{ asof }}</b></span>
+  </div>
+
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Source Report</th>
+          <th>Corrective Action Task</th>
+          <th>Priority</th>
+          <th>Department &amp; Owner</th>
+          <th>SLA Target Due</th>
+          <th>Status</th>
+          <th>Escalation Stage</th>
+          <th>Workflow Progression</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for a in rows %}
+          <tr class="{{ 'overdue' if a.overdue }}">
+            <td><b>#{{ a.id }}</b></td>
+            <td><a href="{{ url_for('reports') }}?q={{ a.report_id }}" style="font-weight:700; color:#0284c7; text-decoration:none;">#{{ a.report_id }}</a></td>
+            <td style="font-weight:600; max-width:240px; color:var(--text-main);">{{ a.action }}</td>
+            <td><span class="badge {{ a.priority }}">{{ a.priority }}</span></td>
+            <td>
+              <span class="action-dept" style="display:block;">{{ a.department }}</span>
+              <span style="font-size:11.5px; color:var(--text-muted);">{{ a.owner }}</span>
+            </td>
+            <td style="font-size:12px; white-space:nowrap;">
+              {{ a.due_date }}
+              {% if a.overdue %}
+                <span class="badge CRITICAL" style="font-size:9px; padding:1px 5px; margin-left:4px;">OVERDUE</span>
+              {% endif %}
+            </td>
+            <td>
+              {% if a.status == 'Verified' %}
+                <span class="badge LOW">{{ a.status }}</span>
+              {% elif a.status == 'Resolved' %}
+                <span class="badge" style="background:#f3e8ff; color:#7e22ce; border:1px solid #d8b4fe;">{{ a.status }}</span>
+              {% elif a.status == 'In Progress' %}
+                <span class="badge" style="background:#e0f2fe; color:#0369a1; border:1px solid #bae6fd;">{{ a.status }}</span>
+              {% else %}
+                <span class="badge MEDIUM">{{ a.status }}</span>
+              {% endif %}
+
+              {% if a.resolver %}
+                <div style="font-size:11px; color:var(--text-muted); margin-top:2px;">By: {{ a.resolver }}</div>
+              {% endif %}
+              {% if a.verifier %}
+                <div style="font-size:11px; color:#15803d; margin-top:2px;">Verified: {{ a.verifier }}</div>
+              {% endif %}
+            </td>
+            <td>
+              {% if a.escalate %}
+                <span class="badge CRITICAL" style="font-size:10px;">
+                  &uarr; {{ a.escalate }}
+                </span>
+              {% else %}
+                <span class="muted" style="font-size:11px;">Within SLA</span>
+              {% endif %}
+            </td>
+            <td>
+              {% if a.next %}
+                <form method="post" class="row" style="gap:4px;">
+                  <input type="hidden" name="id" value="{{ a.id }}">
+                  <input type="hidden" name="to" value="{{ a.next }}">
+                  <input name="person" placeholder="Staff Name" required style="padding:4px 8px; font-size:12px; width:95px;">
+                  {% if a.next == 'Resolved' %}
+                    <input name="resolution" placeholder="Mitigation details" required style="padding:4px 8px; font-size:12px; width:130px;">
+                  {% endif %}
+                  <button type="submit" style="padding:5px 10px; font-size:11px; font-weight:700;">
+                    &rarr; {{ a.next }}
+                  </button>
+                </form>
+              {% else %}
+                <span class="tag" style="background:#dcfce7; color:#15803d; font-size:11px; font-weight:700;">COMPLETED &amp; AUDITED</span>
+              {% endif %}
+            </td>
+          </tr>
+        {% else %}
+          <tr>
+            <td colspan="9" style="text-align:center; padding:24px; color:var(--text-muted);">
+              No active corrective actions recorded.
+            </td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</div>
+{% endblock %}

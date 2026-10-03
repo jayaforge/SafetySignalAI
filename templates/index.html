@@ -1,0 +1,241 @@
+{% extends "base.html" %}{% block body %}
+<div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; margin-bottom: 8px;">
+  <div>
+    <h2>Analyze a Safety Report</h2>
+    <p class="muted">Automated triage: Input Validation → ML Classification → SIF Prediction → Rule Engine → Barrier Failures → Risk Scoring → Action Routing.</p>
+  </div>
+  <div class="flow">
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
+    REPORT → RISK → PATTERN → ACTION
+  </div>
+</div>
+
+<div class="card highlight">
+  <div class="scenario-bar">
+    <span class="scenario-label">Quick Demo Scenarios:</span>
+    <button type="button" class="scenario-btn" onclick="fillScenario('Worker entered the tank without gas testing and no standby person at the manhole.', 'Duliajan', 'Tank Farm', 'Tank Cleaning', 'Safety Officer', 'High')">
+      ⚠️ Confined Space (Critical)
+    </button>
+    <button type="button" class="scenario-btn" onclick="fillScenario('A worker entered a restricted area without required PPE and was nearly struck by moving equipment.', 'Duliajan', 'Rig Floor', 'Maintenance', 'Fitter', 'High')">
+      🚧 PPE & Line of Fire
+    </button>
+    <button type="button" class="scenario-btn" onclick="fillScenario('A forklift came very close to hitting a pedestrian at the warehouse entrance. No injury occurred.', 'Duliajan', 'Main Warehouse', 'Material Handling', 'Driver', 'Medium')">
+      🚜 Forklift Near Miss
+    </button>
+    <button type="button" class="scenario-btn" onclick="fillScenario('Oil was spilled near the main walkway. No one was injured, but workers could slip and fall.', 'Duliajan', 'Pump House', 'Routine Walk', 'Operator', 'Low')">
+      💧 Walkway Oil Spill
+    </button>
+  </div>
+
+  <form method="post" id="reportForm">
+    <textarea id="reportText" name="text" rows="4" maxlength="3000" placeholder="Describe the safety observation, unsafe condition, unsafe act, or near-miss in detail..." required>{{ request.form.get('text','') }}</textarea>
+    
+    <div class="row" style="margin-top: 10px;">
+      <input id="reportSite" name="site" list="sites" placeholder="Site Location" value="{{ request.form.get('site','Duliajan') }}" style="flex: 1; min-width: 140px;">
+      <datalist id="sites">
+        {% for s in sites %}<option>{{ s }}</option>{% endfor %}
+      </datalist>
+      
+      <input id="reportLocation" name="location" placeholder="Specific Area (e.g. Rig 4)" value="{{ request.form.get('location','') }}" style="flex: 1; min-width: 140px;">
+      <input id="reportActivity" name="activity" placeholder="Activity (e.g. Drilling)" value="{{ request.form.get('activity','') }}" style="flex: 1; min-width: 140px;">
+      <input id="reportRole" name="role" placeholder="Reporter Role" value="{{ request.form.get('role','') }}" style="flex: 1; min-width: 120px;">
+      
+      <select id="reportSeverity" name="severity" style="font-weight: 600;">
+        <option value="Unspecified">Severity: Unspecified</option>
+        <option value="Low" {{ 'selected' if request.form.get('severity') == 'Low' }}>Severity: Low</option>
+        <option value="Medium" {{ 'selected' if request.form.get('severity') == 'Medium' }}>Severity: Medium</option>
+        <option value="High" {{ 'selected' if request.form.get('severity') == 'High' }}>Severity: High</option>
+      </select>
+      
+      <button type="submit">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+        Analyze Report
+      </button>
+    </div>
+  </form>
+</div>
+
+<script>
+function fillScenario(text, site, loc, act, role, sev) {
+  document.getElementById('reportText').value = text;
+  document.getElementById('reportSite').value = site;
+  document.getElementById('reportLocation').value = loc;
+  document.getElementById('reportActivity').value = act;
+  document.getElementById('reportRole').value = role;
+  document.getElementById('reportSeverity').value = sev;
+}
+</script>
+
+{% if result %}
+  <div class="card" style="box-shadow: var(--shadow-xl); border-top: 4px solid {% if result.risk and result.risk.level == 'CRITICAL' %}#dc2626{% elif result.risk and result.risk.level == 'HIGH' %}#ea580c{% elif result.risk and result.risk.level == 'MEDIUM' %}#ca8a04{% else %}#16a34a{% endif %};">
+    {% if result.error %}
+      <div class="flash err">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
+        {{ result.error }}
+      </div>
+    {% elif not result.relevant %}
+      <div class="flash warn">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
+        {{ result.message }}
+      </div>
+      <p class="muted">No safety risk score is assigned to non-safety content.</p>
+    {% else %}
+      {% if result.relevance_uncertain %}
+        <div class="flash warn" style="display:block;">
+          <b>Human Review Advisory:</b> Keyword gate and ML model showed moderate disagreement.
+          {% if result.needs_confirm %}
+            <p style="margin: 6px 0 10px;">This report has been placed on hold pending verification.</p>
+            <form method="post">
+              {% for k, v in result.needs_confirm.items() %}
+                <input type="hidden" name="{{ k }}" value="{{ v }}">
+              {% endfor %}
+              <input type="hidden" name="confirm" value="1">
+              <button>Confirm As Safety Report & Save</button>
+            </form>
+          {% endif %}
+        </div>
+      {% endif %}
+
+      {% if result.saved_id %}
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom: 12px;">
+          <span class="tag" style="background:#dbeafe; color:#1e40af; font-size:12px; font-weight:700;">REPORT RECORD #{{ result.saved_id }} STORED</span>
+          <span class="muted" style="margin:0;">Time: {{ result.row.reported_at }}</span>
+        </div>
+      {% endif %}
+
+      <div class="result-header">
+        <div class="risk-display">
+          <div class="risk-meter meter-{{ result.risk.level }}">
+            {{ result.risk.score }}
+          </div>
+          <div>
+            <div style="font-size: 11px; font-weight:700; color:var(--text-muted); text-transform:uppercase; letter-spacing:0.06em;">Calculated Risk Index</div>
+            <div style="display:flex; align-items:center; gap:8px;">
+              <span class="badge {{ result.risk.level }}" style="font-size:13px;">{{ result.risk.level }} PRIORITY</span>
+              <span style="font-weight:700; color:var(--text-main); font-size:15px;">{{ result.risk.score }} / 100</span>
+            </div>
+          </div>
+        </div>
+
+        <div style="text-align: right;">
+          <div style="font-size: 11px; font-weight:700; color:var(--text-muted); text-transform:uppercase;">AI Classification</div>
+          <div style="font-size: 15px; font-weight:700; color:var(--text-main);">
+            {{ result.ml.report_type.label }}
+            <span class="tag" style="background:#f1f5f9; color:#475569;">Confidence: {{ result.ml.report_type.confidence }}</span>
+          </div>
+          <div style="font-size: 12px; color:var(--text-muted);">
+            SIF Potential: <b style="color: {% if result.ml.sif.sif_level == 'High' %}#dc2626{% elif result.ml.sif.sif_level == 'Medium' %}#ea580c{% else %}#16a34a{% endif %};">{{ result.ml.sif.sif_level }}</b> (p = {{ result.ml.sif.sif_probability }})
+          </div>
+        </div>
+      </div>
+
+      <h4>Risk Score Point Breakdown</h4>
+      <div class="score-breakdown-chips">
+        {% for r in result.risk.reasons %}
+          <div class="score-chip">{{ r }}</div>
+        {% endfor %}
+      </div>
+
+      <div class="grid" style="margin-top: 14px;">
+        <div class="card" style="margin:0; background: var(--bg-card-subtle);">
+          <h4>
+            Life-Saving Rules Triggered
+            <span class="tag">Rule Engine</span>
+          </h4>
+          {% for r in result.rules %}
+            <div class="evidence-box">
+              <b>{{ r.rule }}</b><br>
+              <i style="color:var(--text-muted); font-size:12px;">Evidence: "{{ r.evidence }}"</i>
+            </div>
+          {% else %}
+            <p class="muted" style="margin-top:6px;">No Life-Saving Rule violations detected.</p>
+          {% endfor %}
+        </div>
+
+        <div class="card" style="margin:0; background: var(--bg-card-subtle);">
+          <h4>
+            Barrier Failures
+            <span class="tag" style="background:#fee2e2; color:#991b1b;">Defenses</span>
+          </h4>
+          {% for b in result.barriers %}
+            <div class="evidence-box barrier">
+              <b>{{ b.barrier }}</b> — <span style="color:#b91c1c; font-weight:700;">Missing/Failed</span><br>
+              <i style="color:var(--text-muted); font-size:12px;">Evidence: "{{ b.evidence }}"</i>
+            </div>
+          {% else %}
+            <p class="muted" style="margin-top:6px;">No critical barrier failures identified.</p>
+          {% endfor %}
+        </div>
+      </div>
+
+      <div style="margin-top: 18px;">
+        <h4>Explainability & Diagnostic Rationale</h4>
+        <ul style="margin: 6px 0 14px 20px; padding:0; color:var(--text-main); font-size:13.5px;">
+          {% for e in result.explanations %}
+            <li style="margin-bottom: 4px;">{{ e }}</li>
+          {% endfor %}
+        </ul>
+      </div>
+
+      <div style="margin-top: 18px;">
+        <h4>
+          Similar Historical Reports
+          <span class="tag">Cosine Match &ge; 20%</span>
+        </h4>
+        {% if result.similar %}
+          <div class="table-wrap">
+            <table>
+              <tr>
+                <th>Similarity</th>
+                <th>Relationship</th>
+                <th>Recorded Date</th>
+                <th>Site</th>
+                <th>Report Text</th>
+              </tr>
+              {% for s in result.similar %}
+                <tr>
+                  <td>
+                    <span class="badge {% if s.similarity_pct >= 80 %}CRITICAL{% elif s.similarity_pct >= 35 %}HIGH{% else %}LOW{% endif %}" style="font-size:10px;">
+                      {{ s.similarity_pct }}%
+                    </span>
+                  </td>
+                  <td style="font-weight:600;">{{ s.kind }}</td>
+                  <td style="color:var(--text-muted); font-size:12px;">{{ s.reported_at }}</td>
+                  <td><b>{{ s.site }}</b></td>
+                  <td class="report-text" title="{{ s.text }}">{{ s.text[:140] }}{% if s.text|length > 140 %}…{% endif %}</td>
+                </tr>
+              {% endfor %}
+            </table>
+          </div>
+        {% else %}
+          <p class="muted">No similar historical reports found in the active 30-day baseline.</p>
+        {% endif %}
+      </div>
+
+      <div style="margin-top: 18px;">
+        <h4>
+          Recommended Corrective Actions
+          <span class="tag">Automated Dispatch</span>
+        </h4>
+        <p class="muted" style="margin-bottom:8px;">{{ note }}</p>
+        {% if result.actions %}
+          {% for a in result.actions %}
+            <div class="action-item">
+              <div>
+                <span class="badge {{ a.priority }}" style="margin-right: 6px;">{{ a.priority }}</span>
+                <span style="font-weight: 700; color: var(--text-main);">{{ a.action }}</span>
+              </div>
+              <div style="display:flex; align-items:center; gap: 10px; font-size: 12.5px;">
+                <span class="action-dept">{{ a.department }} / {{ a.owner }}</span>
+                <span class="tag" style="background:#f1f5f9;">Due: {{ a.due_date }}</span>
+              </div>
+            </div>
+          {% endfor %}
+        {% else %}
+          <p class="muted">Standard observation noted. Corrective actions with SLAs are generated for HIGH and CRITICAL risks.</p>
+        {% endif %}
+      </div>
+    {% endif %}
+  </div>
+{% endif %}
+{% endblock %}

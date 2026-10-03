@@ -1,0 +1,41 @@
+id,text,report_type,sif_potential,relevant
+1,"Pipe slipped from the crane sling and crashed down a metre from the rigger, he jumped back",Near Miss,1,1
+2,"gas smell near seperator, crew evacuated, found flange leking",Near Miss,1,1
+3,"Operator nearly fell off the tank roof when the handrail gave way, caught the pipe",Near Miss,1,1
+4,"Spark flew from grinder towards oily waste, put out immediately",Near Miss,1,1
+5,Truck reversed fast and almost hit the banksman,Near Miss,1,1
+6,"Hose whipped when coupling failed, missed the roustabout by inches",Near Miss,1,1
+7,"Trench wall collapsed partially, labourer had just climbed out",Near Miss,1,1
+8,"Helper entered the sump to retrieve tools, atmosphere not tested",Unsafe Act,1,1
+9,"Electrician opened the live MCC panel for checking, no isolation done",Unsafe Act,1,1
+10,Fitter on pipe rack at 6m not tied off,Unsafe Act,1,1
+11,Contractor started cutting job near wellhead w/o PTW,Unsafe Act,1,1
+12,Supervisor allowed work inside vessel with expired permit and no standby,Unsafe Act,1,1
+13,Operator bypassed low level trip on the separator for 2 hours,Unsafe Act,1,1
+14,bina harness ke scaffold pe kaam kar rahe the,Unsafe Act,1,1
+15,Workers stood under the lifted skid while it was being moved,Unsafe Act,1,1
+16,H2S alarm not functioning at the sour gas manifold,Unsafe Condition,1,1
+17,"Exposed live terminals in the junction box, cover missing, area wet",Unsafe Condition,1,1
+18,Unbarricaded open excavation next to the access road,Unsafe Condition,1,1
+19,Fire extinguishers empty at the gas compressor shed,Unsafe Condition,1,1
+20,Scaffold lacks toe boards and handrail on third level,Unsafe Condition,1,1
+21,Visitor entered process area without safety glasses,Unsafe Act,0,1
+22,Driver was talking on phone while driving in the field,Unsafe Act,0,1
+23,Operator did not wear gloves during sampling,Unsafe Act,0,1
+24,Contractor smoking behind the store,Unsafe Act,0,1
+25,"Waste left at the site after the job, no housekeeping",Unsafe Condition,0,1
+26,Wet floor with no sign in the workshop corridor,Unsafe Condition,0,1
+27,Fan guard cracked on the cooling tower motor,Unsafe Condition,0,1
+28,Torn hose pipe lying on the walkway,Unsafe Condition,0,1
+29,Helper slipped on an oil patch but didnt fall,Near Miss,0,1
+30,"Door swung and hit the operator's shoulder, minor",Near Miss,0,1
+31,"Small tool fell from the table, no one was near",Near Miss,0,1
+32,Please approve my travel allowance bill,Non-Safety,0,0
+33,Cafeteria chai was cold today,Non-Safety,0,0
+34,Wifi is slow in the guest house,Non-Safety,0,0
+35,Need the training schedule for next month's batch,Non-Safety,0,0
+36,Which form is needed for LTC claim?,Non-Safety,0,0
+37,Happy Diwali to the entire team,Non-Safety,0,0
+38,The new safety poster in the lobby looks great,Non-Safety,0,0
+39,Delivery truck arrived late with spare parts,Non-Safety,0,0
+40,Live cricket match was shown in the recreation hall,Non-Safety,0,0

@@ -1,0 +1,61 @@
+{% extends "base.html" %}{% block body %}
+<div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; margin-bottom: 8px;">
+  <div>
+    <h2>Human-in-the-Loop Review Queue</h2>
+    <p class="muted">Governance safeguard: Review pending HIGH &amp; CRITICAL incidents ({{ total }} pending). Decisions are archived with audit trails and never retrain models automatically without validation.</p>
+  </div>
+  <div class="flow" style="background:#e0e7ff; color:#3730a3; border-color:#c7d2fe;">
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><polyline points="16 11 18 13 22 9"></polyline></svg>
+    AUDIT CONTROL ACTIVE
+  </div>
+</div>
+
+<div style="margin-top: 14px;">
+  {% for r in rows %}
+    <div class="card" style="border-left: 4px solid {% if r.risk_level == 'CRITICAL' %}#dc2626{% else %}#ea580c{% endif %};">
+      <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px; margin-bottom:8px;">
+        <div style="display:flex; align-items:center; gap:8px;">
+          <span style="font-weight:800; color:var(--primary-blue); font-size:15px;">#{{ r.id }}</span>
+          <b>{{ r.site }}</b>
+          <span style="color:var(--text-muted); font-size:12px;">{{ r.reported_at }}</span>
+          <span class="badge {{ r.risk_level }}">{{ r.risk_level }} {{ r.risk_score }}</span>
+          <span class="tag" style="background:#f1f5f9; color:#334155; font-weight:700;">AI Type: {{ r.report_type }}</span>
+        </div>
+      </div>
+
+      <div class="evidence-box" style="margin: 8px 0 14px; font-size:13.5px; line-height:1.5;">
+        {{ r.text }}
+      </div>
+
+      <form method="post" class="row" style="background:#f8fafc; padding:10px 14px; border-radius:8px; border:1px solid #e2e8f0;">
+        <input type="hidden" name="id" value="{{ r.id }}">
+        
+        <label style="font-size:12px; font-weight:700; color:#475569;">Decision:</label>
+        <select name="decision" style="font-weight:700;">
+          <option value="Confirmed">✓ Confirm AI Prediction</option>
+          <option value="Overridden">✗ Override Classification</option>
+        </select>
+
+        <label style="font-size:12px; font-weight:700; color:#475569;">Assign Correct Type:</label>
+        <select name="new_type">
+          <option value="">(Retain Current: {{ r.report_type }})</option>
+          <option value="Unsafe Act">Unsafe Act</option>
+          <option value="Unsafe Condition">Unsafe Condition</option>
+          <option value="Near Miss">Near Miss</option>
+        </select>
+
+        <input name="reviewer" placeholder="Safety Officer Name" required style="width:160px;">
+        <input name="comment" placeholder="Audit justification notes..." maxlength="1000" style="flex:1; min-width:200px;">
+
+        <button type="submit" style="background:#1e40af;">Submit Audit Decision</button>
+      </form>
+    </div>
+  {% else %}
+    <div class="card" style="text-align:center; padding:32px; color:var(--text-muted);">
+      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2" style="margin-bottom:8px;"><circle cx="12" cy="12" r="10"></circle><polyline points="9 12 11 14 15 10"></polyline></svg>
+      <div style="font-size:16px; font-weight:700; color:var(--text-main);">Human Review Queue is Clear</div>
+      <p class="muted" style="margin:4px 0 0;">All High &amp; Critical priority incidents have been confirmed or audited.</p>
+    </div>
+  {% endfor %}
+</div>
+{% endblock %}

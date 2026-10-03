@@ -1,0 +1,364 @@
+{
+ "disclaimer": "Demo system using synthetic data. Metrics demonstrate the methodology, not field accuracy at OIL.",
+ "dataset": {
+  "rows": 654,
+  "scenario_families": 23,
+  "paraphrase_groups": 69,
+  "safety_rows": 519,
+  "sif_rows": 159
+ },
+ "methodology": {
+  "GroupKFold(5) by paraphrase_group": {
+   "relevance": {
+    "n": 654,
+    "per_class": {
+     "0": {
+      "precision": 1.0,
+      "recall": 0.119,
+      "f1-score": 0.212,
+      "support": 135
+     },
+     "1": {
+      "precision": 0.813,
+      "recall": 1.0,
+      "f1-score": 0.897,
+      "support": 519
+     }
+    },
+    "macro_f1": 0.555,
+    "labels": [
+     "0",
+     "1"
+    ],
+    "confusion_matrix": [
+     [
+      16,
+      119
+     ],
+     [
+      0,
+      519
+     ]
+    ]
+   },
+   "report_type": {
+    "n": 519,
+    "per_class": {
+     "Near Miss": {
+      "precision": 0.792,
+      "recall": 0.409,
+      "f1-score": 0.539,
+      "support": 93
+     },
+     "Unsafe Act": {
+      "precision": 0.634,
+      "recall": 0.79,
+      "f1-score": 0.703,
+      "support": 210
+     },
+     "Unsafe Condition": {
+      "precision": 0.751,
+      "recall": 0.727,
+      "f1-score": 0.739,
+      "support": 216
+     }
+    },
+    "macro_f1": 0.66,
+    "labels": [
+     "Near Miss",
+     "Unsafe Act",
+     "Unsafe Condition"
+    ],
+    "confusion_matrix": [
+     [
+      38,
+      41,
+      14
+     ],
+     [
+      6,
+      166,
+      38
+     ],
+     [
+      4,
+      55,
+      157
+     ]
+    ]
+   },
+   "sif": {
+    "n": 519,
+    "per_class": {
+     "0": {
+      "precision": 0.87,
+      "recall": 0.5,
+      "f1-score": 0.635,
+      "support": 360
+     },
+     "1": {
+      "precision": 0.423,
+      "recall": 0.83,
+      "f1-score": 0.561,
+      "support": 159
+     }
+    },
+    "macro_f1": 0.598,
+    "labels": [
+     "0",
+     "1"
+    ],
+    "confusion_matrix": [
+     [
+      180,
+      180
+     ],
+     [
+      27,
+      132
+     ]
+    ],
+    "sif_recall": 0.83,
+    "sif_recall_95ci_group_bootstrap": [
+     0.678,
+     0.953
+    ],
+    "pr_auc": 0.649,
+    "pr_auc_baseline_prevalence": 0.306
+   }
+  },
+  "GroupKFold(5) by scenario_family": {
+   "relevance": {
+    "n": 654,
+    "per_class": {
+     "0": {
+      "precision": 1.0,
+      "recall": 0.007,
+      "f1-score": 0.015,
+      "support": 135
+     },
+     "1": {
+      "precision": 0.795,
+      "recall": 1.0,
+      "f1-score": 0.886,
+      "support": 519
+     }
+    },
+    "macro_f1": 0.45,
+    "labels": [
+     "0",
+     "1"
+    ],
+    "confusion_matrix": [
+     [
+      1,
+      134
+     ],
+     [
+      0,
+      519
+     ]
+    ]
+   },
+   "report_type": {
+    "n": 519,
+    "per_class": {
+     "Near Miss": {
+      "precision": 0.75,
+      "recall": 0.387,
+      "f1-score": 0.511,
+      "support": 93
+     },
+     "Unsafe Act": {
+      "precision": 0.479,
+      "recall": 0.648,
+      "f1-score": 0.551,
+      "support": 210
+     },
+     "Unsafe Condition": {
+      "precision": 0.599,
+      "recall": 0.519,
+      "f1-score": 0.556,
+      "support": 216
+     }
+    },
+    "macro_f1": 0.539,
+    "labels": [
+     "Near Miss",
+     "Unsafe Act",
+     "Unsafe Condition"
+    ],
+    "confusion_matrix": [
+     [
+      36,
+      44,
+      13
+     ],
+     [
+      12,
+      136,
+      62
+     ],
+     [
+      0,
+      104,
+      112
+     ]
+    ]
+   },
+   "sif": {
+    "n": 519,
+    "per_class": {
+     "0": {
+      "precision": 0.716,
+      "recall": 0.336,
+      "f1-score": 0.457,
+      "support": 360
+     },
+     "1": {
+      "precision": 0.317,
+      "recall": 0.698,
+      "f1-score": 0.436,
+      "support": 159
+     }
+    },
+    "macro_f1": 0.447,
+    "labels": [
+     "0",
+     "1"
+    ],
+    "confusion_matrix": [
+     [
+      121,
+      239
+     ],
+     [
+      48,
+      111
+     ]
+    ],
+    "sif_recall": 0.698,
+    "sif_recall_95ci_group_bootstrap": [
+     0.543,
+     0.818
+    ],
+    "pr_auc": 0.32,
+    "pr_auc_baseline_prevalence": 0.306
+   }
+  }
+ },
+ "challenge_set": {
+  "relevance": {
+   "n": 40,
+   "per_class": {
+    "0": {
+     "precision": 1.0,
+     "recall": 0.444,
+     "f1-score": 0.615,
+     "support": 9
+    },
+    "1": {
+     "precision": 0.861,
+     "recall": 1.0,
+     "f1-score": 0.925,
+     "support": 31
+    }
+   },
+   "macro_f1": 0.77,
+   "labels": [
+    "0",
+    "1"
+   ],
+   "confusion_matrix": [
+    [
+     4,
+     5
+    ],
+    [
+     0,
+     31
+    ]
+   ]
+  },
+  "report_type (gold-relevant rows only)": {
+   "n": 31,
+   "per_class": {
+    "Near Miss": {
+     "precision": 0.778,
+     "recall": 0.7,
+     "f1-score": 0.737,
+     "support": 10
+    },
+    "Unsafe Act": {
+     "precision": 0.857,
+     "recall": 1.0,
+     "f1-score": 0.923,
+     "support": 12
+    },
+    "Unsafe Condition": {
+     "precision": 0.75,
+     "recall": 0.667,
+     "f1-score": 0.706,
+     "support": 9
+    }
+   },
+   "macro_f1": 0.789,
+   "labels": [
+    "Near Miss",
+    "Unsafe Act",
+    "Unsafe Condition"
+   ],
+   "confusion_matrix": [
+    [
+     7,
+     1,
+     2
+    ],
+    [
+     0,
+     12,
+     0
+    ],
+    [
+     2,
+     1,
+     6
+    ]
+   ]
+  },
+  "sif (gold-relevant rows only)": {
+   "n": 31,
+   "per_class": {
+    "0": {
+     "precision": 0.727,
+     "recall": 0.727,
+     "f1-score": 0.727,
+     "support": 11
+    },
+    "1": {
+     "precision": 0.85,
+     "recall": 0.85,
+     "f1-score": 0.85,
+     "support": 20
+    }
+   },
+   "macro_f1": 0.789,
+   "labels": [
+    "0",
+    "1"
+   ],
+   "confusion_matrix": [
+    [
+     8,
+     3
+    ],
+    [
+     3,
+     17
+    ]
+   ],
+   "sif_recall": 0.85
+  },
+  "note": "Frozen, hand-written, never used for training. Small n: wide uncertainty. Single labeller so far; Cohen's kappa needs a 2nd independent labeller."
+ }
+}
